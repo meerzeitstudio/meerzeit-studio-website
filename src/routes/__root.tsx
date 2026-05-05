@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 
 import appCss from "../styles.css?url";
 
@@ -29,19 +30,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Meerzeit Studio – Creative Sessions für Frauen" },
+      { name: "description", content: "Kreative Auszeit-Events für Frauen und Mütter. Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst." },
+      { name: "author", content: "Meerzeit Studio" },
+      { property: "og:title", content: "Meerzeit Studio – Creative Sessions" },
+      { property: "og:description", content: "Kreative Auszeit-Events für Frauen und Mütter." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap",
       },
     ],
   }),
@@ -65,5 +68,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <>
+      <SiteNav />
+      <Outlet />
+      <SiteFooter />
+    </>
+  );
 }
