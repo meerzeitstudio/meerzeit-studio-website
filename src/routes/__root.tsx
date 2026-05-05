@@ -30,14 +30,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Meerzeit Studio – Creative Sessions für Frauen" },
+      { name: "description", content: "Kreative Auszeit-Events für Frauen und Mütter. Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst." },
+      { name: "author", content: "Meerzeit Studio" },
+      { property: "og:title", content: "Meerzeit Studio – Creative Sessions" },
+      { property: "og:description", content: "Kreative Auszeit-Events für Frauen und Mütter." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
