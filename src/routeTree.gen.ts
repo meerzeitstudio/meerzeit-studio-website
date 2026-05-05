@@ -9,8 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UeberUnsRouteImport } from './routes/ueber-uns'
+import { Route as SessionsRouteImport } from './routes/sessions'
+import { Route as PhilosophieRouteImport } from './routes/philosophie'
+import { Route as FuerWenRouteImport } from './routes/fuer-wen'
+import { Route as BuchenRouteImport } from './routes/buchen'
+import { Route as AblaufRouteImport } from './routes/ablauf'
 import { Route as IndexRouteImport } from './routes/index'
 
+const UeberUnsRoute = UeberUnsRouteImport.update({
+  id: '/ueber-uns',
+  path: '/ueber-uns',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SessionsRoute = SessionsRouteImport.update({
+  id: '/sessions',
+  path: '/sessions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhilosophieRoute = PhilosophieRouteImport.update({
+  id: '/philosophie',
+  path: '/philosophie',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FuerWenRoute = FuerWenRouteImport.update({
+  id: '/fuer-wen',
+  path: '/fuer-wen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuchenRoute = BuchenRouteImport.update({
+  id: '/buchen',
+  path: '/buchen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AblaufRoute = AblaufRouteImport.update({
+  id: '/ablauf',
+  path: '/ablauf',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +55,116 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ablauf': typeof AblaufRoute
+  '/buchen': typeof BuchenRoute
+  '/fuer-wen': typeof FuerWenRoute
+  '/philosophie': typeof PhilosophieRoute
+  '/sessions': typeof SessionsRoute
+  '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ablauf': typeof AblaufRoute
+  '/buchen': typeof BuchenRoute
+  '/fuer-wen': typeof FuerWenRoute
+  '/philosophie': typeof PhilosophieRoute
+  '/sessions': typeof SessionsRoute
+  '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ablauf': typeof AblaufRoute
+  '/buchen': typeof BuchenRoute
+  '/fuer-wen': typeof FuerWenRoute
+  '/philosophie': typeof PhilosophieRoute
+  '/sessions': typeof SessionsRoute
+  '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/ablauf'
+    | '/buchen'
+    | '/fuer-wen'
+    | '/philosophie'
+    | '/sessions'
+    | '/ueber-uns'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/ablauf'
+    | '/buchen'
+    | '/fuer-wen'
+    | '/philosophie'
+    | '/sessions'
+    | '/ueber-uns'
+  id:
+    | '__root__'
+    | '/'
+    | '/ablauf'
+    | '/buchen'
+    | '/fuer-wen'
+    | '/philosophie'
+    | '/sessions'
+    | '/ueber-uns'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AblaufRoute: typeof AblaufRoute
+  BuchenRoute: typeof BuchenRoute
+  FuerWenRoute: typeof FuerWenRoute
+  PhilosophieRoute: typeof PhilosophieRoute
+  SessionsRoute: typeof SessionsRoute
+  UeberUnsRoute: typeof UeberUnsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/ueber-uns': {
+      id: '/ueber-uns'
+      path: '/ueber-uns'
+      fullPath: '/ueber-uns'
+      preLoaderRoute: typeof UeberUnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sessions': {
+      id: '/sessions'
+      path: '/sessions'
+      fullPath: '/sessions'
+      preLoaderRoute: typeof SessionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/philosophie': {
+      id: '/philosophie'
+      path: '/philosophie'
+      fullPath: '/philosophie'
+      preLoaderRoute: typeof PhilosophieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fuer-wen': {
+      id: '/fuer-wen'
+      path: '/fuer-wen'
+      fullPath: '/fuer-wen'
+      preLoaderRoute: typeof FuerWenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buchen': {
+      id: '/buchen'
+      path: '/buchen'
+      fullPath: '/buchen'
+      preLoaderRoute: typeof BuchenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ablauf': {
+      id: '/ablauf'
+      path: '/ablauf'
+      fullPath: '/ablauf'
+      preLoaderRoute: typeof AblaufRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +177,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AblaufRoute: AblaufRoute,
+  BuchenRoute: BuchenRoute,
+  FuerWenRoute: FuerWenRoute,
+  PhilosophieRoute: PhilosophieRoute,
+  SessionsRoute: SessionsRoute,
+  UeberUnsRoute: UeberUnsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
