@@ -1,17 +1,19 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { CONTACT, whatsappLink } from "@/lib/contact";
 
 const links = [
   { to: "/sessions", label: "Sessions" },
-  { to: "/fuer-wen", label: "Für wen" },
-  { to: "/philosophie", label: "Philosophie" },
-  { to: "/ueber-uns", label: "Über uns" },
-  { to: "/ablauf", label: "Ablauf" },
   { to: "/termine", label: "Termine" },
+  { to: "/private-anlaesse", label: "Private Anlässe" },
+  { to: "/ablauf", label: "Ablauf" },
+  { to: "/fuer-wen", label: "Für wen" },
+  { to: "/ueber-uns", label: "Über uns" },
 ] as const;
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
   const { location } = useRouterState();
   const isHome = location.pathname === "/";
 
@@ -22,21 +24,23 @@ export function SiteNav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const transparent = isHome && !scrolled;
+  useEffect(() => setOpen(false), [location.pathname]);
+
+  const transparent = isHome && !scrolled && !open;
 
   return (
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         transparent
           ? "bg-transparent border-transparent text-[color:var(--ivory)]"
-          : "backdrop-blur-md bg-background/80 border-b border-border/40 text-foreground"
+          : "backdrop-blur-md bg-background/85 border-b border-border/40 text-foreground"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
         <Link to="/" className="font-serif text-xl tracking-wide">
           Meerzeit <span className="text-[color:var(--terracotta)]">Studio</span>
         </Link>
-        <div className="hidden md:flex items-center gap-8 text-sm">
+        <div className="hidden lg:flex items-center gap-7 text-sm">
           {links.map((l) => (
             <Link
               key={l.to}
@@ -48,35 +52,87 @@ export function SiteNav() {
             </Link>
           ))}
         </div>
-        <Link
-          to="/buchen"
-          className="text-sm px-5 py-2 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition"
-        >
-          Buchen
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link
+            to="/buchen"
+            className="hidden sm:inline-block text-sm px-5 py-2 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition"
+          >
+            Buchen
+          </Link>
+          <button
+            aria-label="Menü"
+            onClick={() => setOpen((o) => !o)}
+            className="lg:hidden p-2 -mr-2"
+          >
+            <span className="block w-5 h-px bg-current mb-1.5" />
+            <span className="block w-5 h-px bg-current mb-1.5" />
+            <span className="block w-5 h-px bg-current" />
+          </button>
+        </div>
       </div>
+      {open && (
+        <div className="lg:hidden border-t border-border/40 bg-background/95 backdrop-blur-md text-foreground">
+          <div className="px-6 py-6 flex flex-col gap-4 text-sm">
+            {links.map((l) => (
+              <Link key={l.to} to={l.to} className="py-1">
+                {l.label}
+              </Link>
+            ))}
+            <Link to="/buchen" className="py-1 text-[color:var(--terracotta)]">
+              Buchen
+            </Link>
+            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="py-1">
+              WhatsApp · {CONTACT.phoneDisplay}
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
 
 export function SiteFooter() {
   return (
-    <footer className="py-14 px-6 bg-[color:var(--graphite)] text-[color:var(--ivory)]/60 text-center text-sm">
-      <Link to="/" className="font-serif text-2xl text-[color:var(--ivory)] mb-2 inline-block">
-        Meerzeit <span className="text-[color:var(--terracotta)]">Studio</span>
-      </Link>
-      <p className="font-script text-base mb-6">— Creative Sessions für Frauen —</p>
-      <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-8 text-[color:var(--ivory)]/70">
-        {links.map((l) => (
-          <Link key={l.to} to={l.to} className="hover:text-[color:var(--ivory)] transition">
-            {l.label}
+    <footer className="py-16 px-6 bg-[color:var(--graphite)] text-[color:var(--ivory)]/70 text-sm">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
+        <div>
+          <Link to="/" className="font-serif text-2xl text-[color:var(--ivory)] inline-block">
+            Meerzeit <span className="text-[color:var(--terracotta)]">Studio</span>
           </Link>
-        ))}
-        <Link to="/buchen" className="hover:text-[color:var(--ivory)] transition">
-          Buchen
-        </Link>
+          <p className="font-script text-base mt-2">— Creative Sessions —</p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="uppercase tracking-widest text-xs text-[color:var(--ivory)]/50 mb-1">Entdecken</p>
+          {links.map((l) => (
+            <Link key={l.to} to={l.to} className="hover:text-[color:var(--ivory)] transition">
+              {l.label}
+            </Link>
+          ))}
+          <Link to="/buchen" className="hover:text-[color:var(--ivory)] transition">
+            Buchen
+          </Link>
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="uppercase tracking-widest text-xs text-[color:var(--ivory)]/50 mb-1">Kontakt</p>
+          <a href={`mailto:${CONTACT.email}`} className="hover:text-[color:var(--ivory)] transition">
+            {CONTACT.email}
+          </a>
+          <a href={`tel:+${CONTACT.phoneE164}`} className="hover:text-[color:var(--ivory)] transition">
+            {CONTACT.phoneDisplay}
+          </a>
+          <a
+            href={whatsappLink()}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[color:var(--terracotta)] hover:text-[color:var(--ivory)] transition"
+          >
+            WhatsApp schreiben →
+          </a>
+        </div>
       </div>
-      <p>© {new Date().getFullYear()} Meerzeit Studio. Mit Liebe gemacht.</p>
+      <p className="text-center mt-12 text-[color:var(--ivory)]/50">
+        © {new Date().getFullYear()} Meerzeit Studio. Mit Liebe gemacht.
+      </p>
     </footer>
   );
 }
