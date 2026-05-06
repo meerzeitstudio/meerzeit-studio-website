@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
+import { CONTACT, whatsappLink } from "@/lib/contact";
+import { sessionOptionsList } from "@/lib/events";
 import hero from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/buchen")({
@@ -10,19 +12,23 @@ export const Route = createFileRoute("/buchen")({
       {
         name: "description",
         content:
-          "Buche deine kreative Auszeit bei Meerzeit Studio. Wir freuen uns, dir einen Platz zu reservieren.",
+          "Buche deine kreative Auszeit – per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden.",
       },
       { property: "og:title", content: "Buche deine Auszeit – Meerzeit Studio" },
-      {
-        property: "og:description",
-        content: "Reserviere deinen Platz für eine kreative Session am Meer.",
-      },
     ],
   }),
   component: BookingPage,
 });
 
-const sessionOptions = ["Malen am Meer", "Meditatives Malen", "Malen bei Nacht", "Paint & Beats"];
+const occasionOptions = [
+  "Einzelplatz in offener Session",
+  "Freundinnenabend",
+  "Hochzeit / JGA",
+  "Firmenevent",
+  "Geburtstag / privater Anlass",
+  "Mutti malt – mit Baby",
+  "Etwas anderes",
+];
 
 function BookingPage() {
   return (
@@ -31,10 +37,34 @@ function BookingPage() {
         eyebrow="deine Auszeit wartet"
         title="Buche deine"
         italic="Auszeit."
-        intro="Schreib uns – wir melden uns innerhalb von 48 Stunden mit verfügbaren Terminen und allen Details."
+        intro="Schreib uns – per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden mit Terminen und allen Details."
       />
 
-      <section className="py-16 md:py-24 px-6">
+      {/* Schnellkontakte */}
+      <section className="px-6">
+        <div className="max-w-3xl mx-auto -mt-6 grid sm:grid-cols-2 gap-4">
+          <a
+            href={whatsappLink()}
+            target="_blank"
+            rel="noreferrer"
+            className="block p-5 rounded-sm bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition shadow-[var(--shadow-soft)]"
+          >
+            <p className="text-xs uppercase tracking-widest opacity-80 mb-1">am schnellsten</p>
+            <p className="font-serif text-xl">WhatsApp · {CONTACT.phoneDisplay}</p>
+            <p className="text-xs mt-1 opacity-90">Antwort meist am selben Tag</p>
+          </a>
+          <a
+            href={`mailto:${CONTACT.email}`}
+            className="block p-5 rounded-sm bg-card border border-border hover:border-[color:var(--terracotta)]/50 transition shadow-[var(--shadow-soft)]"
+          >
+            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">per E-Mail</p>
+            <p className="font-serif text-xl text-foreground">{CONTACT.email}</p>
+            <p className="text-xs mt-1 text-muted-foreground">Antwort innerhalb von 48 Stunden</p>
+          </a>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <Reveal>
             <form
@@ -54,14 +84,41 @@ function BookingPage() {
                 />
               </div>
 
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">E-Mail</label>
+                  <input
+                    required
+                    type="email"
+                    className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
+                    placeholder="dein@name.de"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">
+                    Telefon / WhatsApp
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
+                    placeholder="optional"
+                  />
+                </div>
+              </div>
+
               <div>
-                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">E-Mail</label>
-                <input
-                  required
-                  type="email"
+                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">Anlass</label>
+                <select
                   className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                  placeholder="dein@name.de"
-                />
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Bitte wählen
+                  </option>
+                  {occasionOptions.map((s) => (
+                    <option key={s}>{s}</option>
+                  ))}
+                </select>
               </div>
 
               <div>
@@ -72,11 +129,10 @@ function BookingPage() {
                   className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
                   defaultValue=""
                 >
-                  <option value="" disabled>Bitte wählen</option>
-                  {sessionOptions.map((s) => (
+                  <option value="">Noch nicht sicher</option>
+                  {sessionOptionsList.map((s) => (
                     <option key={s}>{s}</option>
                   ))}
-                  <option>Ich bin mir noch nicht sicher</option>
                 </select>
               </div>
 
@@ -87,7 +143,7 @@ function BookingPage() {
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition resize-none"
-                  placeholder="Erzähl uns ein wenig: Allein, mit Freundinnen, ein bestimmtes Datum?"
+                  placeholder="Erzähl uns ein wenig: Wann hast du Zeit? Wie viele seid ihr? Besondere Wünsche zum Material (z. B. bestimmte Farben, Goldfolie, Format)?"
                 />
               </div>
 
@@ -97,13 +153,6 @@ function BookingPage() {
               >
                 Anfrage senden
               </button>
-
-              <p className="text-center text-sm text-muted-foreground pt-2">
-                Oder schreib uns direkt:{" "}
-                <a href="mailto:hallo@meerzeit-studio.de" className="text-[color:var(--terracotta)] hover:underline">
-                  hallo@meerzeit-studio.de
-                </a>
-              </p>
             </form>
           </Reveal>
         </div>
