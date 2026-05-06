@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UeberUnsRouteImport } from './routes/ueber-uns'
+import { Route as TermineRouteImport } from './routes/termine'
 import { Route as SessionsRouteImport } from './routes/sessions'
 import { Route as PhilosophieRouteImport } from './routes/philosophie'
 import { Route as FuerWenRouteImport } from './routes/fuer-wen'
@@ -20,6 +21,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const UeberUnsRoute = UeberUnsRouteImport.update({
   id: '/ueber-uns',
   path: '/ueber-uns',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermineRoute = TermineRouteImport.update({
+  id: '/termine',
+  path: '/termine',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SessionsRoute = SessionsRouteImport.update({
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/fuer-wen': typeof FuerWenRoute
   '/philosophie': typeof PhilosophieRoute
   '/sessions': typeof SessionsRoute
+  '/termine': typeof TermineRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +76,7 @@ export interface FileRoutesByTo {
   '/fuer-wen': typeof FuerWenRoute
   '/philosophie': typeof PhilosophieRoute
   '/sessions': typeof SessionsRoute
+  '/termine': typeof TermineRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRoutesById {
@@ -79,6 +87,7 @@ export interface FileRoutesById {
   '/fuer-wen': typeof FuerWenRoute
   '/philosophie': typeof PhilosophieRoute
   '/sessions': typeof SessionsRoute
+  '/termine': typeof TermineRoute
   '/ueber-uns': typeof UeberUnsRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +99,7 @@ export interface FileRouteTypes {
     | '/fuer-wen'
     | '/philosophie'
     | '/sessions'
+    | '/termine'
     | '/ueber-uns'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +109,7 @@ export interface FileRouteTypes {
     | '/fuer-wen'
     | '/philosophie'
     | '/sessions'
+    | '/termine'
     | '/ueber-uns'
   id:
     | '__root__'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/fuer-wen'
     | '/philosophie'
     | '/sessions'
+    | '/termine'
     | '/ueber-uns'
   fileRoutesById: FileRoutesById
 }
@@ -118,6 +130,7 @@ export interface RootRouteChildren {
   FuerWenRoute: typeof FuerWenRoute
   PhilosophieRoute: typeof PhilosophieRoute
   SessionsRoute: typeof SessionsRoute
+  TermineRoute: typeof TermineRoute
   UeberUnsRoute: typeof UeberUnsRoute
 }
 
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/ueber-uns'
       fullPath: '/ueber-uns'
       preLoaderRoute: typeof UeberUnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/termine': {
+      id: '/termine'
+      path: '/termine'
+      fullPath: '/termine'
+      preLoaderRoute: typeof TermineRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sessions': {
@@ -182,6 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   FuerWenRoute: FuerWenRoute,
   PhilosophieRoute: PhilosophieRoute,
   SessionsRoute: SessionsRoute,
+  TermineRoute: TermineRoute,
   UeberUnsRoute: UeberUnsRoute,
 }
 export const routeTree = rootRouteImport
