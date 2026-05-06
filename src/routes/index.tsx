@@ -1,10 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
+import { CalendarSection } from "@/components/CalendarSection";
+import { CONTACT, whatsappLink } from "@/lib/contact";
 import hero from "@/assets/hero.jpg";
 import sMeer from "@/assets/session-meer.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
+import sMutti from "@/assets/session-mutti-baby.jpg";
+import privateImg from "@/assets/private-events.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -13,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "120 Minuten nur für dich. Kreative Auszeit-Events für Frauen und Mütter – kein Müssen, kein Perfekt, nur Sein.",
+          "Kreative Auszeit-Events für Frauen, Mütter und Freundinnen. Acrylmalerei in entspannter Atmosphäre – kein Müssen, kein Perfekt.",
       },
       { property: "og:title", content: "Meerzeit Studio – Creative Sessions" },
       {
@@ -30,6 +34,7 @@ export const Route = createFileRoute("/")({
 const sessions = [
   { title: "Malen am Meer", img: sMeer, text: "Salzige Luft, weiche Farben – und der Horizont, der alles weit macht." },
   { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein." },
+  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen." },
   { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht." },
   { title: "Paint & Beats", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion." },
 ];
@@ -62,12 +67,18 @@ function Index() {
           <p className="mt-8 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light text-balance">
             Kein Müssen. Kein Perfekt. Nur Sein.
           </p>
-          <div className="mt-12">
+          <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              to="/sessions"
+              to="/termine"
               className="inline-block px-8 py-4 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition shadow-[var(--shadow-glow)] text-sm tracking-widest uppercase"
             >
-              Creative Sessions entdecken
+              Termine ansehen
+            </Link>
+            <Link
+              to="/sessions"
+              className="inline-block px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
+            >
+              Sessions entdecken
             </Link>
           </div>
         </div>
@@ -78,7 +89,7 @@ function Index() {
       </section>
 
       {/* INTRO */}
-      <section className="py-32 md:py-40 px-6">
+      <section className="py-24 md:py-32 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">ein Raum für dich</p>
@@ -94,21 +105,42 @@ function Index() {
         </div>
       </section>
 
-      {/* SESSIONS PREVIEW */}
-      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)]">
-        <div className="max-w-7xl mx-auto">
+      {/* CALENDAR – oben sichtbar */}
+      <section className="py-20 md:py-28 px-6 bg-[color:var(--ivory)]">
+        <div className="max-w-6xl mx-auto">
           <Reveal>
-            <div className="text-center mb-20">
-              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Sessions</p>
-              <h2 className="font-serif text-4xl md:text-6xl text-balance">
-                Vier Welten. <span className="italic">Ein Gefühl.</span>
+            <div className="text-center mb-12">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">die nächsten Termine</p>
+              <h2 className="font-serif text-3xl md:text-5xl text-balance">
+                Such dir <span className="italic">deinen Tag.</span>
               </h2>
             </div>
           </Reveal>
+          <Reveal delay={120}>
+            <CalendarSection compact />
+          </Reveal>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+      {/* SESSIONS PREVIEW */}
+      <section className="py-24 md:py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-16">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Sessions</p>
+              <h2 className="font-serif text-4xl md:text-6xl text-balance">
+                Was bei uns <span className="italic">entstehen darf.</span>
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                Jede Session ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt –
+                wir kümmern uns um Material, Atmosphäre und Getränke.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {sessions.map((s, i) => (
-              <Reveal key={s.title} delay={i * 120}>
+              <Reveal key={s.title} delay={i * 100}>
                 <Link to="/sessions" className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
                   <div className="aspect-[4/5] overflow-hidden">
                     <img
@@ -121,9 +153,9 @@ function Index() {
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--graphite)]/85 via-[color:var(--graphite)]/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10 text-[color:var(--ivory)]">
-                    <h3 className="font-serif text-3xl md:text-4xl mb-3">{s.title}</h3>
-                    <p className="text-[color:var(--ivory)]/85 text-base leading-relaxed font-light max-w-md">
+                  <div className="absolute bottom-0 left-0 right-0 p-7 text-[color:var(--ivory)]">
+                    <h3 className="font-serif text-2xl md:text-3xl mb-2">{s.title}</h3>
+                    <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
                       {s.text}
                     </p>
                   </div>
@@ -132,7 +164,7 @@ function Index() {
             ))}
           </div>
 
-          <div className="text-center mt-16">
+          <div className="text-center mt-14">
             <Link
               to="/sessions"
               className="inline-block px-8 py-3 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
@@ -143,8 +175,87 @@ function Index() {
         </div>
       </section>
 
+      {/* MATERIAL / ABLAUF KURZ */}
+      <section className="py-24 px-6 bg-[color:var(--ivory)]">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <Reveal>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">so läuft es ab</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6 leading-snug">
+              Du kommst an –<br />
+              <span className="italic">wir kümmern uns um den Rest.</span>
+            </h2>
+            <ul className="space-y-4 text-muted-foreground font-light leading-relaxed">
+              <li>
+                <strong className="text-foreground font-serif text-lg block mb-1">Material inklusive</strong>
+                Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben aus dem Acrylbereich –
+                und erweitern unser Sortiment laufend. Besondere Wünsche? Sag Bescheid in der Anfrage.
+              </li>
+              <li>
+                <strong className="text-foreground font-serif text-lg block mb-1">Keine Vorkenntnisse</strong>
+                Du brauchst nichts mitzubringen außer dir selbst. Bequeme Kleidung empfehlen wir.
+              </li>
+              <li>
+                <strong className="text-foreground font-serif text-lg block mb-1">Rund 120 Minuten</strong>
+                Ankommen, loslassen, malen, verbinden. Du gehst mit deinem Bild – und einem vollen Herzen.
+              </li>
+            </ul>
+            <Link
+              to="/ablauf"
+              className="mt-8 inline-block text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]"
+            >
+              Mehr zum Ablauf
+            </Link>
+          </Reveal>
+          <Reveal delay={150}>
+            <img
+              src={sMeditativ}
+              alt="Acrylfarben und Pinsel im Studio"
+              loading="lazy"
+              width={1024}
+              height={1280}
+              className="w-full aspect-[4/5] object-cover rounded-sm shadow-[var(--shadow-soft)]"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* PRIVATE ANLÄSSE */}
+      <section className="py-24 md:py-32 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <Reveal>
+            <img
+              src={privateImg}
+              alt="Privates Event mit Frauen, die gemeinsam malen"
+              loading="lazy"
+              width={1600}
+              height={1024}
+              className="w-full aspect-[4/3] object-cover rounded-sm shadow-[var(--shadow-soft)]"
+            />
+          </Reveal>
+          <Reveal delay={150}>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">auch als privates Erlebnis</p>
+            <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-snug">
+              Firmenevent, Hochzeit oder
+              <br />
+              <span className="italic">Freundinnenabend.</span>
+            </h2>
+            <p className="text-muted-foreground leading-relaxed font-light mb-6">
+              Manche Anlässe verdienen mehr als einen Tisch im Restaurant. Wir gestalten Meerzeit-Sessions
+              auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier. Für Teams, Brautpartys,
+              runde Geburtstage oder einfach einen Abend, den ihr nicht so schnell vergesst.
+            </p>
+            <Link
+              to="/private-anlaesse"
+              className="inline-block px-7 py-3 rounded-full bg-[color:var(--smoke)] text-[color:var(--ivory)] hover:bg-[color:var(--graphite)] transition text-sm tracking-widest uppercase"
+            >
+              Mehr erfahren
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="relative py-32 md:py-44 px-6 text-center text-[color:var(--ivory)] overflow-hidden">
+      <section className="relative py-32 md:py-40 px-6 text-center text-[color:var(--ivory)] overflow-hidden">
         <div className="absolute inset-0 bg-[var(--gradient-dusk)]" />
         <div
           className="absolute inset-0 opacity-30 mix-blend-overlay"
@@ -158,12 +269,25 @@ function Index() {
               <br />
               <span className="italic">Auszeit.</span>
             </h2>
-            <Link
-              to="/buchen"
-              className="mt-12 inline-block px-10 py-4 rounded-full bg-[color:var(--terracotta)] hover:bg-[color:var(--copper)] transition text-sm tracking-widest uppercase shadow-[var(--shadow-glow)]"
-            >
-              Jetzt anfragen
-            </Link>
+            <p className="mt-6 text-[color:var(--ivory)]/80 max-w-md mx-auto font-light">
+              Per Formular, E-Mail oder direkt über WhatsApp – wie es für dich am leichtesten ist.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/buchen"
+                className="px-8 py-4 rounded-full bg-[color:var(--terracotta)] hover:bg-[color:var(--copper)] transition text-sm tracking-widest uppercase shadow-[var(--shadow-glow)]"
+              >
+                Jetzt anfragen
+              </Link>
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
+              >
+                WhatsApp · {CONTACT.phoneDisplay}
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>
