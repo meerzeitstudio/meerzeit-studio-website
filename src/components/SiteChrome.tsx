@@ -7,6 +7,7 @@ const links = [
   { to: "/philosophie", label: "Philosophie" },
   { to: "/ueber-uns", label: "Über uns" },
   { to: "/ablauf", label: "Ablauf" },
+  { to: "/termine", label: "Termine" },
 ] as const;
 
 export function SiteNav() {
