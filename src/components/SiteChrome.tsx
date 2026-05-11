@@ -1,6 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CONTACT, whatsappLink } from "@/lib/contact";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/sessions", label: "Sessions" },
@@ -37,8 +38,15 @@ export function SiteNav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-        <Link to="/" className="font-serif text-xl tracking-wide">
-          Meerzeit <span className="text-[color:var(--terracotta)]">Studio</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src={logo}
+            alt="Meerzeit Studio Logo"
+            width={1024}
+            height={1024}
+            className={`h-10 md:h-12 w-auto transition ${transparent ? "brightness-0 invert" : ""}`}
+          />
+          <span className="sr-only">Meerzeit Studio</span>
         </Link>
         <div className="hidden lg:flex items-center gap-7 text-sm">
           {links.map((l) => (
@@ -96,10 +104,16 @@ export function SiteFooter() {
     <footer className="py-16 px-6 bg-[color:var(--graphite)] text-[color:var(--ivory)]/70 text-sm">
       <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
         <div>
-          <Link to="/" className="font-serif text-2xl text-[color:var(--ivory)] inline-block">
-            Meerzeit <span className="text-[color:var(--terracotta)]">Studio</span>
+          <Link to="/" className="inline-block">
+            <img
+              src={logo}
+              alt="Meerzeit Studio Logo"
+              width={1024}
+              height={1024}
+              loading="lazy"
+              className="h-20 w-auto brightness-0 invert"
+            />
           </Link>
-          <p className="font-script text-base mt-2">— Creative Sessions —</p>
         </div>
         <div className="flex flex-col gap-2">
           <p className="uppercase tracking-widest text-xs text-[color:var(--ivory)]/50 mb-1">Entdecken</p>
