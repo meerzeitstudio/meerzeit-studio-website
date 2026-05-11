@@ -38,15 +38,13 @@ export function SiteNav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <img
-            src={logo}
-            alt="Meerzeit Studio Logo"
-            width={1024}
-            height={1024}
-            className={`h-10 md:h-12 w-auto transition ${transparent ? "brightness-0 invert" : ""}`}
-          />
-          <span className="sr-only">Meerzeit Studio</span>
+        <Link to="/" className="flex items-center gap-2.5 group">
+          <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[color:var(--ivory)] shadow-sm overflow-hidden">
+            <img src={logo} alt="" width={1024} height={1024} className="w-full h-full object-cover scale-[1.4]" />
+          </span>
+          <span className="font-serif text-lg md:text-xl tracking-wide leading-none">
+            Meerzeit <span className="italic text-[color:var(--terracotta)]">Studio</span>
+          </span>
         </Link>
         <div className="hidden lg:flex items-center gap-7 text-sm">
           {links.map((l) => (
@@ -103,17 +101,23 @@ export function SiteFooter() {
   return (
     <footer className="py-16 px-6 bg-[color:var(--graphite)] text-[color:var(--ivory)]/70 text-sm">
       <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
-        <div>
-          <Link to="/" className="inline-block">
+        <div className="flex flex-col items-center md:items-start gap-3">
+          <Link to="/" className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-[color:var(--ivory)] shadow-md overflow-hidden">
             <img
               src={logo}
               alt="Meerzeit Studio Logo"
               width={1024}
               height={1024}
               loading="lazy"
-              className="h-20 w-auto brightness-0 invert"
+              className="w-full h-full object-cover scale-[1.3]"
             />
           </Link>
+          <div>
+            <p className="font-serif text-xl text-[color:var(--ivory)]">
+              Meerzeit <span className="italic text-[color:var(--terracotta)]">Studio</span>
+            </p>
+            <p className="font-script text-sm text-[color:var(--ivory)]/60 mt-0.5">— Creative Sessions —</p>
+          </div>
         </div>
         <div className="flex flex-col gap-2">
           <p className="uppercase tracking-widest text-xs text-[color:var(--ivory)]/50 mb-1">Entdecken</p>
