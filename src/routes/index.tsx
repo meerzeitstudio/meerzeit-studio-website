@@ -60,12 +60,13 @@ function Index() {
             — Meerzeit Studio
           </p>
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.05] text-balance">
-            120 Minuten
+            Zeit für dich –
             <br />
-            <span className="italic font-light">nur für dich.</span>
+            <span className="italic font-light">und die, die dir gut tun.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light text-balance">
-            Kein Müssen. Kein Perfekt. Nur Sein.
+            Freundschaft, Geborgenheit, Achtsamkeit und ein bisschen Leichtigkeit –<br className="hidden md:block" />
+            mit Farbe, Lachen und Momenten, die bleiben.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
