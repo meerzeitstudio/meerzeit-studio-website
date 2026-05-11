@@ -56,35 +56,27 @@ function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--graphite)]/30 via-[color:var(--graphite)]/40 to-[color:var(--graphite)]/70" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
-          <div className="mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full bg-[color:var(--ivory)]/95 shadow-2xl overflow-hidden flex items-center justify-center">
-            <img
-              src={logo}
-              alt="Meerzeit Studio Logo – vier Frauen Arm in Arm"
-              width={1024}
-              height={1024}
-              className="w-full h-full object-cover scale-[1.25]"
-            />
-          </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
+          <img
+            src={logo}
+            alt="Meerzeit Studio – vier Frauen Arm in Arm"
+            width={1024}
+            height={768}
+            className="mx-auto w-48 md:w-64 h-auto opacity-95 mb-10"
+          />
           <h1 className="font-serif leading-[0.95] text-balance">
-            <span className="block text-6xl md:text-8xl lg:text-9xl tracking-tight">
-              Meerzeit
-            </span>
-            <span className="block italic font-light text-5xl md:text-7xl lg:text-8xl text-[color:var(--ivory)]/95 mt-1">
+            <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
+            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
               Studio
             </span>
           </h1>
-          <p className="font-script text-xl md:text-2xl text-[color:var(--terracotta)] mt-6 tracking-wide">
+          <p className="font-script text-lg md:text-xl text-[color:var(--terracotta)] mt-8 tracking-wide">
             — Creative Sessions —
           </p>
-          <p className="mt-10 text-lg md:text-2xl text-[color:var(--ivory)]/90 font-light leading-relaxed text-balance max-w-2xl mx-auto">
+          <p className="mt-12 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
             Für die, die dir nahe sind.
-            <br className="hidden md:block" />
+            <br />
             <span className="italic">Und für die, die du selbst bist.</span>
-          </p>
-          <p className="mt-6 text-base md:text-lg text-[color:var(--ivory)]/75 font-light leading-relaxed max-w-xl mx-auto">
-            Ein stiller Raum für Freundschaft, Geborgenheit und Achtsamkeit –
-            mit Farbe, leisem Lachen und Momenten, die bleiben.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
