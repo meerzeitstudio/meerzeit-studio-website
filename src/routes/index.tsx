@@ -9,6 +9,7 @@ import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
 import sMutti from "@/assets/session-mutti-baby.jpg";
 import privateImg from "@/assets/private-events.jpg";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
