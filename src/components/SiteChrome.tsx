@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CONTACT, whatsappLink } from "@/lib/contact";
-import logo from "@/assets/logo.png";
+import { LogoMark } from "@/components/LogoMark";
 
 const links = [
   { to: "/sessions", label: "Sessions" },
@@ -99,8 +99,8 @@ export function SiteFooter() {
     <footer className="py-16 px-6 bg-[color:var(--graphite)] text-[color:var(--ivory)]/70 text-sm">
       <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start gap-3">
-          <Link to="/" className="inline-block opacity-90">
-            <img src={logo} alt="Meerzeit Studio" width={1200} height={896} loading="lazy" className="h-24 w-auto" />
+          <Link to="/" className="inline-block text-[color:var(--ivory)]/80">
+            <LogoMark className="h-24 w-auto" />
           </Link>
           <div>
             <p className="font-serif text-xl text-[color:var(--ivory)]">
