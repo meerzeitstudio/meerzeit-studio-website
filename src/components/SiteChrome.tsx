@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CONTACT, whatsappLink } from "@/lib/contact";
-import { LogoMark } from "@/components/LogoMark";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/sessions", label: "Sessions" },
