@@ -100,7 +100,7 @@ export function SiteFooter() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start gap-3">
           <Link to="/" className="inline-block text-[color:var(--ivory)]/80">
-            <LogoMark className="h-24 w-auto" />
+            <img src={logo} alt="Meerzeit Studio" className="h-24 w-auto opacity-90" />
           </Link>
           <div>
             <p className="font-serif text-xl text-[color:var(--ivory)]">
