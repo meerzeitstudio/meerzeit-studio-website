@@ -9,7 +9,7 @@ import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
 import sMutti from "@/assets/session-mutti-baby.jpg";
 import privateImg from "@/assets/private-events.jpg";
-import { LogoMark } from "@/components/LogoMark";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -57,7 +57,7 @@ function Index() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
-          <LogoMark className="mx-auto w-48 md:w-64 h-auto opacity-90 mb-10 text-[color:var(--ivory)]" />
+          <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
           <h1 className="font-serif leading-[0.95] text-balance">
             <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
             <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
