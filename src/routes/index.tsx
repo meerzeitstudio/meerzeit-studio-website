@@ -262,6 +262,68 @@ function Index() {
         </div>
       </section>
 
+      {/* ATELIER & STORIES */}
+      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)]">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Atelier & Stories</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Weitere kreative Ausdrucksformen
+                <br />
+                <span className="italic">aus dem Studio.</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground font-light leading-relaxed">
+                Neben den Sessions entstehen hier Werke und Bilder – freie Kunst, Auftragsarbeiten und Fotografie.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-12 gap-4 md:gap-6 mb-12">
+            <Reveal delay={0}>
+              <div className="col-span-12 md:col-span-6 overflow-hidden rounded-sm">
+                <img src={atelierWave} alt="Wellen-Diptychon" loading="lazy" className="w-full aspect-[4/3] object-cover" />
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="col-span-6 md:col-span-3 overflow-hidden rounded-sm md:mt-10">
+                <img src={atelierPortrait} alt="Portrait Studie" loading="lazy" className="w-full aspect-[3/4] object-cover" />
+              </div>
+            </Reveal>
+            <Reveal delay={240}>
+              <div className="col-span-6 md:col-span-3 overflow-hidden rounded-sm">
+                <img src={atelierCollage} alt="Mixed Media Collage" loading="lazy" className="w-full aspect-[3/4] object-cover" />
+              </div>
+            </Reveal>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <Reveal>
+              <div className="border-t border-[color:var(--smoke)]/25 pt-6">
+                <h3 className="font-serif text-2xl md:text-3xl mb-3">Kunstwerke</h3>
+                <p className="text-muted-foreground font-light leading-relaxed mb-5">
+                  Kunst, die Räume ruhiger macht und Emotion sichtbar werden lässt.
+                </p>
+                <Link to="/atelier" className="text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]">
+                  Kunst entdecken
+                </Link>
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="border-t border-[color:var(--smoke)]/25 pt-6">
+                <h3 className="font-serif text-2xl md:text-3xl mb-3">Auftragsarbeiten</h3>
+                <p className="text-muted-foreground font-light leading-relaxed mb-5">
+                  Für Erinnerungen, die sich echt anfühlen – Hochzeit, Babybauch, Motherhood, Paare, Brand.
+                </p>
+                <Link to="/buchen" className="text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]">
+                  Anfrage senden
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="relative py-32 md:py-40 px-6 text-center text-[color:var(--ivory)] overflow-hidden">
         <div className="absolute inset-0 bg-[var(--gradient-dusk)]" />
