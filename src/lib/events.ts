@@ -16,9 +16,9 @@ export type SessionEvent = {
 
 // Termine – hier können neue Sessions einfach ergänzt werden
 export const events: SessionEvent[] = [
-  { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 5, 3), title: "Meditatives Malen", theme: "Natur und Melodie", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
+  { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
+  { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
+  { date: new Date(2026, 5, 3), title: "Meditatives Malen", theme: "Natur und Melodie", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
 ];
 
 export const titleColor: Record<SessionTitle, string> = {
