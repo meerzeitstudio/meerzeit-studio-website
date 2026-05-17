@@ -30,20 +30,31 @@ function FotografiePage() {
         intro="Unser Fotografie-Bereich ist noch in Arbeit. Wir feilen an Bildern, Worten und einer ehrlichen Handschrift – damit hier bald etwas steht, hinter dem wir wirklich stehen."
       />
 
-      <section className="py-20 md:py-28 px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <Reveal>
+      {/* GROSSES BILD – FULL BLEED */}
+      <section className="px-0 md:px-6">
+        <Reveal>
+          <figure className="relative w-full max-w-[1600px] mx-auto">
             <img
               src={photoMaternity}
               alt="Fotografie von Martina Jürgens – Frau im stillen Wasser"
               loading="lazy"
-              className="w-full aspect-[16/10] object-cover rounded-sm shadow-[var(--shadow-soft)] mb-4"
+              className="w-full h-[70vh] md:h-[88vh] object-cover md:rounded-sm shadow-[var(--shadow-soft)]"
             />
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
-              Foto · Martina Jürgens
-            </p>
-          </Reveal>
+            <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--graphite)]/60 via-transparent to-transparent md:rounded-sm" />
+            <figcaption className="absolute bottom-6 md:bottom-10 left-6 md:left-12 right-6 md:right-12 text-[color:var(--ivory)] flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+              <p className="font-script text-2xl md:text-3xl leading-snug max-w-xl">
+                „Stille Bilder, die bleiben."
+              </p>
+              <p className="text-xs uppercase tracking-widest text-[color:var(--ivory)]/80">
+                Foto · Martina Jürgens
+              </p>
+            </figcaption>
+          </figure>
+        </Reveal>
+      </section>
 
+      <section className="py-20 md:py-28 px-6">
+        <div className="max-w-3xl mx-auto text-center">
           <Reveal delay={120}>
             <h2 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
               Was bald hier <span className="italic">wohnen darf.</span>
