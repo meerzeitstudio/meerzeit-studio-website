@@ -120,7 +120,7 @@ function AblaufPage() {
               },
               {
                 t: "Anreise & Ort",
-                s: "Die genaue Adresse bekommst du mit der Buchungsbestätigung. Bei „Malen am Meer“ treffen wir uns direkt am Strand.",
+                s: "Die genaue Adresse bekommst du mit der Buchungsbestätigung. Bei „Freies Malen am organisierten Ort“ treffen wir uns direkt am Strand.",
               },
             ].map((b, i) => (
               <Reveal key={b.t} delay={i * 60}>

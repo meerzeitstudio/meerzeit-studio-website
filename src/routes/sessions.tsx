@@ -17,7 +17,7 @@ export const Route = createFileRoute("/sessions")({
       {
         name: "description",
         content:
-          "Malen am Meer, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Paint & Beats – kreative Auszeiten und alle kommenden Termine.",
+          "Freies Malen am organisierten Ort, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Paint & Beats – kreative Auszeiten und alle kommenden Termine.",
       },
       { property: "og:title", content: "Unsere Events – Meerzeit Studio" },
       { property: "og:image", content: sMeer },
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/sessions")({
 
 const sessions = [
   {
-    title: "Malen am Meer",
+    title: "Freies Malen am organisierten Ort",
     img: sMeer,
     intro: "Die Wellen als Taktgeberin. Salzige Luft, weiche Farben, ein Pinsel in deiner Hand – und der Horizont, der alles weit macht.",
     outro: "Ein Event draußen, wenn das Wetter es erlaubt – sonst mit Meeresrauschen im Raum.",
