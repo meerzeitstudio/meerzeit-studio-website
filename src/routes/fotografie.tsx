@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
-import photoMaternity from "@/assets/photo-maternity.jpg";
+import photoMaternity from "@/assets/photo-martina-1.jpg";
 
 export const Route = createFileRoute("/fotografie")({
   head: () => ({
@@ -35,10 +35,13 @@ function FotografiePage() {
           <Reveal>
             <img
               src={photoMaternity}
-              alt="Bald: Fotografie aus dem Meerzeit Studio"
+              alt="Fotografie von Martina Jürgens – Frau im stillen Wasser"
               loading="lazy"
-              className="w-full aspect-[16/10] object-cover rounded-sm shadow-[var(--shadow-soft)] mb-12"
+              className="w-full aspect-[16/10] object-cover rounded-sm shadow-[var(--shadow-soft)] mb-4"
             />
+            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-12">
+              Foto · Martina Jürgens
+            </p>
           </Reveal>
 
           <Reveal delay={120}>
@@ -48,7 +51,7 @@ function FotografiePage() {
             <ul className="mt-8 space-y-3 text-muted-foreground font-light">
               <li>Hochzeitsfotografie – für den Tag, an dem alles ehrlich ist.</li>
               <li>Babybauch – weiches Licht, kein Posieren.</li>
-              <li>Motherhood – die kleinen Momente zwischen euch.</li>
+              <li>Mutterglück – die kleinen Momente zwischen euch.</li>
               <li>Paarshootings – Nähe, wie sie wirklich aussieht.</li>
             </ul>
             <p className="font-script text-[color:var(--terracotta)] text-xl mt-10 leading-snug">
