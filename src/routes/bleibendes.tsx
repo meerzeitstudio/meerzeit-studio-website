@@ -38,18 +38,18 @@ function BleibendesPage() {
       {/* SUB-NAV */}
       <div className="px-6 -mt-6 pb-2">
         <div className="max-w-6xl mx-auto flex justify-center gap-3 md:gap-4 flex-wrap">
-          <a
-            href="#kunstwerke"
+          <Link
+            to="/atelier"
             className="px-6 py-2.5 rounded-full border border-[color:var(--smoke)]/40 text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-xs tracking-[0.25em] uppercase"
           >
-            Atelier
-          </a>
-          <a
-            href="#fotografie"
+            Atelier entdecken
+          </Link>
+          <Link
+            to="/fotografie"
             className="px-6 py-2.5 rounded-full border border-[color:var(--smoke)]/40 text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-xs tracking-[0.25em] uppercase"
           >
-            Fotografie
-          </a>
+            Fotografie ansehen
+          </Link>
         </div>
       </div>
 
