@@ -126,28 +126,35 @@ function AtelierPage() {
                 Werke in ihrem <span className="italic">neuen Zuhause.</span>
               </h2>
               <p className="mt-5 text-muted-foreground font-light leading-relaxed">
-                Eine Auswahl bisheriger Auftragsarbeiten – entstanden für Wohnräume,
-                Praxen und Hotels. Jedes Werk ein Unikat, gemacht für genau diesen Ort.
+                Eine Auswahl bisheriger Werke von Iris Christophers –
+                entstanden für Wohnräume und Praxen. Jedes Bild ein Unikat,
+                gemacht für genau diesen Ort.
               </p>
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-14">
             {references.map((r, i) => (
-              <Reveal key={r.location} delay={i * 100}>
-                <figure>
+              <Reveal key={r.title} delay={i * 100}>
+                <figure className="group">
                   <div className="overflow-hidden rounded-sm bg-card">
                     <img
                       src={r.img}
-                      alt={r.location}
+                      alt={r.title}
                       loading="lazy"
-                      width={1280}
-                      height={1024}
-                      className="w-full aspect-[5/4] object-cover"
+                      width={1024}
+                      height={1280}
+                      className="w-full aspect-[4/5] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                     />
                   </div>
-                  <figcaption className="mt-3 text-xs tracking-widest uppercase text-muted-foreground">
-                    {r.location}
+                  <figcaption className="mt-5">
+                    <h3 className="font-serif text-xl">{r.title}</h3>
+                    <p className="font-script text-[color:var(--terracotta)] text-base mt-2 leading-snug">
+                      {r.quote}
+                    </p>
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3">
+                      Iris Christophers
+                    </p>
                   </figcaption>
                 </figure>
               </Reveal>
