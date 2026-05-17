@@ -72,7 +72,7 @@ function ForWhomPage() {
             to="/sessions"
             className="mt-10 inline-block px-8 py-3 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-sm tracking-widest uppercase"
           >
-            Begegnungen entdecken
+            Events entdecken
           </Link>
         </Reveal>
       </section>

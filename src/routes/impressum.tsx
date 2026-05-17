@@ -6,7 +6,7 @@ export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
       { title: "Impressum – Meerzeit Studio" },
-      { name: "description", content: "Impressum & Anbieterkennzeichnung von Meerzeit Studio – Creative Begegnungen." },
+      { name: "description", content: "Impressum & Anbieterkennzeichnung von Meerzeit Studio – Creative Events." },
       { name: "robots", content: "index,follow" },
     ],
   }),
@@ -26,7 +26,7 @@ function Impressum() {
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">Angaben gemäß § 5 TMG</h2>
             <p>
-              Meerzeit Studio – Creative Begegnungen
+              Meerzeit Studio – Creative Events
               <br />
               Martina Jürgens &amp; Iris Christophers
               <br />
