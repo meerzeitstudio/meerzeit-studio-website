@@ -26,8 +26,8 @@ const references: { img: string; title: string; quote: string }[] = [
   { img: ref1, title: "Im Verborgenen", quote: "„Was wir nicht zeigen, formt uns am tiefsten.“" },
   { img: ref2, title: "Der Visionär", quote: "„Manche Gedanken leuchten, lange nachdem sie ausgesprochen sind.“" },
   { img: ref3, title: "Halt", quote: "„Zwischen zwei Händen findet das Gesicht zurück zu sich.“" },
-  { img: ref4, title: "Heimkehr", quote: "„Es gibt Orte, die uns kennen, bevor wir sie betreten.“" },
   { img: ref5, title: "Zwei Freunde", quote: "„Manche Begegnungen tragen uns ein Leben lang auf der Schulter.“" },
+  { img: ref4, title: "Heimkehr", quote: "„Es gibt Orte, die uns kennen, bevor wir sie betreten.“" },
 ];
 
 const process = [
