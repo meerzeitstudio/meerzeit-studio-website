@@ -161,7 +161,7 @@ function AtelierPage() {
             <div className="text-center max-w-2xl mx-auto mb-16">
               <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">So entsteht ein Unikat</p>
               <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-                Vier ruhige <span className="italic">Schritte.</span>
+                Vier ehrliche <span className="italic">Schritte.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
                 Eine Auftragsarbeit ist ein Dialog – kein Bestellvorgang. So gehen wir gemeinsam vor.
