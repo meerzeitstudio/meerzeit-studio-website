@@ -2,7 +2,7 @@ export type SessionTitle =
   | "Freies Malen am organisierten Ort"
   | "Meditatives Malen"
   | "Malen bei Nacht"
-  | "Paint & Beats"
+  | "Beats & Brushes"
   | "Mutti malt – mit Baby";
 
 export type SessionEvent = {
@@ -25,7 +25,7 @@ export const titleColor: Record<SessionTitle, string> = {
   "Freies Malen am organisierten Ort": "var(--sage)",
   "Meditatives Malen": "var(--smoky-blue)",
   "Malen bei Nacht": "var(--graphite)",
-  "Paint & Beats": "var(--terracotta)",
+  "Beats & Brushes": "var(--terracotta)",
   "Mutti malt – mit Baby": "var(--copper)",
 };
 
@@ -33,6 +33,6 @@ export const sessionOptionsList: SessionTitle[] = [
   "Freies Malen am organisierten Ort",
   "Meditatives Malen",
   "Malen bei Nacht",
-  "Paint & Beats",
+  "Beats & Brushes",
   "Mutti malt – mit Baby",
 ];
