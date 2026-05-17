@@ -62,13 +62,10 @@ function Index() {
           <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
           <h1 className="font-serif leading-[0.95] text-balance">
             <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
-            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
+            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--terracotta)] mt-2">
               Studio
             </span>
           </h1>
-          <p className="font-script text-lg md:text-xl text-[color:var(--terracotta)] mt-8 tracking-wide">
-            — Creative Sessions —
-          </p>
           <p className="mt-12 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
             Für die, die dir nahe sind.
             <br />
@@ -302,7 +299,7 @@ function Index() {
                   <p className="font-script text-[color:var(--terracotta)] text-base mb-1">Fotografie</p>
                   <h3 className="font-serif text-2xl md:text-3xl mb-2">Erinnerungen</h3>
                   <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
-                    Hochzeit, Babybauch, Motherhood, Paare und Brand – leise und ehrlich.
+                    Hochzeit, Babybauch, Mutterglück, Paare und Brand – leise und ehrlich.
                   </p>
                 </div>
               </Link>
