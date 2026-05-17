@@ -96,6 +96,73 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* VISION & MISSION — text only */}
+      <section className="py-16 md:py-24 px-6 border-t border-border/60">
+        <div className="max-w-3xl mx-auto grid md:grid-cols-[auto_1fr] gap-x-12 gap-y-16">
+          <Reveal>
+            <p className="font-script text-[color:var(--terracotta)] text-lg md:sticky md:top-28">Vision</p>
+          </Reveal>
+          <Reveal delay={100}>
+            <h2 className="font-serif text-3xl md:text-4xl mb-8 leading-tight text-balance">
+              Ein Raum, in dem Frauen
+              <br />
+              <span className="italic">einfach sein dürfen.</span>
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg font-light">
+              <p>
+                Wir glauben, dass jede Frau Momente braucht, in denen sie einfach mal nur
+                sein darf. Ohne Erwartungen. Ohne Druck. Ohne perfekt funktionieren zu müssen.
+              </p>
+              <p>
+                Meerzeit Studio ist aus genau diesem Wunsch entstanden: einen Raum zu schaffen,
+                der ruhig ist. Kreativ. Echt. Einen Ort, an dem man abschalten, ausprobieren
+                und wieder bei sich ankommen darf.
+              </p>
+              <p className="font-serif italic text-foreground text-xl">
+                Denn oft entstehen die schönsten Dinge nicht dann, wenn alles perfekt sein soll –
+                sondern wenn man loslässt und einfach beginnt.
+              </p>
+              <p>
+                Genau dafür möchten wir Raum schaffen. Für kleine Auszeiten. Für echte
+                Begegnungen. Und für kreative Momente, die sich leicht anfühlen dürfen.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <p className="font-script text-[color:var(--terracotta)] text-lg md:sticky md:top-28">Mission</p>
+          </Reveal>
+          <Reveal delay={100}>
+            <h2 className="font-serif text-3xl md:text-4xl mb-8 leading-tight text-balance">
+              Kreative Erlebnisse
+              <br />
+              <span className="italic">und Arbeiten mit Gefühl.</span>
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg font-light">
+              <p>
+                Mit Meerzeit Studio schaffen wir kreative Erlebnisse und persönliche
+                Arbeiten mit Gefühl.
+              </p>
+              <p>
+                Wir veranstalten kreative Events für Frauen, in denen nicht Leistung oder
+                Talent im Mittelpunkt stehen, sondern Zeit für sich selbst.
+              </p>
+              <p>
+                Gleichzeitig gestalten wir Kunstwerke und fotografische Erinnerungen, die
+                echt, ruhig und persönlich sind.
+              </p>
+              <p>
+                Ob bei einem Creative Event, einem Fotoshooting oder einem individuellen
+                Kunstwerk: Es geht uns nicht darum, etwas Perfektes zu erschaffen.
+              </p>
+              <p className="font-serif italic text-foreground text-xl">
+                Sondern etwas, das sich ehrlich anfühlt. Etwas, das bleibt.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* WOFÜR WIR STEHEN — zwei Säulen */}
       <section className="py-20 md:py-28 px-6">
         <div className="max-w-3xl mx-auto text-center mb-20">
