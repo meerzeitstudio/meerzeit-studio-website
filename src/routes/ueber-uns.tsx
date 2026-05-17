@@ -3,6 +3,23 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import founders from "@/assets/founders.jpg";
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Meerzeit Studio",
+  description:
+    "Meerzeit Studio entwickelt kreative Erlebnisse und Auftragsarbeiten, die Menschen berühren – authentisch, ruhig und zeitlos.",
+  slogan: "Nicht nur etwas Schönes. Etwas Echtes.",
+  knowsAbout: [
+    "Kreative Auszeiten",
+    "Acrylmalerei",
+    "Auftragskunst",
+    "Fotografie",
+    "Resonanz",
+    "Entschleunigung",
+  ],
+};
+
 export const Route = createFileRoute("/ueber-uns")({
   head: () => ({
     meta: [
@@ -18,6 +35,12 @@ export const Route = createFileRoute("/ueber-uns")({
         content: "Zwei Gründerinnen. Selbst Mütter. Eine gemeinsame Vision.",
       },
       { property: "og:image", content: founders },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(orgSchema),
+      },
     ],
   }),
   component: AboutPage,
@@ -68,6 +91,105 @@ function AboutPage() {
               </p>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* VISION & MISSION */}
+      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60">
+        <div className="max-w-6xl mx-auto">
+          <Reveal>
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">wofür wir stehen</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Vision &amp; <span className="italic">Mission.</span>
+              </h2>
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
+            {/* VISION */}
+            <Reveal>
+              <article className="relative h-full bg-card border border-border rounded-sm p-8 md:p-10 shadow-[var(--shadow-soft)]">
+                <span className="absolute -top-3 left-8 px-3 py-1 bg-[color:var(--terracotta)] text-[color:var(--ivory)] text-xs tracking-[0.25em] uppercase rounded-full">
+                  Vision
+                </span>
+                <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-6 mt-2">
+                  Räume, die Menschen
+                  <span className="italic"> langsamer werden lassen.</span>
+                </h3>
+                <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
+                  <p>
+                    In einer Welt, die immer schneller wird, glauben wir an Räume, die
+                    Menschen wieder langsamer werden lassen.
+                  </p>
+                  <p>
+                    Wir kennen den Druck, kreativ sein zu wollen – und gleichzeitig das
+                    Gefühl, dass alles sofort gut sein muss. Das leere Blatt. Die
+                    Erwartungen. Der Fokus auf das Ergebnis.
+                  </p>
+                  <p className="font-serif text-foreground italic text-lg leading-relaxed">
+                    Doch wir haben gelernt: Die schönsten Ideen entstehen nicht unter Druck.
+                  </p>
+                  <ul className="space-y-2 pl-4 border-l-2 border-[color:var(--terracotta)]/40">
+                    <li>Sie entstehen, wenn man einfach beginnt.</li>
+                    <li>Wenn Menschen zusammenkommen.</li>
+                    <li>Wenn aus Ruhe Flow wird.</li>
+                    <li>Wenn Kreativität wieder leicht sein darf.</li>
+                  </ul>
+                  <p>
+                    Meerzeit Studio schafft genau diesen Raum – für echte Begegnung, für
+                    Resonanz, für kreative Momente, die nicht perfekt sein müssen, um
+                    bedeutend zu sein.
+                  </p>
+                  <p className="font-script text-[color:var(--terracotta)] text-lg pt-2">
+                    Wir glauben, die Welt braucht mehr davon.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            {/* MISSION */}
+            <Reveal delay={150}>
+              <article className="relative h-full bg-[color:var(--smoke)] text-[color:var(--ivory)] rounded-sm p-8 md:p-10 shadow-[var(--shadow-soft)]">
+                <span className="absolute -top-3 left-8 px-3 py-1 bg-[color:var(--ivory)] text-[color:var(--smoke)] text-xs tracking-[0.25em] uppercase rounded-full">
+                  Mission
+                </span>
+                <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-6 mt-2">
+                  Arbeiten, die berühren.
+                  <span className="italic"> Räume, die verbinden.</span>
+                </h3>
+                <div className="space-y-4 text-[color:var(--ivory)]/85 font-light leading-relaxed">
+                  <p>
+                    Meerzeit Studio entwickelt kreative Erlebnisse und Auftragsarbeiten,
+                    die Menschen berühren.
+                  </p>
+                  <p>
+                    Von Fotoshootings bis zu individuellen Kunstwerken schaffen wir
+                    Arbeiten mit Gefühl, Atmosphäre und Persönlichkeit – authentisch,
+                    ruhig und zeitlos.
+                  </p>
+                  <p>
+                    Gleichzeitig öffnen wir Räume, in denen Menschen gemeinsam kreativ
+                    werden können. Ohne Leistungsdruck. Ohne Erwartungen. Einfach im
+                    Moment.
+                  </p>
+                  <p className="font-serif italic text-[color:var(--ivory)] text-lg leading-relaxed">
+                    Denn Kreativität verändert sich, wenn man sie teilt.
+                  </p>
+                  <ul className="space-y-2 pl-4 border-l-2 border-[color:var(--terracotta)]">
+                    <li>Sie verbindet.</li>
+                    <li>Sie entschleunigt.</li>
+                    <li>Sie bringt Menschen wieder in Resonanz – mit sich und miteinander.</li>
+                  </ul>
+                  <p className="pt-2">
+                    Darum geht es bei Meerzeit Studio. Nicht nur etwas Schönes zu
+                    erschaffen,
+                    <span className="font-script text-[color:var(--terracotta)] text-xl"> sondern etwas Echtes.</span>
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+          </div>
         </div>
       </section>
 
