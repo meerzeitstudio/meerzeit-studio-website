@@ -35,11 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const sessions = [
-  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei." },
-  { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein." },
-  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen." },
-  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht." },
-  { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion." },
+  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei.", to: "/sessions" },
+  { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein.", to: "/sessions" },
+  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
+  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
+  { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion.", to: "/sessions" },
+  { title: "Individuell wie du", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende – eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
 ];
 
 function Index() {
