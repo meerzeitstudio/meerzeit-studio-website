@@ -3,10 +3,10 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 import wave from "@/assets/atelier-wave.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import iris1 from "@/assets/iris-1.png";
+import iris2 from "@/assets/iris-2.png";
+import iris3 from "@/assets/iris-3.png";
+import iris4 from "@/assets/iris-4.jpg";
 import ref1 from "@/assets/ref-1.jpg";
 import ref2 from "@/assets/ref-2.jpg";
 import ref3 from "@/assets/ref-3.jpg";
@@ -14,10 +14,10 @@ import ref3 from "@/assets/ref-3.jpg";
 type ForSale = { img: string; title: string; quote: string };
 
 const forSale: ForSale[] = [
-  { img: gallery1, title: "Stiller Strand", quote: "„Wenn das Meer atmet, wird alles weicher.“" },
-  { img: gallery2, title: "Bewegung", quote: "„Manchmal ist eine einzige Linie genug.“" },
-  { img: gallery3, title: "Nordlicht", quote: "„Ein Horizont, der nichts von dir verlangt.“" },
-  { img: gallery4, title: "Erdton", quote: "„Hier darf alles seine Spuren behalten.“" },
+  { img: iris1, title: "Im Farbsturm", quote: "„Wenn alles in dir bunt wird, darf es laut sein.“" },
+  { img: iris2, title: "Aufschwung", quote: "„Es gibt Momente, in denen man nur noch nach oben greift.“" },
+  { img: iris3, title: "Freiheit & Bindung", quote: "„Zwischen den Worten lebt das, was uns ausmacht.“" },
+  { img: iris4, title: "Gedankenflug", quote: "„Manchmal trägt der Kopf eine ganze Stadt aus Träumen.“" },
 ];
 
 const references = [
