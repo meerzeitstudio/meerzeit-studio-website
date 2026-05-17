@@ -11,6 +11,7 @@ import ref1 from "@/assets/ref-iris-1.png";
 import ref2 from "@/assets/ref-iris-2.png";
 import ref3 from "@/assets/ref-iris-3.png";
 import ref4 from "@/assets/ref-iris-4.png";
+import ref5 from "@/assets/ref-iris-5.jpg";
 
 type ForSale = { img: string; title: string; quote: string };
 
@@ -26,6 +27,7 @@ const references: { img: string; title: string; quote: string }[] = [
   { img: ref2, title: "Der Visionär", quote: "„Manche Gedanken leuchten, lange nachdem sie ausgesprochen sind.“" },
   { img: ref3, title: "Halt", quote: "„Zwischen zwei Händen findet das Gesicht zurück zu sich.“" },
   { img: ref4, title: "Heimkehr", quote: "„Es gibt Orte, die uns kennen, bevor wir sie betreten.“" },
+  { img: ref5, title: "Zwei Freunde", quote: "„Manche Begegnungen tragen uns ein Leben lang auf der Schulter.“" },
 ];
 
 const process = [
