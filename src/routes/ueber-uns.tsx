@@ -100,7 +100,7 @@ function AboutPage() {
       <section className="py-20 md:py-28 px-6">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <Reveal>
-            <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">wofür wir stehen</p>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">Vision &amp; Mission</p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
               Momente erleben.
               <br />
