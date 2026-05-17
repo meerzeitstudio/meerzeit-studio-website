@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CalendarSection } from "@/components/CalendarSection";
 import { events, titleColor } from "@/lib/events";
-import sMeer from "@/assets/session-meer.jpg";
+import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/sessions")({
       {
         name: "description",
         content:
-          "Malen am Meer, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Paint & Beats – kreative Auszeiten und alle kommenden Termine.",
+          "Freies Malen am organisierten Ort, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Paint & Beats – kreative Auszeiten und alle kommenden Termine.",
       },
       { property: "og:title", content: "Unsere Events – Meerzeit Studio" },
       { property: "og:image", content: sMeer },
@@ -28,11 +28,11 @@ export const Route = createFileRoute("/sessions")({
 
 const sessions = [
   {
-    title: "Malen am Meer",
+    title: "Freies Malen am organisierten Ort",
     img: sMeer,
-    intro: "Die Wellen als Taktgeberin. Salzige Luft, weiche Farben, ein Pinsel in deiner Hand – und der Horizont, der alles weit macht.",
-    outro: "Ein Event draußen, wenn das Wetter es erlaubt – sonst mit Meeresrauschen im Raum.",
-    mood: "weit · klar · frei",
+    intro: "Wir suchen einen besonderen Ort – Wald, Meer, eine stille Location – und richten alles für dich her. Du bringst nur dich mit, wir den Rahmen.",
+    outro: "Freies Malen, draußen in der Natur oder an einer kuratierten Location. Keine Vorgaben, kein Thema – nur du, die Farben und der Moment.",
+    mood: "frei · draußen · besonders",
   },
   {
     title: "Meditatives Malen",

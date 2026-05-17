@@ -3,7 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { CalendarSection } from "@/components/CalendarSection";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 import hero from "@/assets/hero.jpg";
-import sMeer from "@/assets/session-meer.jpg";
+import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
 });
 
 const sessions = [
-  { title: "Malen am Meer", img: sMeer, text: "Salzige Luft, weiche Farben – und der Horizont, der alles weit macht." },
+  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei." },
   { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein." },
   { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen." },
   { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht." },
