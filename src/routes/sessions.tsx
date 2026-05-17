@@ -30,9 +30,9 @@ const sessions = [
   {
     title: "Freies Malen am organisierten Ort",
     img: sMeer,
-    intro: "Die Wellen als Taktgeberin. Salzige Luft, weiche Farben, ein Pinsel in deiner Hand – und der Horizont, der alles weit macht.",
-    outro: "Ein Event draußen, wenn das Wetter es erlaubt – sonst mit Meeresrauschen im Raum.",
-    mood: "weit · klar · frei",
+    intro: "Wir suchen einen besonderen Ort – Wald, Meer, eine stille Location – und richten alles für dich her. Du bringst nur dich mit, wir den Rahmen.",
+    outro: "Freies Malen, draußen in der Natur oder an einer kuratierten Location. Keine Vorgaben, kein Thema – nur du, die Farben und der Moment.",
+    mood: "frei · draußen · besonders",
   },
   {
     title: "Meditatives Malen",
