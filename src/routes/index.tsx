@@ -35,11 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const sessions = [
-  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei." },
-  { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein." },
-  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen." },
-  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht." },
-  { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion." },
+  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei.", to: "/sessions" },
+  { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein.", to: "/sessions" },
+  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
+  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
+  { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion.", to: "/sessions" },
+  { title: "Individuell wie du", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende – eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
 ];
 
 function Index() {
@@ -146,7 +147,7 @@ function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {sessions.map((s, i) => (
               <Reveal key={s.title} delay={i * 100}>
-                <Link to="/sessions" className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
+                <Link to={s.to} className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
                   <div className="aspect-[4/5] overflow-hidden">
                     <img
                       src={s.img}
@@ -220,41 +221,6 @@ function Index() {
               height={1280}
               className="w-full aspect-[4/5] object-cover rounded-sm shadow-[var(--shadow-soft)]"
             />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* PRIVATE ANLÄSSE */}
-      <section className="py-24 md:py-32 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <Reveal>
-            <img
-              src={privateImg}
-              alt="Privates Event mit Frauen, die gemeinsam malen"
-              loading="lazy"
-              width={1600}
-              height={1024}
-              className="w-full aspect-[4/3] object-cover rounded-sm shadow-[var(--shadow-soft)]"
-            />
-          </Reveal>
-          <Reveal delay={150}>
-            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">auch als privates Erlebnis</p>
-            <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-snug">
-              Firmenevent, Hochzeit oder
-              <br />
-              <span className="italic">Freundinnenabend.</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed font-light mb-6">
-              Manche Anlässe verdienen mehr als einen Tisch im Restaurant. Wir gestalten Meerzeit-Begegnungen
-              auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier. Für Teams, Brautpartys,
-              runde Geburtstage oder einfach einen Abend, den ihr nicht so schnell vergesst.
-            </p>
-            <Link
-              to="/private-anlaesse"
-              className="inline-block px-7 py-3 rounded-full bg-[color:var(--smoke)] text-[color:var(--ivory)] hover:bg-[color:var(--graphite)] transition text-sm tracking-widest uppercase"
-            >
-              Mehr erfahren
-            </Link>
           </Reveal>
         </div>
       </section>
