@@ -11,6 +11,7 @@ import ref1 from "@/assets/ref-iris-1.png";
 import ref2 from "@/assets/ref-iris-2.png";
 import ref3 from "@/assets/ref-iris-3.png";
 import ref4 from "@/assets/ref-iris-4.png";
+import ref5 from "@/assets/ref-iris-5.jpg";
 
 type ForSale = { img: string; title: string; quote: string };
 
