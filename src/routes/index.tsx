@@ -11,7 +11,7 @@ import sMutti from "@/assets/session-mutti-baby.jpg";
 import privateImg from "@/assets/private-events.jpg";
 import logo from "@/assets/logo.png";
 import atelierWave from "@/assets/atelier-wave.jpg";
-import atelierPortrait from "@/assets/atelier-portrait.jpg";
+import atelierPortrait from "@/assets/photo-martina-1.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
