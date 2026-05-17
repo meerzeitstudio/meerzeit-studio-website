@@ -85,8 +85,6 @@ export function EventCard({ event }: { event: SessionEvent }) {
         <dd>{event.time}</dd>
         <dt className="text-muted-foreground uppercase tracking-wide text-xs">Ort</dt>
         <dd>{event.location}</dd>
-        <dt className="text-muted-foreground uppercase tracking-wide text-xs">Plätze</dt>
-        <dd>{event.spots} verfügbar</dd>
       </dl>
       <Link
         to="/buchen"
