@@ -40,7 +40,7 @@ const sessions = [
   { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
   { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
   { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion.", to: "/sessions" },
-  { title: "Individuell wie du", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende – eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
+  { title: "So individuell wie ihr", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende – eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
 ];
 
 function Index() {
