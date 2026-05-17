@@ -77,6 +77,9 @@ export function EventCard({ event }: { event: SessionEvent }) {
         <span className="w-2.5 h-2.5 rounded-full" style={{ background: titleColor[event.title] }} />
         <h4 className="font-serif text-xl">{event.title}</h4>
       </div>
+      {event.theme && (
+        <p className="font-script text-[color:var(--terracotta)] text-base mb-3 -mt-1">Thema: {event.theme}</p>
+      )}
       <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-1.5 text-sm mb-4">
         <dt className="text-muted-foreground uppercase tracking-wide text-xs">Zeit</dt>
         <dd>{event.time}</dd>

@@ -75,6 +75,9 @@ function TerminePage() {
                       <span className="w-2 h-2 rounded-full" style={{ background: titleColor[e.title] }} />
                       <h3 className="font-serif text-xl">{e.title}</h3>
                     </div>
+                    {e.theme && (
+                      <p className="text-sm italic text-[color:var(--terracotta)] mb-1">Thema: {e.theme}</p>
+                    )}
                     <p className="text-sm text-muted-foreground">
                       {e.time} · {e.location}
                     </p>

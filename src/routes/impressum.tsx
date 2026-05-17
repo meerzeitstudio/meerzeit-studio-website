@@ -28,6 +28,8 @@ function Impressum() {
             <p>
               Meerzeit Studio – Creative Sessions
               <br />
+              Martina Jürgens &amp; Iris Christophers
+              <br />
               Börgweg 1c
               <br />
               26556 Utarp
@@ -60,7 +62,35 @@ function Impressum() {
             <p>
               nach § 18 Abs. 2 MStV:
               <br />
-              Meerzeit Studio, Börgweg 1c, 26556 Utarp
+              Martina Jürgens &amp; Iris Christophers
+              <br />
+              Börgweg 1c, 26556 Utarp
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-foreground text-xl mb-3">Umsatzsteuer</h2>
+            <p>
+              Eine Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz wird ggf. nachgereicht.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-foreground text-xl mb-3">Streitschlichtung</h2>
+            <p>
+              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+              <a
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+                rel="noreferrer"
+                className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground"
+              >
+                https://ec.europa.eu/consumers/odr
+              </a>
+              .
+              <br />
+              Unsere E-Mail-Adresse findest du oben. Wir sind nicht bereit oder verpflichtet, an
+              Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
             </p>
           </div>
 
