@@ -2,8 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import iris1 from "@/assets/iris-1.png";
-import iris3 from "@/assets/iris-3.png";
-import ref5 from "@/assets/ref-iris-5.jpg";
 import photoMaternity from "@/assets/photo-martina-1.jpg";
 
 export const Route = createFileRoute("/bleibendes")({
