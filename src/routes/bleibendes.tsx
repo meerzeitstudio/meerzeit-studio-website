@@ -39,92 +39,70 @@ function BleibendesPage() {
 
       {/* KUNSTWERKE */}
       <section className="py-24 md:py-32 px-6 bg-background">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Reveal>
-            <article className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-sm bg-card aspect-[4/5]">
-                  <img
-                    src={iris1}
-                    alt="Kunstwerk aus dem Atelier"
-                    loading="lazy"
-                    className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-[1400ms]"
-                  />
-                </div>
-                <div className="overflow-hidden rounded-sm bg-card aspect-[4/5] mt-10">
-                  <img
-                    src={iris3}
-                    alt="Kunstwerk aus dem Atelier"
-                    loading="lazy"
-                    className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-[1400ms]"
-                  />
-                </div>
-              </div>
-              <div>
-                <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Kunstwerke</p>
-                <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-                  Kunst mit Ruhe, <span className="italic">Gefühl und Persönlichkeit.</span>
-                </h2>
-                <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                  Originale aus dem Atelier – organisch, farbstark, ehrlich. Werke, die ein Zuhause
-                  suchen, und individuelle Auftragsarbeiten, die in deinem Raum entstehen dürfen.
-                </p>
-                <Link
-                  to="/atelier"
-                  className="mt-8 inline-block text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]"
-                >
-                  Atelier entdecken →
-                </Link>
-              </div>
-            </article>
+            <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
+              <img
+                src={iris1}
+                alt="Kunstwerk aus dem Atelier"
+                loading="lazy"
+                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+              />
+            </div>
+            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Kunstwerke</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Kunst mit Ruhe, <span className="italic">Gefühl und Persönlichkeit.</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
+                Originale aus dem Atelier – organisch, farbstark, ehrlich. Werke, die ein Zuhause
+                suchen, und individuelle Auftragsarbeiten, die in deinem Raum entstehen dürfen.
+              </p>
+              <Link
+                to="/atelier"
+                className="mt-8 inline-block text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]"
+              >
+                Atelier entdecken →
+              </Link>
+            </div>
           </Reveal>
         </div>
       </section>
 
       {/* FOTOGRAFIE */}
       <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Reveal>
-            <article className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-              <div>
-                <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Fotografie</p>
-                <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-                  Für Erinnerungen, <span className="italic">die sich echt anfühlen.</span>
-                </h2>
-                <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                  Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen –
-                  ruhige, ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
-                </p>
-                <Link
-                  to="/fotografie"
-                  className="mt-8 inline-block text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]"
-                >
-                  Fotografie ansehen →
-                </Link>
-              </div>
-              <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
-                <img
-                  src={photoMaternity}
-                  alt="Fotografie aus dem Meerzeit Studio"
-                  loading="lazy"
-                  className="w-full aspect-[4/5] object-cover hover:scale-[1.03] transition-transform duration-[1400ms]"
-                />
-              </div>
-            </article>
+            <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
+              <img
+                src={photoMaternity}
+                alt="Fotografie aus dem Meerzeit Studio"
+                loading="lazy"
+                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+              />
+            </div>
+            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Fotografie</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Für Erinnerungen, <span className="italic">die sich echt anfühlen.</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
+                Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen –
+                ruhige, ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
+              </p>
+              <Link
+                to="/fotografie"
+                className="mt-8 inline-block text-sm tracking-widest uppercase border-b border-[color:var(--terracotta)] pb-1 text-[color:var(--terracotta)] hover:text-[color:var(--copper)]"
+              >
+                Fotografie ansehen →
+              </Link>
+            </div>
           </Reveal>
 
           <Reveal delay={120}>
             <p className="font-script text-[color:var(--terracotta)] text-xl md:text-2xl text-center mt-20 max-w-2xl mx-auto leading-snug">
               „Events sind Momente erleben. Bleibendes ist Momente festhalten."
             </p>
-            <div className="text-center mt-8">
-              <img
-                src={ref5}
-                alt=""
-                aria-hidden
-                className="hidden"
-              />
-            </div>
           </Reveal>
         </div>
       </section>
