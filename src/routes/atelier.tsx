@@ -40,7 +40,7 @@ export const Route = createFileRoute("/atelier")({
       {
         name: "description",
         content:
-          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume, die ruhiger werden dürfen.",
+          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
       },
       { property: "og:title", content: "Atelier – Meerzeit Studio" },
       { property: "og:image", content: wave },
@@ -55,7 +55,7 @@ function AtelierPage() {
       <PageHeader
         eyebrow="Atelier"
         title="Werke, die Räume"
-        italic="ruhiger machen."
+        italic="lebendig machen."
         intro="Freie Arbeiten und Auftragskunst aus dem Studio – derzeit ausschließlich Originale von Iris Christophers. Kunst, die Emotion sichtbar werden lässt."
       />
 
