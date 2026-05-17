@@ -57,10 +57,10 @@ function AtelierPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Atelier"
-        title="Werke, die Räume"
-        italic="lebendig machen."
-        intro="Freie Arbeiten und Auftragskunst aus dem Studio – derzeit ausschließlich Originale von Iris Christophers. Kunst, die Emotion sichtbar werden lässt."
+        eyebrow="Bleibendes · Atelier"
+        title="Kunst mit Ruhe,"
+        italic="Gefühl und Persönlichkeit."
+        intro="Freie Arbeiten und Auftragskunst aus dem Studio – derzeit ausschließlich Originale von Iris Christophers. Werke, die ein Zuhause suchen und in deinem Raum weiterleben dürfen."
       />
 
       {/* GALERIE ZUM VERKAUF */}
