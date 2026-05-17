@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import founders from "@/assets/founders.jpg";
+import erleben from "@/assets/session-meditativ.jpg";
+import festhalten from "@/assets/atelier-wave.jpg";
 
 const orgSchema = {
   "@context": "https://schema.org",
@@ -94,102 +96,87 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* VISION & MISSION */}
-      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60">
-        <div className="max-w-6xl mx-auto">
+      {/* WOFÜR WIR STEHEN — zwei Säulen */}
+      <section className="py-20 md:py-28 px-6">
+        <div className="max-w-3xl mx-auto text-center mb-20">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">wofür wir stehen</p>
-              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-                Vision &amp; <span className="italic">Mission.</span>
-              </h2>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">wofür wir stehen</p>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+              Momente erleben.
+              <br />
+              <span className="italic">Momente festhalten.</span>
+            </h2>
+            <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
+              Zwei Wege, ein Gefühl. Bei Meerzeit Studio geht es nicht darum, etwas zu leisten –
+              sondern um echte Momente, die berühren und bleiben dürfen.
+            </p>
+          </Reveal>
+        </div>
+
+        {/* EVENTS – Momente erleben */}
+        <div className="max-w-5xl mx-auto mb-24 md:mb-32">
+          <Reveal>
+            <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
+              <img
+                src={erleben}
+                alt="Kreative Auszeit bei Meerzeit Studio"
+                loading="lazy"
+                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+              />
+            </div>
+            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Events — Momente erleben</p>
+              <h3 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
+                Räume, die Menschen <span className="italic">langsamer werden lassen.</span>
+              </h3>
+              <div className="mt-6 space-y-5 text-muted-foreground font-light leading-relaxed text-lg">
+                <p>
+                  In einer Welt, die immer schneller wird, glauben wir an Räume, die Menschen
+                  wieder langsamer werden lassen. Ohne Druck. Ohne Erwartungen. Einfach im Moment.
+                </p>
+                <p className="font-serif italic text-foreground">
+                  Die schönsten Ideen entstehen nicht unter Druck – sie entstehen, wenn man einfach beginnt.
+                </p>
+                <p>
+                  Unsere Events sind kreative Auszeiten für Frauen. Ein Raum zum Abschalten,
+                  Ausprobieren und einfach im Moment sein.
+                </p>
+              </div>
             </div>
           </Reveal>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
-            {/* VISION */}
-            <Reveal>
-              <article className="relative h-full bg-card border border-border rounded-sm p-8 md:p-10 shadow-[var(--shadow-soft)]">
-                <span className="absolute -top-3 left-8 px-3 py-1 bg-[color:var(--terracotta)] text-[color:var(--ivory)] text-xs tracking-[0.25em] uppercase rounded-full">
-                  Vision
-                </span>
-                <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-6 mt-2">
-                  Räume, die Menschen
-                  <span className="italic"> langsamer werden lassen.</span>
-                </h3>
-                <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
-                  <p>
-                    In einer Welt, die immer schneller wird, glauben wir an Räume, die
-                    Menschen wieder langsamer werden lassen.
-                  </p>
-                  <p>
-                    Wir kennen den Druck, kreativ sein zu wollen – und gleichzeitig das
-                    Gefühl, dass alles sofort gut sein muss. Das leere Blatt. Die
-                    Erwartungen. Der Fokus auf das Ergebnis.
-                  </p>
-                  <p className="font-serif text-foreground italic text-lg leading-relaxed">
-                    Doch wir haben gelernt: Die schönsten Ideen entstehen nicht unter Druck.
-                  </p>
-                  <ul className="space-y-2 pl-4 border-l-2 border-[color:var(--terracotta)]/40">
-                    <li>Sie entstehen, wenn man einfach beginnt.</li>
-                    <li>Wenn Menschen zusammenkommen.</li>
-                    <li>Wenn aus Ruhe Flow wird.</li>
-                    <li>Wenn Kreativität wieder leicht sein darf.</li>
-                  </ul>
-                  <p>
-                    Meerzeit Studio schafft genau diesen Raum – für echte Event, für
-                    Resonanz, für kreative Momente, die nicht perfekt sein müssen, um
-                    bedeutend zu sein.
-                  </p>
-                  <p className="font-script text-[color:var(--terracotta)] text-lg pt-2">
-                    Wir glauben, die Welt braucht mehr davon.
-                  </p>
-                </div>
-              </article>
-            </Reveal>
-
-            {/* MISSION */}
-            <Reveal delay={150}>
-              <article className="relative h-full bg-[color:var(--smoke)] text-[color:var(--ivory)] rounded-sm p-8 md:p-10 shadow-[var(--shadow-soft)]">
-                <span className="absolute -top-3 left-8 px-3 py-1 bg-[color:var(--ivory)] text-[color:var(--smoke)] text-xs tracking-[0.25em] uppercase rounded-full">
-                  Mission
-                </span>
-                <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-6 mt-2">
-                  Arbeiten, die berühren.
-                  <span className="italic"> Räume, die verbinden.</span>
-                </h3>
-                <div className="space-y-4 text-[color:var(--ivory)]/85 font-light leading-relaxed">
-                  <p>
-                    Meerzeit Studio entwickelt kreative Erlebnisse und Auftragsarbeiten,
-                    die Menschen berühren.
-                  </p>
-                  <p>
-                    Von Fotoshootings bis zu individuellen Kunstwerken schaffen wir
-                    Arbeiten mit Gefühl, Atmosphäre und Persönlichkeit – authentisch,
-                    ruhig und zeitlos.
-                  </p>
-                  <p>
-                    Gleichzeitig öffnen wir Räume, in denen Menschen gemeinsam kreativ
-                    werden können. Ohne Leistungsdruck. Ohne Erwartungen. Einfach im
-                    Moment.
-                  </p>
-                  <p className="font-serif italic text-[color:var(--ivory)] text-lg leading-relaxed">
-                    Denn Kreativität verändert sich, wenn man sie teilt.
-                  </p>
-                  <ul className="space-y-2 pl-4 border-l-2 border-[color:var(--terracotta)]">
-                    <li>Sie verbindet.</li>
-                    <li>Sie entschleunigt.</li>
-                    <li>Sie bringt Menschen wieder in Resonanz – mit sich und miteinander.</li>
-                  </ul>
-                  <p className="pt-2">
-                    Darum geht es bei Meerzeit Studio. Nicht nur etwas Schönes zu
-                    erschaffen,
-                    <span className="font-script text-[color:var(--terracotta)] text-xl"> sondern etwas Echtes.</span>
-                  </p>
-                </div>
-              </article>
-            </Reveal>
-          </div>
+        {/* BLEIBENDES – Momente festhalten */}
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
+              <img
+                src={festhalten}
+                alt="Bleibendes – Kunst und Fotografie aus dem Atelier"
+                loading="lazy"
+                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+              />
+            </div>
+            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Bleibendes — Momente festhalten</p>
+              <h3 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
+                Arbeiten, die berühren. <span className="italic">Erinnerungen, die bleiben.</span>
+              </h3>
+              <div className="mt-6 space-y-5 text-muted-foreground font-light leading-relaxed text-lg">
+                <p>
+                  Manche Momente möchte man festhalten. Mit Bildern, Kunst und Erinnerungen,
+                  die sich echt anfühlen und bleiben dürfen.
+                </p>
+                <p>
+                  Von Fotografie bis zu individuellen Kunstwerken schaffen wir Arbeiten mit
+                  Gefühl, Atmosphäre und Persönlichkeit – authentisch, ruhig und zeitlos.
+                </p>
+                <p className="font-serif italic text-foreground">
+                  Nicht nur etwas Schönes zu erschaffen, sondern etwas Echtes.
+                </p>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
