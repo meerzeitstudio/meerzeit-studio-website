@@ -99,7 +99,7 @@ function AtelierPage() {
                       {w.quote}
                     </p>
                     <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3">
-                      Iris Christophers
+                      Iris Christophers · Preis auf Anfrage
                     </p>
                   </figcaption>
                 </figure>
