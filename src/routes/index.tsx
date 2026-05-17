@@ -147,7 +147,7 @@ function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {sessions.map((s, i) => (
               <Reveal key={s.title} delay={i * 100}>
-                <Link to="/sessions" className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
+                <Link to={s.to} className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
                   <div className="aspect-[4/5] overflow-hidden">
                     <img
                       src={s.img}
