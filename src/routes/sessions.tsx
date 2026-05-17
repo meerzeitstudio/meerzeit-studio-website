@@ -63,8 +63,16 @@ function SessionsPage() {
         eyebrow="unsere Events"
         title="Was bei uns"
         italic="entstehen darf."
-        intro="Jede Event ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt – wir kümmern uns um Material, Atmosphäre und Getränke."
+        intro="Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, Ausprobieren und einfach im Moment sein."
       />
+
+      <section className="pt-12 md:pt-16 pb-4 px-6">
+        <Reveal>
+          <p className="font-script text-[color:var(--terracotta)] text-xl md:text-2xl text-center max-w-2xl mx-auto leading-snug">
+            „Such dir aus, was sich heute richtig anfühlt – wir kümmern uns um Material, Atmosphäre und Getränke."
+          </p>
+        </Reveal>
+      </section>
 
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto space-y-24 md:space-y-32">

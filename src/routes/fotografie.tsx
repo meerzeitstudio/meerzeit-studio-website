@@ -24,10 +24,10 @@ function FotografiePage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Fotografie"
-        title="Hier entsteht gerade"
-        italic="etwas Schönes."
-        intro="Unser Fotografie-Bereich ist noch in Arbeit. Wir feilen an Bildern, Worten und einer ehrlichen Handschrift – damit hier bald etwas steht, hinter dem wir wirklich stehen."
+        eyebrow="Bleibendes · Fotografie"
+        title="Für Erinnerungen,"
+        italic="die sich echt anfühlen."
+        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ruhige, ehrliche Bilder im Editorial-Stil – ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
       />
 
       {/* GROSSES BILD – FULL BLEED */}
@@ -60,10 +60,11 @@ function FotografiePage() {
               Was bald hier <span className="italic">wohnen darf.</span>
             </h2>
             <ul className="mt-8 space-y-3 text-muted-foreground font-light">
-              <li>Hochzeitsfotografie – für den Tag, an dem alles ehrlich ist.</li>
+              <li>Hochzeiten – für den Tag, an dem alles ehrlich ist.</li>
               <li>Babybauch – weiches Licht, kein Posieren.</li>
-              <li>Mutterglück – die kleinen Momente zwischen euch.</li>
+              <li>Motherhood – die kleinen Momente zwischen euch.</li>
               <li>Paarshootings – Nähe, wie sie wirklich aussieht.</li>
+              <li>Brand Shootings – für Unternehmerinnen mit Handschrift.</li>
             </ul>
             <p className="font-script text-[color:var(--terracotta)] text-xl mt-10 leading-snug">
               „Gute Dinge brauchen Zeit – und wir nehmen sie uns."
