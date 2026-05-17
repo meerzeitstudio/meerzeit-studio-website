@@ -106,9 +106,6 @@ function AboutPage() {
               <br />
               <span className="italic">Momente festhalten.</span>
             </h2>
-              <br />
-              <span className="italic">Momente festhalten.</span>
-            </h2>
             <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
               Zwei Wege, ein Gefühl. Bei Meerzeit Studio geht es nicht darum, etwas zu leisten –
               sondern um echte Momente, die berühren und bleiben dürfen.
