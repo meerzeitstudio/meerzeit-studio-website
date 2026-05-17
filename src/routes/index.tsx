@@ -93,7 +93,7 @@ function Index() {
       </section>
 
       {/* INTRO */}
-      <section className="py-24 md:py-32 px-6">
+      <section className="pt-20 md:pt-24 pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">ein Raum für dich</p>
@@ -110,7 +110,7 @@ function Index() {
       </section>
 
       {/* CALENDAR – oben sichtbar */}
-      <section className="py-20 md:py-28 px-6 bg-[color:var(--ivory)]">
+      <section className="pt-8 md:pt-10 pb-20 md:pb-28 px-6 bg-[color:var(--ivory)]">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="text-center mb-12">

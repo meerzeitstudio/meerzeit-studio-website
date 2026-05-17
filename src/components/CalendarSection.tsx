@@ -20,8 +20,8 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
   const dayEvents = selected ? events.filter((e) => sameDay(e.date, selected)) : [];
 
   return (
-    <div className="grid lg:grid-cols-[auto_1fr] gap-10 lg:gap-14 items-start">
-      <div className="bg-card p-5 md:p-6 rounded-sm shadow-[var(--shadow-soft)] border border-border inline-block mx-auto lg:mx-0">
+    <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <div className="bg-card p-5 md:p-8 rounded-sm shadow-[var(--shadow-soft)] border border-border w-full flex flex-col items-center">
         <Calendar
           mode="single"
           selected={selected}
