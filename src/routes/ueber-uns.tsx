@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import founders from "@/assets/founders.jpg";
+import erleben from "@/assets/session-meditativ.jpg";
+import festhalten from "@/assets/atelier-wave.jpg";
 
 const orgSchema = {
   "@context": "https://schema.org",
