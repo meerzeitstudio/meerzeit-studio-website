@@ -21,7 +21,7 @@ export const Route = createFileRoute("/buchen")({
 });
 
 const occasionOptions = [
-  "Einzelplatz in offener Session",
+  "Einzelplatz in offener Begegnung",
   "Freundinnenabend",
   "Hochzeit / JGA",
   "Firmenevent",
@@ -123,7 +123,7 @@ function BookingPage() {
 
               <div>
                 <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">
-                  Welche Session interessiert dich?
+                  Welche Begegnung interessiert dich?
                 </label>
                 <select
                   className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"

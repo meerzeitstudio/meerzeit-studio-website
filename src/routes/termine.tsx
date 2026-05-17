@@ -12,10 +12,10 @@ export const Route = createFileRoute("/termine")({
       {
         name: "description",
         content:
-          "Alle kommenden Creative Sessions im Überblick. Finde deinen Termin und buche deine kreative Auszeit am Meer.",
+          "Alle kommenden Creative Begegnungen im Überblick. Finde deinen Termin und buche deine kreative Auszeit am Meer.",
       },
       { property: "og:title", content: "Termine – Meerzeit Studio" },
-      { property: "og:description", content: "Alle kommenden Creative Sessions im Überblick." },
+      { property: "og:description", content: "Alle kommenden Creative Begegnungen im Überblick." },
     ],
   }),
   component: TerminePage,
@@ -31,10 +31,10 @@ function TerminePage() {
   return (
     <main>
       <PageHeader
-        eyebrow="kommende Sessions"
+        eyebrow="kommende Begegnungen"
         title="Unsere"
         italic="Termine."
-        intro="Wähle ein Datum im Kalender oder stöbere durch die Liste – jede Session ist eine kleine Auszeit für dich."
+        intro="Wähle ein Datum im Kalender oder stöbere durch die Liste – jede Begegnung ist eine kleine Auszeit für dich."
       />
 
       <section className="py-16 md:py-24 px-6 bg-[color:var(--ivory)]">
@@ -50,7 +50,7 @@ function TerminePage() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-lg text-center mb-3">alle Termine im Überblick</p>
             <h2 className="font-serif text-3xl md:text-4xl text-center mb-12">
-              Kommende <span className="italic">Sessions</span>
+              Kommende <span className="italic">Begegnungen</span>
             </h2>
           </Reveal>
 
@@ -98,7 +98,7 @@ function TerminePage() {
             „Kein passender Termin dabei?“
           </p>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            Schreib uns – wir planen regelmäßig neue Sessions und private Auszeiten für kleine Gruppen.
+            Schreib uns – wir planen regelmäßig neue Begegnungen und private Auszeiten für kleine Gruppen.
           </p>
           <Link
             to="/buchen"

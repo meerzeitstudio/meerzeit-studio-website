@@ -16,13 +16,13 @@ import atelierPortrait from "@/assets/atelier-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meerzeit Studio – Creative Sessions für Frauen" },
+      { title: "Meerzeit Studio – Creative Begegnungen für Frauen" },
       {
         name: "description",
         content:
           "Kreative Auszeit-Events für Frauen, Mütter und Freundinnen. Acrylmalerei in entspannter Atmosphäre – kein Müssen, kein Perfekt.",
       },
-      { property: "og:title", content: "Meerzeit Studio – Creative Sessions" },
+      { property: "og:title", content: "Meerzeit Studio – Creative Begegnungen" },
       {
         property: "og:description",
         content: "Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.",
@@ -82,7 +82,7 @@ function Index() {
               to="/sessions"
               className="inline-block px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
             >
-              Sessions entdecken
+              Begegnungen entdecken
             </Link>
           </div>
         </div>
@@ -131,12 +131,12 @@ function Index() {
         <div className="max-w-7xl mx-auto">
           <Reveal>
             <div className="text-center mb-16">
-              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Sessions</p>
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Begegnungen</p>
               <h2 className="font-serif text-4xl md:text-6xl text-balance">
                 Was bei uns <span className="italic">entstehen darf.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Jede Session ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt –
+                Jede Begegnung ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt –
                 wir kümmern uns um Material, Atmosphäre und Getränke.
               </p>
             </div>
@@ -173,7 +173,7 @@ function Index() {
               to="/sessions"
               className="inline-block px-8 py-3 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
             >
-              Alle Sessions ansehen
+              Alle Begegnungen ansehen
             </Link>
           </div>
         </div>
@@ -268,7 +268,7 @@ function Index() {
                 Aus dem <span className="italic">Studio.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                Neben den Sessions entstehen Werke und Bilder – in zwei eigenen Welten.
+                Neben den Begegnungen entstehen Werke und Bilder – in zwei eigenen Welten.
               </p>
             </div>
           </Reveal>
