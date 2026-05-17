@@ -85,10 +85,11 @@ function Index() {
               Events entdecken
             </Link>
           </div>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[color:var(--ivory)]/60 text-xs tracking-[0.3em] uppercase animate-pulse">
-          ↓ scroll
+          <div className="mt-16 flex justify-center">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[color:var(--ivory)]/30 text-[color:var(--ivory)]/70 text-xs tracking-[0.3em] uppercase animate-pulse">
+              ↓ scroll
+            </span>
+          </div>
         </div>
       </section>
 
