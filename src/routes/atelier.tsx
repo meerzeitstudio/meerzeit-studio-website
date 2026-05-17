@@ -5,6 +5,64 @@ import { CONTACT, whatsappLink } from "@/lib/contact";
 import wave from "@/assets/atelier-wave.jpg";
 import portrait from "@/assets/atelier-portrait.jpg";
 import collage from "@/assets/atelier-collage.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import ref1 from "@/assets/ref-1.jpg";
+import ref2 from "@/assets/ref-2.jpg";
+import ref3 from "@/assets/ref-3.jpg";
+
+type ForSale = { img: string; title: string; quote: string; artist: string; format: string; price: string };
+
+const forSale: ForSale[] = [
+  {
+    img: gallery1,
+    title: "Stiller Strand",
+    quote: "„Wenn das Meer atmet, wird alles weicher.“",
+    artist: "Iris Christophers",
+    format: "80 × 100 cm · Acryl auf Leinwand",
+    price: "Auf Anfrage",
+  },
+  {
+    img: gallery2,
+    title: "Bewegung",
+    quote: "„Manchmal ist eine einzige Linie genug.“",
+    artist: "Martina Jürgens",
+    format: "60 × 80 cm · Acryl auf Leinwand",
+    price: "Auf Anfrage",
+  },
+  {
+    img: gallery3,
+    title: "Nordlicht",
+    quote: "„Ein Horizont, der nichts von dir verlangt.“",
+    artist: "Iris Christophers",
+    format: "70 × 90 cm · Acryl & Pigment",
+    price: "Auf Anfrage",
+  },
+  {
+    img: gallery4,
+    title: "Erdton",
+    quote: "„Hier darf alles seine Spuren behalten.“",
+    artist: "Martina Jürgens",
+    format: "80 × 100 cm · Mixed Media",
+    price: "Auf Anfrage",
+  },
+];
+
+const references = [
+  { img: ref1, location: "Privatwohnung · Hamburg", note: "Wohnzimmer · 140 × 100 cm" },
+  { img: ref2, location: "Schlafraum · Schleswig", note: "Diptychon · je 60 × 80 cm" },
+  { img: ref3, location: "Boutique-Hotel · Ostsee", note: "Lobby · 220 × 140 cm" },
+];
+
+const process = [
+  { n: "01", t: "Kennenlernen", s: "Ein ruhiges Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
+  { n: "02", t: "Entwurf & Stimmung", s: "Wir entwickeln eine erste Farb- und Formidee – inklusive Format, Material und Preisrahmen." },
+  { n: "03", t: "Im Atelier", s: "Das Werk entsteht in Ruhe. Zwischenbilder bekommst du auf Wunsch – sonst überraschen wir." },
+  { n: "04", t: "Ankunft", s: "Sicher verpackt, persönlich übergeben oder versendet. Inklusive kleiner Geschichte zum Werk." },
+];
+
 
 export const Route = createFileRoute("/atelier")({
   head: () => ({
