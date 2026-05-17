@@ -3,10 +3,10 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 import wave from "@/assets/atelier-wave.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import iris1 from "@/assets/iris-1.png";
+import iris2 from "@/assets/iris-2.png";
+import iris3 from "@/assets/iris-3.png";
+import iris4 from "@/assets/iris-4.jpg";
 import ref1 from "@/assets/ref-1.jpg";
 import ref2 from "@/assets/ref-2.jpg";
 import ref3 from "@/assets/ref-3.jpg";
@@ -14,10 +14,10 @@ import ref3 from "@/assets/ref-3.jpg";
 type ForSale = { img: string; title: string; quote: string };
 
 const forSale: ForSale[] = [
-  { img: gallery1, title: "Stiller Strand", quote: "„Wenn das Meer atmet, wird alles weicher.“" },
-  { img: gallery2, title: "Bewegung", quote: "„Manchmal ist eine einzige Linie genug.“" },
-  { img: gallery3, title: "Nordlicht", quote: "„Ein Horizont, der nichts von dir verlangt.“" },
-  { img: gallery4, title: "Erdton", quote: "„Hier darf alles seine Spuren behalten.“" },
+  { img: iris1, title: "Im Farbsturm", quote: "„Wenn alles in dir bunt wird, darf es laut sein.“" },
+  { img: iris2, title: "Aufschwung", quote: "„Es gibt Momente, in denen man nur noch nach oben greift.“" },
+  { img: iris3, title: "Freiheit & Bindung", quote: "„Zwischen den Worten lebt das, was uns ausmacht.“" },
+  { img: iris4, title: "Gedankenflug", quote: "„Manchmal trägt der Kopf eine ganze Stadt aus Träumen.“" },
 ];
 
 const references = [
@@ -27,7 +27,7 @@ const references = [
 ];
 
 const process = [
-  { n: "01", t: "Kennenlernen", s: "Ein ruhiges Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
+  { n: "01", t: "Kennenlernen", s: "Ein erstes Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
   { n: "02", t: "Entwurf & Stimmung", s: "Wir entwickeln eine erste Farb- und Formidee – inklusive Format, Material und Preisrahmen." },
   { n: "03", t: "Im Atelier", s: "Das Werk entsteht in Ruhe. Zwischenbilder bekommst du auf Wunsch – sonst überraschen wir." },
   { n: "04", t: "Ankunft", s: "Sicher verpackt, persönlich übergeben oder versendet. Inklusive kleiner Geschichte zum Werk." },
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/atelier")({
       {
         name: "description",
         content:
-          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume, die ruhiger werden dürfen.",
+          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
       },
       { property: "og:title", content: "Atelier – Meerzeit Studio" },
       { property: "og:image", content: wave },
@@ -55,7 +55,7 @@ function AtelierPage() {
       <PageHeader
         eyebrow="Atelier"
         title="Werke, die Räume"
-        italic="ruhiger machen."
+        italic="lebendig machen."
         intro="Freie Arbeiten und Auftragskunst aus dem Studio – derzeit ausschließlich Originale von Iris Christophers. Kunst, die Emotion sichtbar werden lässt."
       />
 
@@ -161,7 +161,7 @@ function AtelierPage() {
             <div className="text-center max-w-2xl mx-auto mb-16">
               <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">So entsteht ein Unikat</p>
               <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-                Vier ruhige <span className="italic">Schritte.</span>
+                Vier ehrliche <span className="italic">Schritte.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
                 Eine Auftragsarbeit ist ein Dialog – kein Bestellvorgang. So gehen wir gemeinsam vor.
