@@ -7,9 +7,10 @@ import iris1 from "@/assets/iris-1.png";
 import iris2 from "@/assets/iris-2.png";
 import iris3 from "@/assets/iris-3.png";
 import iris4 from "@/assets/iris-4.jpg";
-import ref1 from "@/assets/ref-1.jpg";
-import ref2 from "@/assets/ref-2.jpg";
-import ref3 from "@/assets/ref-3.jpg";
+import ref1 from "@/assets/ref-iris-1.png";
+import ref2 from "@/assets/ref-iris-2.png";
+import ref3 from "@/assets/ref-iris-3.png";
+import ref4 from "@/assets/ref-iris-4.png";
 
 type ForSale = { img: string; title: string; quote: string };
 
@@ -20,10 +21,11 @@ const forSale: ForSale[] = [
   { img: iris4, title: "Gedankenflug", quote: "„Manchmal trägt der Kopf eine ganze Stadt aus Träumen.“" },
 ];
 
-const references = [
-  { img: ref1, location: "Privatwohnung · Hamburg" },
-  { img: ref2, location: "Schlafraum · Schleswig" },
-  { img: ref3, location: "Boutique-Hotel · Ostsee" },
+const references: { img: string; title: string; quote: string }[] = [
+  { img: ref1, title: "Im Verborgenen", quote: "„Was wir nicht zeigen, formt uns am tiefsten.“" },
+  { img: ref2, title: "Der Visionär", quote: "„Manche Gedanken leuchten, lange nachdem sie ausgesprochen sind.“" },
+  { img: ref3, title: "Halt", quote: "„Zwischen zwei Händen findet das Gesicht zurück zu sich.“" },
+  { img: ref4, title: "Heimkehr", quote: "„Es gibt Orte, die uns kennen, bevor wir sie betreten.“" },
 ];
 
 const process = [
