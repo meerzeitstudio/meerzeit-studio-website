@@ -86,7 +86,7 @@ function BleibendesPage() {
       </section>
 
       {/* FOTOGRAFIE */}
-      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60">
+      <section id="fotografie" className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
