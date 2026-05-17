@@ -244,7 +244,7 @@ function Index() {
               <span className="italic">Freundinnenabend.</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed font-light mb-6">
-              Manche Anlässe verdienen mehr als einen Tisch im Restaurant. Wir gestalten Meerzeit-Sessions
+              Manche Anlässe verdienen mehr als einen Tisch im Restaurant. Wir gestalten Meerzeit-Begegnungen
               auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier. Für Teams, Brautpartys,
               runde Geburtstage oder einfach einen Abend, den ihr nicht so schnell vergesst.
             </p>

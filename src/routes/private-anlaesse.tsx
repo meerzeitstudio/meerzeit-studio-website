@@ -46,7 +46,7 @@ function PrivatePage() {
         eyebrow="auf Anfrage"
         title="Eure Auszeit –"
         italic="ganz für euch."
-        intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Sessions auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier."
+        intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Begegnungen auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier."
       />
 
       <section className="px-6">
