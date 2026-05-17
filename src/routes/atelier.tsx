@@ -27,7 +27,7 @@ const references = [
 ];
 
 const process = [
-  { n: "01", t: "Kennenlernen", s: "Ein ruhiges Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
+  { n: "01", t: "Kennenlernen", s: "Ein erstes Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
   { n: "02", t: "Entwurf & Stimmung", s: "Wir entwickeln eine erste Farb- und Formidee – inklusive Format, Material und Preisrahmen." },
   { n: "03", t: "Im Atelier", s: "Das Werk entsteht in Ruhe. Zwischenbilder bekommst du auf Wunsch – sonst überraschen wir." },
   { n: "04", t: "Ankunft", s: "Sicher verpackt, persönlich übergeben oder versendet. Inklusive kleiner Geschichte zum Werk." },
