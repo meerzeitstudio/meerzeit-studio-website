@@ -24,10 +24,10 @@ function FotografiePage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Fotografie"
-        title="Hier entsteht gerade"
-        italic="etwas Schönes."
-        intro="Unser Fotografie-Bereich ist noch in Arbeit. Wir feilen an Bildern, Worten und einer ehrlichen Handschrift – damit hier bald etwas steht, hinter dem wir wirklich stehen."
+        eyebrow="Bleibendes · Fotografie"
+        title="Für Erinnerungen,"
+        italic="die sich echt anfühlen."
+        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ruhige, ehrliche Bilder im Editorial-Stil – ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
       />
 
       {/* GROSSES BILD – FULL BLEED */}
