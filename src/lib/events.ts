@@ -8,6 +8,7 @@ export type SessionTitle =
 export type SessionEvent = {
   date: Date;
   title: SessionTitle;
+  theme?: string;
   time: string;
   location: string;
   spots: number;
@@ -15,19 +16,9 @@ export type SessionEvent = {
 
 // Termine – hier können neue Sessions einfach ergänzt werden
 export const events: SessionEvent[] = [
-  { date: new Date(2026, 4, 16), title: "Malen am Meer", time: "10:00 – 13:00", location: "Strand Heiligendamm", spots: 8 },
-  { date: new Date(2026, 4, 21), title: "Mutti malt – mit Baby", time: "10:30 – 12:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 4, 23), title: "Meditatives Malen", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 5, 6), title: "Paint & Beats", time: "19:00 – 22:00", location: "Studio Warnemünde", spots: 10 },
-  { date: new Date(2026, 5, 11), title: "Mutti malt – mit Baby", time: "10:30 – 12:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 5, 13), title: "Malen am Meer", time: "10:00 – 13:00", location: "Strand Kühlungsborn", spots: 8 },
-  { date: new Date(2026, 5, 20), title: "Malen bei Nacht", time: "20:30 – 23:00", location: "Strand Heiligendamm", spots: 8 },
-  { date: new Date(2026, 6, 4), title: "Meditatives Malen", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
-  { date: new Date(2026, 6, 11), title: "Malen am Meer", time: "10:00 – 13:00", location: "Strand Heiligendamm", spots: 8 },
-  { date: new Date(2026, 6, 18), title: "Paint & Beats", time: "19:00 – 22:00", location: "Studio Warnemünde", spots: 10 },
-  { date: new Date(2026, 6, 25), title: "Malen bei Nacht", time: "20:30 – 23:00", location: "Strand Kühlungsborn", spots: 8 },
-  { date: new Date(2026, 7, 8), title: "Malen am Meer", time: "10:00 – 13:00", location: "Strand Warnemünde", spots: 8 },
-  { date: new Date(2026, 7, 22), title: "Meditatives Malen", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
+  { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
+  { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
+  { date: new Date(2026, 5, 3), title: "Meditatives Malen", theme: "Natur und Melodie", time: "18:00 – 20:30", location: "Studio Warnemünde", spots: 6 },
 ];
 
 export const titleColor: Record<SessionTitle, string> = {
