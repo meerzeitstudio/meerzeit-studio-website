@@ -18,6 +18,7 @@ import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as FuerWenRouteImport } from './routes/fuer-wen'
 import { Route as FotografieRouteImport } from './routes/fotografie'
 import { Route as BuchenRouteImport } from './routes/buchen'
+import { Route as BleibendesRouteImport } from './routes/bleibendes'
 import { Route as AtelierRouteImport } from './routes/atelier'
 import { Route as AblaufRouteImport } from './routes/ablauf'
 import { Route as IndexRouteImport } from './routes/index'
@@ -67,6 +68,11 @@ const BuchenRoute = BuchenRouteImport.update({
   path: '/buchen',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BleibendesRoute = BleibendesRouteImport.update({
+  id: '/bleibendes',
+  path: '/bleibendes',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AtelierRoute = AtelierRouteImport.update({
   id: '/atelier',
   path: '/atelier',
@@ -87,6 +93,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
+  '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
@@ -101,6 +108,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
+  '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
@@ -116,6 +124,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
+  '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
@@ -132,6 +141,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ablauf'
     | '/atelier'
+    | '/bleibendes'
     | '/buchen'
     | '/fotografie'
     | '/fuer-wen'
@@ -146,6 +156,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ablauf'
     | '/atelier'
+    | '/bleibendes'
     | '/buchen'
     | '/fotografie'
     | '/fuer-wen'
@@ -160,6 +171,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ablauf'
     | '/atelier'
+    | '/bleibendes'
     | '/buchen'
     | '/fotografie'
     | '/fuer-wen'
@@ -175,6 +187,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AblaufRoute: typeof AblaufRoute
   AtelierRoute: typeof AtelierRoute
+  BleibendesRoute: typeof BleibendesRoute
   BuchenRoute: typeof BuchenRoute
   FotografieRoute: typeof FotografieRoute
   FuerWenRoute: typeof FuerWenRoute
@@ -251,6 +264,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BuchenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bleibendes': {
+      id: '/bleibendes'
+      path: '/bleibendes'
+      fullPath: '/bleibendes'
+      preLoaderRoute: typeof BleibendesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/atelier': {
       id: '/atelier'
       path: '/atelier'
@@ -279,6 +299,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AblaufRoute: AblaufRoute,
   AtelierRoute: AtelierRoute,
+  BleibendesRoute: BleibendesRoute,
   BuchenRoute: BuchenRoute,
   FotografieRoute: FotografieRoute,
   FuerWenRoute: FuerWenRoute,
@@ -292,3 +313,12 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}
