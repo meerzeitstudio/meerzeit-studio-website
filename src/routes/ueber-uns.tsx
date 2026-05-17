@@ -137,7 +137,7 @@ function AboutPage() {
                     <li>Wenn Kreativität wieder leicht sein darf.</li>
                   </ul>
                   <p>
-                    Meerzeit Studio schafft genau diesen Raum – für echte Begegnung, für
+                    Meerzeit Studio schafft genau diesen Raum – für echte Event, für
                     Resonanz, für kreative Momente, die nicht perfekt sein müssen, um
                     bedeutend zu sein.
                   </p>
@@ -204,7 +204,7 @@ function AboutPage() {
             to="/sessions"
             className="mt-10 inline-block px-8 py-3 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
           >
-            Unsere Begegnungen
+            Unsere Events
           </Link>
         </Reveal>
       </section>

@@ -14,7 +14,7 @@ export type SessionEvent = {
   spots: number;
 };
 
-// Termine – hier können neue Begegnungen einfach ergänzt werden
+// Termine – hier können neue Events einfach ergänzt werden
 export const events: SessionEvent[] = [
   { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
   { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
