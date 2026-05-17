@@ -183,6 +183,135 @@ function AtelierPage() {
         </div>
       </section>
 
+      {/* GALERIE ZUM VERKAUF */}
+      <section className="py-24 md:py-32 px-6 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Galerie</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Werke, die ein <span className="italic">Zuhause suchen.</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground font-light leading-relaxed">
+                Eine kleine, kuratierte Auswahl verfügbarer Originale aus dem Atelier –
+                jedes Werk begleitet von einem Gedanken seiner Künstlerin.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-14">
+            {forSale.map((w, i) => (
+              <Reveal key={w.title} delay={i * 80}>
+                <figure className="group">
+                  <div className="overflow-hidden rounded-sm bg-card">
+                    <img
+                      src={w.img}
+                      alt={w.title}
+                      loading="lazy"
+                      width={1024}
+                      height={1280}
+                      className="w-full aspect-[4/5] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <figcaption className="mt-5">
+                    <h3 className="font-serif text-xl">{w.title}</h3>
+                    <p className="font-script text-[color:var(--terracotta)] text-base mt-1 leading-snug">
+                      {w.quote}
+                    </p>
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3">
+                      {w.artist}
+                    </p>
+                    <p className="text-xs text-muted-foreground/80 mt-1 italic">{w.format}</p>
+                    <p className="text-sm mt-3 text-[color:var(--smoke)]">{w.price}</p>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="text-center mt-16">
+            <Link
+              to="/buchen"
+              className="inline-block px-8 py-4 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
+            >
+              Werk anfragen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* REFERENZEN */}
+      <section className="py-24 md:py-32 px-6 bg-background border-t border-border/60">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="max-w-2xl mb-14">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Referenzen</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Werke in ihrem <span className="italic">neuen Zuhause.</span>
+              </h2>
+              <p className="mt-5 text-muted-foreground font-light leading-relaxed">
+                Eine Auswahl bisheriger Auftragsarbeiten – entstanden für Wohnräume,
+                Praxen und Hotels. Jedes Werk ein Unikat, gemacht für genau diesen Ort.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {references.map((r, i) => (
+              <Reveal key={r.location} delay={i * 100}>
+                <figure>
+                  <div className="overflow-hidden rounded-sm bg-card">
+                    <img
+                      src={r.img}
+                      alt={r.location}
+                      loading="lazy"
+                      width={1280}
+                      height={1024}
+                      className="w-full aspect-[5/4] object-cover"
+                    />
+                  </div>
+                  <figcaption className="mt-3 flex justify-between text-xs tracking-widest uppercase text-muted-foreground">
+                    <span>{r.location}</span>
+                    <span className="font-light normal-case tracking-normal italic">{r.note}</span>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SO ENTSTEHT EINE AUFTRAGSARBEIT */}
+      <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)] border-t border-border/60">
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">So entsteht ein Unikat</p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+                Vier ruhige <span className="italic">Schritte.</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground font-light leading-relaxed">
+                Eine Auftragsarbeit ist ein Dialog – kein Bestellvorgang. So gehen wir gemeinsam vor.
+              </p>
+            </div>
+          </Reveal>
+
+          <ol className="grid md:grid-cols-2 gap-x-10 gap-y-12">
+            {process.map((p, i) => (
+              <Reveal key={p.n} delay={i * 80}>
+                <li className="border-t border-[color:var(--smoke)]/25 pt-6">
+                  <div className="flex items-baseline gap-4 mb-3">
+                    <span className="font-serif text-3xl text-[color:var(--terracotta)]">{p.n}</span>
+                    <h3 className="font-serif text-2xl">{p.t}</h3>
+                  </div>
+                  <p className="text-muted-foreground font-light leading-relaxed">{p.s}</p>
+                </li>
+              </Reveal>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* AUFTRAGSARBEITEN */}
       <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)]">
         <div className="max-w-6xl mx-auto">
