@@ -285,7 +285,7 @@ function Index() {
                   <p className="font-script text-[color:var(--terracotta)] text-base mb-1">Atelier</p>
                   <h3 className="font-serif text-2xl md:text-3xl mb-2">Kunstwerke</h3>
                   <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
-                    Originale und Auftragsarbeiten – Kunst, die Räume ruhiger macht.
+                    Originale und Auftragsarbeiten – Kunst mit Ausdruck, Farbe und Charakter.
                   </p>
                 </div>
               </Link>
@@ -300,7 +300,7 @@ function Index() {
                   <p className="font-script text-[color:var(--terracotta)] text-base mb-1">Fotografie</p>
                   <h3 className="font-serif text-2xl md:text-3xl mb-2">Erinnerungen</h3>
                   <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
-                    Hochzeit, Babybauch, Mutterglück, Paare und Brand – leise und ehrlich.
+                    Hochzeit, Babybauch, Mutterglück, Paare und Brand – ehrlich und persönlich.
                   </p>
                 </div>
               </Link>

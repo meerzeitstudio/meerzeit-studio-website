@@ -104,7 +104,7 @@ function BleibendesPage() {
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
                 Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen –
-                ruhige, ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
+                ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
               </p>
               <Link
                 to="/fotografie"
