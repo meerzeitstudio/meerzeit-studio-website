@@ -133,32 +133,37 @@ function AtelierPage() {
             </div>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-14">
-            {references.map((r, i) => (
-              <Reveal key={r.title} delay={i * 100}>
-                <figure className="group">
-                  <div className="overflow-hidden rounded-sm bg-card">
-                    <img
-                      src={r.img}
-                      alt={r.title}
-                      loading="lazy"
-                      width={1024}
-                      height={1280}
-                      className="w-full aspect-[4/5] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <figcaption className="mt-5">
-                    <h3 className="font-serif text-xl">{r.title}</h3>
-                    <p className="font-script text-[color:var(--terracotta)] text-base mt-2 leading-snug">
-                      {r.quote}
-                    </p>
-                    <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3">
-                      Iris Christophers
-                    </p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-x-6 gap-y-14">
+            {references.map((r, i) => {
+              const isLandscape = r.title === "Heimkehr";
+              return (
+                <Reveal
+                  key={r.title}
+                  delay={i * 100}
+                  className={isLandscape ? "sm:col-span-2 lg:col-span-4" : "lg:col-span-2"}
+                >
+                  <figure className="group">
+                    <div className="overflow-hidden rounded-sm bg-card">
+                      <img
+                        src={r.img}
+                        alt={r.title}
+                        loading="lazy"
+                        className={`w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03] ${isLandscape ? "aspect-[16/9]" : "aspect-[4/5]"}`}
+                      />
+                    </div>
+                    <figcaption className="mt-5">
+                      <h3 className="font-serif text-xl">{r.title}</h3>
+                      <p className="font-script text-[color:var(--terracotta)] text-base mt-2 leading-snug">
+                        {r.quote}
+                      </p>
+                      <p className="text-xs uppercase tracking-widest text-muted-foreground mt-3">
+                        Iris Christophers
+                      </p>
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
