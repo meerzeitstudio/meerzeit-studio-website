@@ -39,7 +39,7 @@ const sessions = [
   { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein." },
   { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen." },
   { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht." },
-  { title: "Paint & Beats", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion." },
+  { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion." },
 ];
 
 function Index() {
