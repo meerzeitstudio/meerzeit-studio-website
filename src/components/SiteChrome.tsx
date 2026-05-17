@@ -4,7 +4,7 @@ import { CONTACT, whatsappLink } from "@/lib/contact";
 import logo from "@/assets/logo.png";
 
 const links = [
-  { to: "/sessions", label: "Sessions" },
+  { to: "/sessions", label: "Begegnungen" },
   { to: "/termine", label: "Termine" },
   { to: "/atelier", label: "Atelier" },
   { to: "/fotografie", label: "Fotografie" },
@@ -105,7 +105,7 @@ export function SiteFooter() {
             <p className="font-serif text-xl text-[color:var(--ivory)]">
               Meerzeit <span className="italic text-[color:var(--terracotta)]">Studio</span>
             </p>
-            <p className="font-script text-sm text-[color:var(--ivory)]/60 mt-0.5">— Creative Sessions —</p>
+            <p className="font-script text-sm text-[color:var(--ivory)]/60 mt-0.5">— Creative Begegnungen —</p>
           </div>
         </div>
         <div className="flex flex-col gap-2">

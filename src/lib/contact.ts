@@ -6,5 +6,5 @@ export const CONTACT = {
   phoneE164: "4915254975605",
 };
 
-export const whatsappLink = (text = "Hallo Meerzeit Studio, ich habe eine Frage zu einer Session.") =>
+export const whatsappLink = (text = "Hallo Meerzeit Studio, ich habe eine Frage zu einer Begegnung.") =>
   `https://wa.me/${CONTACT.phoneE164}?text=${encodeURIComponent(text)}`;

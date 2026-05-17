@@ -37,7 +37,7 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
         />
         <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
           <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--terracotta)] inline-block" />
-          Tage mit verfügbaren Sessions
+          Tage mit verfügbaren Begegnungen
         </div>
       </div>
 
@@ -47,8 +47,8 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
         </h3>
         <p className="text-muted-foreground text-sm mb-6">
           {dayEvents.length === 0
-            ? "Keine Session an diesem Tag – wähle einen markierten Tag im Kalender."
-            : `${dayEvents.length} Session${dayEvents.length > 1 ? "s" : ""} an diesem Tag.`}
+            ? "Keine Begegnung an diesem Tag – wähle einen markierten Tag im Kalender."
+            : `${dayEvents.length} Begegnung${dayEvents.length > 1 ? "s" : ""} an diesem Tag.`}
         </p>
         <div className="space-y-3">
           {dayEvents.map((e, i) => (

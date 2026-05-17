@@ -10,13 +10,13 @@ import sMutti from "@/assets/session-mutti-baby.jpg";
 export const Route = createFileRoute("/sessions")({
   head: () => ({
     meta: [
-      { title: "Unsere Sessions – Meerzeit Studio" },
+      { title: "Unsere Begegnungen – Meerzeit Studio" },
       {
         name: "description",
         content:
           "Malen am Meer, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Paint & Beats – kreative Auszeit-Formate für Frauen.",
       },
-      { property: "og:title", content: "Unsere Sessions – Meerzeit Studio" },
+      { property: "og:title", content: "Unsere Begegnungen – Meerzeit Studio" },
       { property: "og:image", content: sMeer },
     ],
   }),
@@ -27,7 +27,7 @@ const sessions = [
   {
     title: "Malen am Meer",
     img: sMeer,
-    text: "Die Wellen als Taktgeberin. Salzige Luft, weiche Farben, ein Pinsel in deiner Hand – und der Horizont, der alles weit macht. Eine Session draußen, wenn das Wetter es erlaubt – sonst mit Meeresrauschen im Raum.",
+    text: "Die Wellen als Taktgeberin. Salzige Luft, weiche Farben, ein Pinsel in deiner Hand – und der Horizont, der alles weit macht. Eine Begegnung draußen, wenn das Wetter es erlaubt – sonst mit Meeresrauschen im Raum.",
     mood: "weit · klar · frei",
   },
   {
@@ -51,7 +51,7 @@ const sessions = [
   {
     title: "Paint & Beats",
     img: sBeats,
-    text: "Musik, die durch dich hindurch geht. Farbe, die folgt. Eine Session, die sich wie Tanzen anfühlt – nur in Slow Motion. Mit kuratierter Playlist und viel Bewegungsfreiheit.",
+    text: "Musik, die durch dich hindurch geht. Farbe, die folgt. Eine Begegnung, die sich wie Tanzen anfühlt – nur in Slow Motion. Mit kuratierter Playlist und viel Bewegungsfreiheit.",
     mood: "lebendig · frei · spielerisch",
   },
 ];
@@ -60,10 +60,10 @@ function SessionsPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="unsere Sessions"
+        eyebrow="unsere Begegnungen"
         title="Was bei uns"
         italic="entstehen darf."
-        intro="Jede Session ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt – wir kümmern uns um Material, Atmosphäre und Getränke."
+        intro="Jede Begegnung ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt – wir kümmern uns um Material, Atmosphäre und Getränke."
       />
 
       <section className="py-16 md:py-24 px-6">
@@ -102,7 +102,7 @@ function SessionsPage() {
                       to="/buchen"
                       className="text-sm tracking-widest uppercase border-b border-transparent hover:border-[color:var(--smoke)] pb-1 text-[color:var(--smoke)]"
                     >
-                      Diese Session anfragen
+                      Diese Begegnung anfragen
                     </Link>
                   </div>
                 </div>

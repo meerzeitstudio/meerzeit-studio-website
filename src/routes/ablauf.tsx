@@ -5,13 +5,13 @@ import { PageHeader } from "@/components/SiteChrome";
 export const Route = createFileRoute("/ablauf")({
   head: () => ({
     meta: [
-      { title: "Ablauf einer Session – Meerzeit Studio" },
+      { title: "Ablauf einer Begegnung – Meerzeit Studio" },
       {
         name: "description",
         content:
-          "So fühlt sich eine Session bei Meerzeit Studio an: Ankommen, Loslassen, Kreativ werden, Verbinden – inklusive aller Infos zu Material, Dauer und Atmosphäre.",
+          "So fühlt sich eine Begegnung bei Meerzeit Studio an: Ankommen, Loslassen, Kreativ werden, Verbinden – inklusive aller Infos zu Material, Dauer und Atmosphäre.",
       },
-      { property: "og:title", content: "Ablauf einer Session" },
+      { property: "og:title", content: "Ablauf einer Begegnung" },
     ],
   }),
   component: AblaufPage,
@@ -48,10 +48,10 @@ function AblaufPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Ablauf einer Session"
+        eyebrow="Ablauf einer Begegnung"
         title="So fühlt sich"
         italic="Meerzeit an."
-        intro="Eine Session dauert rund 120 Minuten. Du brauchst nichts vorzubereiten und nichts mitzubringen – wir kümmern uns um Material, Atmosphäre und Getränke."
+        intro="Eine Begegnung dauert rund 120 Minuten. Du brauchst nichts vorzubereiten und nichts mitzubringen – wir kümmern uns um Material, Atmosphäre und Getränke."
       />
 
       <section className="py-20 md:py-28 px-6 bg-[color:var(--muted)]">
@@ -108,7 +108,7 @@ function AblaufPage() {
               },
               {
                 t: "Getränke & Snacks",
-                s: "Tee, Wasser, Kaffee – und je nach Session ein Glas Wein oder etwas Knabberzeug. Bei privaten Anlässen passen wir alles an euren Wunsch an.",
+                s: "Tee, Wasser, Kaffee – und je nach Begegnung ein Glas Wein oder etwas Knabberzeug. Bei privaten Anlässen passen wir alles an euren Wunsch an.",
               },
               {
                 t: "Dein Bild",
@@ -116,7 +116,7 @@ function AblaufPage() {
               },
               {
                 t: "Gruppengröße",
-                s: "Damit wir Zeit für dich haben, sind unsere offenen Sessions auf 6 bis 10 Plätze begrenzt. Private Gruppen ab 4 Personen.",
+                s: "Damit wir Zeit für dich haben, sind unsere offenen Begegnungen auf 6 bis 10 Plätze begrenzt. Private Gruppen ab 4 Personen.",
               },
               {
                 t: "Anreise & Ort",

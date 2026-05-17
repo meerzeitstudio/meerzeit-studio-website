@@ -204,7 +204,7 @@ function AboutPage() {
             to="/sessions"
             className="mt-10 inline-block px-8 py-3 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
           >
-            Unsere Sessions
+            Unsere Begegnungen
           </Link>
         </Reveal>
       </section>
