@@ -43,7 +43,7 @@ function FotografiePage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--graphite)]/60 via-transparent to-transparent md:rounded-sm" />
             <figcaption className="absolute bottom-6 md:bottom-10 left-6 md:left-12 right-6 md:right-12 text-[color:var(--ivory)] flex flex-col md:flex-row md:items-end md:justify-between gap-3">
               <p className="font-script text-2xl md:text-3xl leading-snug max-w-xl">
-                „Stille Bilder, die bleiben."
+                „Ein Blick. Ein Bild. Eine Geschichte."
               </p>
               <p className="text-xs uppercase tracking-widest text-[color:var(--ivory)]/80">
                 Foto · Martina Jürgens
