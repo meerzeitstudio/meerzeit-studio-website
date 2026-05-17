@@ -3,7 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { CalendarSection } from "@/components/CalendarSection";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 import hero from "@/assets/hero.jpg";
-import sMeer from "@/assets/session-meer.jpg";
+import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
