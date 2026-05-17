@@ -54,7 +54,7 @@ function BleibendesPage() {
       </div>
 
       {/* KUNSTWERKE */}
-      <section className="py-24 md:py-32 px-6 bg-background">
+      <section id="kunstwerke" className="py-24 md:py-32 px-6 bg-background scroll-mt-24">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
