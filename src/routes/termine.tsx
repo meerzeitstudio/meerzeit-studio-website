@@ -83,8 +83,7 @@ function TerminePage() {
                     </p>
                   </div>
                   <div className="text-right text-sm text-muted-foreground hidden sm:block">
-                    {e.spots} Plätze
-                    <div className="text-[color:var(--terracotta)] text-xs mt-1 group-hover:underline">Details →</div>
+                    <div className="text-[color:var(--terracotta)] text-xs group-hover:underline">Details →</div>
                   </div>
                 </button>
               </Reveal>
