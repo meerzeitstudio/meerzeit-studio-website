@@ -6,10 +6,8 @@ import logo from "@/assets/logo.png";
 const links = [
   { to: "/sessions", label: "Sessions" },
   { to: "/termine", label: "Termine" },
-  { to: "/private-anlaesse", label: "Private Anlässe" },
-  { to: "/atelier", label: "Atelier & Stories" },
-  { to: "/ablauf", label: "Ablauf" },
-  { to: "/fuer-wen", label: "Für wen" },
+  { to: "/atelier", label: "Atelier" },
+  { to: "/fotografie", label: "Fotografie" },
   { to: "/ueber-uns", label: "Über uns" },
 ] as const;
 

@@ -16,6 +16,7 @@ import { Route as PrivateAnlaesseRouteImport } from './routes/private-anlaesse'
 import { Route as PhilosophieRouteImport } from './routes/philosophie'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as FuerWenRouteImport } from './routes/fuer-wen'
+import { Route as FotografieRouteImport } from './routes/fotografie'
 import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as AtelierRouteImport } from './routes/atelier'
 import { Route as AblaufRouteImport } from './routes/ablauf'
@@ -56,6 +57,11 @@ const FuerWenRoute = FuerWenRouteImport.update({
   path: '/fuer-wen',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FotografieRoute = FotografieRouteImport.update({
+  id: '/fotografie',
+  path: '/fotografie',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BuchenRoute = BuchenRouteImport.update({
   id: '/buchen',
   path: '/buchen',
@@ -82,6 +88,7 @@ export interface FileRoutesByFullPath {
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
   '/buchen': typeof BuchenRoute
+  '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
   '/philosophie': typeof PhilosophieRoute
@@ -95,6 +102,7 @@ export interface FileRoutesByTo {
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
   '/buchen': typeof BuchenRoute
+  '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
   '/philosophie': typeof PhilosophieRoute
@@ -109,6 +117,7 @@ export interface FileRoutesById {
   '/ablauf': typeof AblaufRoute
   '/atelier': typeof AtelierRoute
   '/buchen': typeof BuchenRoute
+  '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
   '/philosophie': typeof PhilosophieRoute
@@ -124,6 +133,7 @@ export interface FileRouteTypes {
     | '/ablauf'
     | '/atelier'
     | '/buchen'
+    | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
     | '/philosophie'
@@ -137,6 +147,7 @@ export interface FileRouteTypes {
     | '/ablauf'
     | '/atelier'
     | '/buchen'
+    | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
     | '/philosophie'
@@ -150,6 +161,7 @@ export interface FileRouteTypes {
     | '/ablauf'
     | '/atelier'
     | '/buchen'
+    | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
     | '/philosophie'
@@ -164,6 +176,7 @@ export interface RootRouteChildren {
   AblaufRoute: typeof AblaufRoute
   AtelierRoute: typeof AtelierRoute
   BuchenRoute: typeof BuchenRoute
+  FotografieRoute: typeof FotografieRoute
   FuerWenRoute: typeof FuerWenRoute
   ImpressumRoute: typeof ImpressumRoute
   PhilosophieRoute: typeof PhilosophieRoute
@@ -224,6 +237,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FuerWenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fotografie': {
+      id: '/fotografie'
+      path: '/fotografie'
+      fullPath: '/fotografie'
+      preLoaderRoute: typeof FotografieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/buchen': {
       id: '/buchen'
       path: '/buchen'
@@ -260,6 +280,7 @@ const rootRouteChildren: RootRouteChildren = {
   AblaufRoute: AblaufRoute,
   AtelierRoute: AtelierRoute,
   BuchenRoute: BuchenRoute,
+  FotografieRoute: FotografieRoute,
   FuerWenRoute: FuerWenRoute,
   ImpressumRoute: ImpressumRoute,
   PhilosophieRoute: PhilosophieRoute,
