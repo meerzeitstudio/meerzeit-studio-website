@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CalendarSection } from "@/components/CalendarSection";
 import { events, titleColor } from "@/lib/events";
-import sMeer from "@/assets/session-meer.jpg";
+import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
