@@ -62,7 +62,7 @@ function Index() {
           <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
           <h1 className="font-serif leading-[0.95] text-balance">
             <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
-            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--terracotta)] mt-2">
+            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
               Studio
             </span>
           </h1>
