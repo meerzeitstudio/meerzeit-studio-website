@@ -149,7 +149,7 @@ function AboutPage() {
               </p>
               <p>
                 Gleichzeitig gestalten wir Kunstwerke und fotografische Erinnerungen, die
-                echt, ruhig und persönlich sind.
+                echt und persönlich sind.
               </p>
               <p>
                 Ob bei einem Creative Event, einem Fotoshooting oder einem individuellen
@@ -236,7 +236,7 @@ function AboutPage() {
                 </p>
                 <p>
                   Von Fotografie bis zu individuellen Kunstwerken schaffen wir Arbeiten mit
-                  Gefühl, Atmosphäre und Persönlichkeit – authentisch, ruhig und zeitlos.
+                  Gefühl, Atmosphäre und Persönlichkeit – authentisch und zeitlos.
                 </p>
                 <p className="font-serif italic text-foreground">
                   Nicht nur etwas Schönes zu erschaffen, sondern etwas Echtes.
