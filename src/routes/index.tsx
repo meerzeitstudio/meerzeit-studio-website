@@ -12,7 +12,6 @@ import privateImg from "@/assets/private-events.jpg";
 import logo from "@/assets/logo.png";
 import atelierWave from "@/assets/atelier-wave.jpg";
 import atelierPortrait from "@/assets/atelier-portrait.jpg";
-import atelierCollage from "@/assets/atelier-collage.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
