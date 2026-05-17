@@ -225,41 +225,6 @@ function Index() {
         </div>
       </section>
 
-      {/* PRIVATE ANLÄSSE */}
-      <section className="py-24 md:py-32 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <Reveal>
-            <img
-              src={privateImg}
-              alt="Privates Event mit Frauen, die gemeinsam malen"
-              loading="lazy"
-              width={1600}
-              height={1024}
-              className="w-full aspect-[4/3] object-cover rounded-sm shadow-[var(--shadow-soft)]"
-            />
-          </Reveal>
-          <Reveal delay={150}>
-            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">auch als privates Erlebnis</p>
-            <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-snug">
-              Firmenevent, Hochzeit oder
-              <br />
-              <span className="italic">Freundinnenabend.</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed font-light mb-6">
-              Manche Anlässe verdienen mehr als einen Tisch im Restaurant. Wir gestalten Meerzeit-Begegnungen
-              auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier. Für Teams, Brautpartys,
-              runde Geburtstage oder einfach einen Abend, den ihr nicht so schnell vergesst.
-            </p>
-            <Link
-              to="/private-anlaesse"
-              className="inline-block px-7 py-3 rounded-full bg-[color:var(--smoke)] text-[color:var(--ivory)] hover:bg-[color:var(--graphite)] transition text-sm tracking-widest uppercase"
-            >
-              Mehr erfahren
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
       {/* ATELIER & FOTOGRAFIE */}
       <section className="py-24 md:py-32 px-6 bg-[color:var(--ivory)]">
         <div className="max-w-7xl mx-auto">
