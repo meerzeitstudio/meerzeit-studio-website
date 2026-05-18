@@ -7,6 +7,7 @@ const links = [
   { to: "/sessions", label: "Events" },
   { to: "/bleibendes", label: "Bleibendes" },
   { to: "/ueber-uns", label: "Über uns" },
+  { to: "/termine", label: "Termine" },
 ] as const;
 
 export function SiteNav() {
