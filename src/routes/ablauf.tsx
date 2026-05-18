@@ -34,13 +34,13 @@ const steps = [
     n: "03",
     title: "Kreativ werden",
     text:
-      "Wir geben dir einen sanften Impuls. Eine Farbidee, ein Motiv, eine Technik – und du beginnst. Wir sind die ganze Zeit für dich da, helfen, wenn du es willst, und halten uns zurück, wenn du im Flow bist. Kein richtig, kein falsch. Nur dein Bild.",
+      "Wir geben dir einen sanften Impuls. Eine Farbidee, ein Motiv, eine Technik, und du beginnst. Wir sind die ganze Zeit für dich da, helfen, wenn du es willst, und halten uns zurück, wenn du im Flow bist. Kein richtig, kein falsch. Nur dein Bild.",
   },
   {
     n: "04",
     title: "Verbinden",
     text:
-      "Am Ende kommen wir nochmal kurz zusammen. Mit einem Glas, einem Gespräch oder einfach Stille. Wer mag, zeigt sein Bild, wer nicht, lässt es einfach. Du nimmst deine Leinwand mit – getrocknet, bereit für deine Wand zu Hause.",
+      "Am Ende kommen wir nochmal kurz zusammen. Mit einem Glas, einem Gespräch oder einfach Stille. Wer mag, zeigt sein Bild, wer nicht, lässt es einfach. Du nimmst deine Leinwand mit. Getrocknet, bereit für deine Wand zu Hause.",
   },
 ];
 
