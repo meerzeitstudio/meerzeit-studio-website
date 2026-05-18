@@ -7,13 +7,13 @@ import { CONTACT, whatsappLink } from "@/lib/contact";
 export const Route = createFileRoute("/private-anlaesse")({
   head: () => ({
     meta: [
-      { title: "Private Anlässe – Firmenevent, Hochzeit & Freundinnenabend" },
+      { title: "Private Anlässe: Firmenevent, Hochzeit & Freundinnenabend" },
       {
         name: "description",
         content:
-          "Meerzeit Studio als Firmenevent, Hochzeitsfeier oder Freundinnenabend buchen – kreative Auszeit auf Anfrage, ganz nach euren Wünschen.",
+          "Meerzeit Studio als Firmenevent, Hochzeitsfeier oder Freundinnenabend buchen. Kreative Auszeit auf Anfrage, ganz nach euren Wünschen.",
       },
-      { property: "og:title", content: "Private Anlässe – Meerzeit Studio" },
+      { property: "og:title", content: "Private Anlässe · Meerzeit Studio" },
       { property: "og:image", content: privateImg },
     ],
   }),
@@ -23,19 +23,19 @@ export const Route = createFileRoute("/private-anlaesse")({
 const occasions = [
   {
     t: "Firmenevent",
-    s: "Ein Teamtag, der nicht nach Pflicht riecht. Wir kommen zu euch oder empfangen euch im Studio – und schaffen Stunden, die euer Team wirklich verbindet. Kein Powerpoint, keine Eisbrecher-Spielchen – nur ein gemeinsamer, ehrlicher Moment.",
+    s: "Ein Teamtag, der nicht nach Pflicht riecht. Wir kommen zu euch oder empfangen euch im Studio. Und schaffen Stunden, die euer Team wirklich verbindet. Kein Powerpoint, keine Eisbrecher-Spielchen. Nur ein gemeinsamer, ehrlicher Moment.",
   },
   {
     t: "Hochzeitsfeier",
-    s: "Ein kreativer Junggesellinnenabschied, ein Brunch mit den Brautjungfern oder ein gemaltes Erinnerungsstück eurer Gäste – wir gestalten den Rahmen, ihr erlebt den Moment. Pinsel statt Penisstrohhalm.",
+    s: "Ein kreativer Junggesellinnenabschied, ein Brunch mit den Brautjungfern oder ein gemaltes Erinnerungsstück eurer Gäste. Wir gestalten den Rahmen, ihr erlebt den Moment. Pinsel statt Penisstrohhalm.",
   },
   {
     t: "Freundinnenabend",
-    s: "Ihr seid 4 bis 12 Frauen und wollt einen Abend, der schöner ist als Wein bei dir auf dem Sofa? Wir richten alles her – Farben, Atmosphäre, Snacks – und ihr genießt einfach.",
+    s: "Ihr seid 4 bis 12 Frauen und wollt einen Abend, der schöner ist als Wein bei dir auf dem Sofa? Wir richten alles her. Farben, Atmosphäre, Snacks. Und ihr genießt einfach.",
   },
   {
     t: "Geburtstag & mehr",
-    s: "Runder Geburtstag, Babymoon, Mama-Tochter-Tag, Reunion mit alten Freundinnen – wenn der Anlass besonders ist, gestalten wir den Rahmen so, dass er sich auch so anfühlt.",
+    s: "Runder Geburtstag, Babymoon, Mama-Tochter-Tag, Reunion mit alten Freundinnen. Wenn der Anlass besonders ist, gestalten wir den Rahmen so, dass er sich auch so anfühlt.",
   },
 ];
 
@@ -44,7 +44,7 @@ function PrivatePage() {
     <main>
       <PageHeader
         eyebrow="auf Anfrage"
-        title="Eure Auszeit –"
+        title="Eure Auszeit."
         italic="ganz für euch."
         intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Begegnungen auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier."
       />
@@ -90,9 +90,9 @@ function PrivatePage() {
           </Reveal>
           <ol className="space-y-6">
             {[
-              ["Anfrage", "Schreib uns – per Formular, E-Mail oder direkt über WhatsApp. Erzähl uns vom Anlass, der Gruppengröße und euren Wünschen."],
+              ["Anfrage", "Schreib uns. Per Formular, E-Mail oder direkt über WhatsApp. Erzähl uns vom Anlass, der Gruppengröße und euren Wünschen."],
               ["Konzept", "Wir antworten innerhalb von 48 Stunden mit einem passenden Vorschlag: Format, Material, Ort, Zeit und Preis."],
-              ["Vorbereitung", "Wir kümmern uns um alles – Farben, Leinwände, Pinsel, Atmosphäre, Musik. Auf Wunsch auch Getränke und kleine Speisen."],
+              ["Vorbereitung", "Wir kümmern uns um alles. Farben, Leinwände, Pinsel, Atmosphäre, Musik. Auf Wunsch auch Getränke und kleine Speisen."],
               ["Eure Event", "Ihr kommt an, lasst los, malt – und nehmt am Ende nicht nur euer Bild mit nach Hause, sondern einen Moment, der bleibt."],
             ].map(([t, s], i) => (
               <Reveal key={t} delay={i * 80}>
@@ -112,7 +112,7 @@ function PrivatePage() {
       <section className="py-24 px-6 text-center">
         <Reveal>
           <p className="font-serif text-2xl md:text-3xl italic max-w-2xl mx-auto leading-snug mb-10 text-balance">
-            „Sagt uns, was euch vorschwebt – wir machen den Rest.“
+            „Sagt uns, was euch vorschwebt. Wir machen den Rest.“
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

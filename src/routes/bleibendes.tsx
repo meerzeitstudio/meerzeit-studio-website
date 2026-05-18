@@ -7,13 +7,13 @@ import photoMaternity from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/bleibendes")({
   head: () => ({
     meta: [
-      { title: "Bleibendes – Kunst & Fotografie aus dem Meerzeit Studio" },
+      { title: "Bleibendes: Kunst & Fotografie aus dem Meerzeit Studio" },
       {
         name: "description",
         content:
           "Bleibendes vom Meerzeit Studio: Kunstwerke und Fotografie, die echte Momente sichtbar machen und im Raum weiterleben dürfen.",
       },
-      { property: "og:title", content: "Bleibendes – Meerzeit Studio" },
+      { property: "og:title", content: "Bleibendes · Meerzeit Studio" },
       {
         property: "og:description",
         content:

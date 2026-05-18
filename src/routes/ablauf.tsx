@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/SiteChrome";
 export const Route = createFileRoute("/ablauf")({
   head: () => ({
     meta: [
-      { title: "Ablauf einer Event – Meerzeit Studio" },
+      { title: "Ablauf einer Event · Meerzeit Studio" },
       {
         name: "description",
         content:

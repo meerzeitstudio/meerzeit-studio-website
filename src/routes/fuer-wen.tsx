@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/SiteChrome";
 export const Route = createFileRoute("/fuer-wen")({
   head: () => ({
     meta: [
-      { title: "Für wen ist Meerzeit – Meerzeit Studio" },
+      { title: "Für wen ist Meerzeit · Meerzeit Studio" },
       {
         name: "description",
         content:
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/fuer-wen")({
       { property: "og:title", content: "Für wen ist Meerzeit?" },
       {
         property: "og:description",
-        content: "Wenn du das Gefühl kennst, einmal kurz aussteigen zu wollen – dann bist du hier richtig.",
+        content: "Wenn du das Gefühl kennst, einmal kurz aussteigen zu wollen. Dann bist du hier richtig.",
       },
     ],
   }),
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/fuer-wen")({
 const groups = [
   {
     t: "Für Mütter,",
-    s: "die eine Pause brauchen – ohne schlechtes Gewissen. Hier darfst du für ein paar Stunden niemandem etwas sein außer dir selbst.",
+    s: "die eine Pause brauchen. Ohne schlechtes Gewissen. Hier darfst du für ein paar Stunden niemandem etwas sein außer dir selbst.",
   },
   {
     t: "Für Frauen,",

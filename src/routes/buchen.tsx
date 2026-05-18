@@ -8,13 +8,13 @@ import hero from "@/assets/hero.jpg";
 export const Route = createFileRoute("/buchen")({
   head: () => ({
     meta: [
-      { title: "Auszeit buchen – Meerzeit Studio" },
+      { title: "Auszeit buchen · Meerzeit Studio" },
       {
         name: "description",
         content:
-          "Buche deine kreative Auszeit – per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden.",
+          "Buche deine kreative Auszeit. Per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden.",
       },
-      { property: "og:title", content: "Buche deine Auszeit – Meerzeit Studio" },
+      { property: "og:title", content: "Buche deine Auszeit · Meerzeit Studio" },
     ],
   }),
   component: BookingPage,
@@ -26,7 +26,7 @@ const occasionOptions = [
   "Hochzeit / JGA",
   "Firmenevent",
   "Geburtstag / privater Anlass",
-  "Mutti malt – mit Baby",
+  "Mutti malt mit Baby",
   "Etwas anderes",
 ];
 

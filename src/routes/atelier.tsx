@@ -40,13 +40,13 @@ const process = [
 export const Route = createFileRoute("/atelier")({
   head: () => ({
     meta: [
-      { title: "Atelier – Kunstwerke und Auftragsarbeiten" },
+      { title: "Atelier: Kunstwerke und Auftragsarbeiten" },
       {
         name: "description",
         content:
           "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
       },
-      { property: "og:title", content: "Atelier – Meerzeit Studio" },
+      { property: "og:title", content: "Atelier · Meerzeit Studio" },
       { property: "og:image", content: wave },
     ],
   }),

@@ -3,7 +3,7 @@ export type SessionTitle =
   | "Meditatives Malen"
   | "Malen bei Nacht"
   | "Beats & Brushes"
-  | "Mutti malt – mit Baby";
+  | "Mutti malt mit Baby";
 
 export type SessionEvent = {
   date: Date;
@@ -14,11 +14,11 @@ export type SessionEvent = {
   spots: number;
 };
 
-// Termine – hier können neue Events einfach ergänzt werden
+// Termine: hier können neue Events einfach ergänzt werden
 export const events: SessionEvent[] = [
-  { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
-  { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
-  { date: new Date(2026, 5, 3), title: "Meditatives Malen", theme: "Natur und Melodie", time: "18:00 – 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
+  { date: new Date(2026, 4, 20), title: "Meditatives Malen", theme: "Farbe und Klang", time: "18:00 bis 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
+  { date: new Date(2026, 4, 27), title: "Meditatives Malen", theme: "Traumreise und Piano", time: "18:00 bis 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
+  { date: new Date(2026, 5, 3), title: "Meditatives Malen", theme: "Natur und Melodie", time: "18:00 bis 20:30", location: "Fliederweg 1, 26556 Utarp", spots: 6 },
 ];
 
 export const titleColor: Record<SessionTitle, string> = {
@@ -26,7 +26,7 @@ export const titleColor: Record<SessionTitle, string> = {
   "Meditatives Malen": "var(--smoky-blue)",
   "Malen bei Nacht": "var(--graphite)",
   "Beats & Brushes": "var(--terracotta)",
-  "Mutti malt – mit Baby": "var(--copper)",
+  "Mutti malt mit Baby": "var(--copper)",
 };
 
 export const sessionOptionsList: SessionTitle[] = [
@@ -34,5 +34,5 @@ export const sessionOptionsList: SessionTitle[] = [
   "Meditatives Malen",
   "Malen bei Nacht",
   "Beats & Brushes",
-  "Mutti malt – mit Baby",
+  "Mutti malt mit Baby",
 ];

@@ -10,7 +10,7 @@ const orgSchema = {
   "@type": "Organization",
   name: "Meerzeit Studio",
   description:
-    "Meerzeit Studio entwickelt kreative Erlebnisse und Auftragsarbeiten, die Menschen berühren – authentisch, ruhig und zeitlos.",
+    "Meerzeit Studio entwickelt kreative Erlebnisse und Auftragsarbeiten, die Menschen berühren. Authentisch, ruhig und zeitlos.",
   slogan: "Nicht nur etwas Schönes. Etwas Echtes.",
   knowsAbout: [
     "Kreative Auszeiten",
@@ -25,13 +25,13 @@ const orgSchema = {
 export const Route = createFileRoute("/ueber-uns")({
   head: () => ({
     meta: [
-      { title: "Über uns – Meerzeit Studio" },
+      { title: "Über uns · Meerzeit Studio" },
       {
         name: "description",
         content:
           "Zwei Gründerinnen, selbst Mütter. Aus kleinen Treffen wurde eine Idee: Frauen einen Raum geben, in dem sie einfach sein dürfen.",
       },
-      { property: "og:title", content: "Über uns – Meerzeit Studio" },
+      { property: "og:title", content: "Über uns · Meerzeit Studio" },
       {
         property: "og:description",
         content: "Zwei Gründerinnen. Selbst Mütter. Eine gemeinsame Vision.",
@@ -119,7 +119,7 @@ function AboutPage() {
                 und wieder bei sich ankommen darf.
               </p>
               <p className="font-serif italic text-foreground text-xl">
-                Denn oft entstehen die schönsten Dinge nicht dann, wenn alles perfekt sein soll –
+                Denn oft entstehen die schönsten Dinge nicht dann, wenn alles perfekt sein soll,
                 sondern wenn man loslässt und einfach beginnt.
               </p>
               <p>
@@ -174,13 +174,13 @@ function AboutPage() {
               <span className="italic">Momente festhalten.</span>
             </h2>
             <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
-              Zwei Wege, ein Gefühl. Bei Meerzeit Studio geht es nicht darum, etwas zu leisten –
+              Zwei Wege, ein Gefühl. Bei Meerzeit Studio geht es nicht darum, etwas zu leisten.
               sondern um echte Momente, die berühren und bleiben dürfen.
             </p>
           </Reveal>
         </div>
 
-        {/* EVENTS – Momente erleben */}
+        {/* EVENTS · Momente erleben */}
         <div className="max-w-5xl mx-auto mb-24 md:mb-32">
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
@@ -202,7 +202,7 @@ function AboutPage() {
                   wieder langsamer werden lassen. Ohne Druck. Ohne Erwartungen. Einfach im Moment.
                 </p>
                 <p className="font-serif italic text-foreground">
-                  Die schönsten Ideen entstehen nicht unter Druck – sie entstehen, wenn man einfach beginnt.
+                  Die schönsten Ideen entstehen nicht unter Druck. Sie entstehen, wenn man einfach beginnt.
                 </p>
                 <p>
                   Unsere Events sind kreative Auszeiten für Frauen. Ein Raum zum Abschalten,
@@ -219,7 +219,7 @@ function AboutPage() {
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
                 src={festhalten}
-                alt="Bleibendes – Kunst und Fotografie aus dem Atelier"
+                alt="Bleibendes: Kunst und Fotografie aus dem Atelier"
                 loading="lazy"
                 className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
               />
@@ -236,7 +236,7 @@ function AboutPage() {
                 </p>
                 <p>
                   Von Fotografie bis zu individuellen Kunstwerken schaffen wir Arbeiten mit
-                  Gefühl, Atmosphäre und Persönlichkeit – authentisch und zeitlos.
+                  Gefühl, Atmosphäre und Persönlichkeit. Authentisch und zeitlos.
                 </p>
                 <p className="font-serif italic text-foreground">
                   Nicht nur etwas Schönes zu erschaffen, sondern etwas Echtes.

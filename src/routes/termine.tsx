@@ -8,13 +8,13 @@ import { useMemo, useState } from "react";
 export const Route = createFileRoute("/termine")({
   head: () => ({
     meta: [
-      { title: "Termine – Meerzeit Studio" },
+      { title: "Termine · Meerzeit Studio" },
       {
         name: "description",
         content:
           "Alle kommenden Creative Events im Überblick. Finde deinen Termin und buche deine kreative Auszeit am Meer.",
       },
-      { property: "og:title", content: "Termine – Meerzeit Studio" },
+      { property: "og:title", content: "Termine · Meerzeit Studio" },
       { property: "og:description", content: "Alle kommenden Creative Events im Überblick." },
     ],
   }),
@@ -34,7 +34,7 @@ function TerminePage() {
         eyebrow="kommende Events"
         title="Unsere"
         italic="Termine."
-        intro="Wähle ein Datum im Kalender oder stöbere durch die Liste – jede Event ist eine kleine Auszeit für dich."
+        intro="Wähle ein Datum im Kalender oder stöbere durch die Liste. Jede Event ist eine kleine Auszeit für dich."
       />
 
       <section className="py-16 md:py-24 px-6 bg-[color:var(--ivory)]">
@@ -98,7 +98,7 @@ function TerminePage() {
             „Kein passender Termin dabei?“
           </p>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            Schreib uns – wir planen regelmäßig neue Events und private Auszeiten für kleine Gruppen.
+            Schreib uns. Wir planen regelmäßig neue Events und private Auszeiten für kleine Gruppen.
           </p>
           <Link
             to="/buchen"
