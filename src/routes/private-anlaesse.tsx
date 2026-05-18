@@ -46,7 +46,7 @@ function PrivatePage() {
         eyebrow="auf Anfrage"
         title="Eure Auszeit."
         italic="ganz für euch."
-        intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Begegnungen auch privat – im Studio, bei euch zu Hause oder am Ort eurer Feier."
+        intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Begegnungen auch privat. Im Studio, bei euch zu Hause oder am Ort eurer Feier."
       />
 
       <section className="px-6">
@@ -93,7 +93,7 @@ function PrivatePage() {
               ["Anfrage", "Schreib uns. Per Formular, E-Mail oder direkt über WhatsApp. Erzähl uns vom Anlass, der Gruppengröße und euren Wünschen."],
               ["Konzept", "Wir antworten innerhalb von 48 Stunden mit einem passenden Vorschlag: Format, Material, Ort, Zeit und Preis."],
               ["Vorbereitung", "Wir kümmern uns um alles. Farben, Leinwände, Pinsel, Atmosphäre, Musik. Auf Wunsch auch Getränke und kleine Speisen."],
-              ["Eure Event", "Ihr kommt an, lasst los, malt – und nehmt am Ende nicht nur euer Bild mit nach Hause, sondern einen Moment, der bleibt."],
+              ["Eure Event", "Ihr kommt an, lasst los, malt. Und nehmt am Ende nicht nur euer Bild mit nach Hause, sondern einen Moment, der bleibt."],
             ].map(([t, s], i) => (
               <Reveal key={t} delay={i * 80}>
                 <li className="grid grid-cols-[auto_1fr] gap-5 md:gap-6 items-start">

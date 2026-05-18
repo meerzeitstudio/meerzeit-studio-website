@@ -37,7 +37,7 @@ function BookingPage() {
         eyebrow="deine Auszeit wartet"
         title="Buche deine"
         italic="Auszeit."
-        intro="Schreib uns – per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden mit Terminen und allen Details."
+        intro="Schreib uns. Per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden mit Terminen und allen Details."
       />
 
       {/* Schnellkontakte */}

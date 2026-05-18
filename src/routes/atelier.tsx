@@ -31,9 +31,9 @@ const references: { img: string; title: string; quote: string }[] = [
 ];
 
 const process = [
-  { n: "01", t: "Kennenlernen", s: "Ein erstes Gespräch – per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
-  { n: "02", t: "Entwurf & Stimmung", s: "Wir entwickeln eine erste Farb- und Formidee – inklusive Format, Material und Preisrahmen." },
-  { n: "03", t: "Im Atelier", s: "Das Werk entsteht in Ruhe. Zwischenbilder bekommst du auf Wunsch – sonst überraschen wir." },
+  { n: "01", t: "Kennenlernen", s: "Ein erstes Gespräch. Per Mail, Telefon oder im Atelier. Was bewegt dich? Welcher Raum darf bespielt werden?" },
+  { n: "02", t: "Entwurf & Stimmung", s: "Wir entwickeln eine erste Farb- und Formidee, inklusive Format, Material und Preisrahmen." },
+  { n: "03", t: "Im Atelier", s: "Das Werk entsteht in Ruhe. Zwischenbilder bekommst du auf Wunsch. Sonst überraschen wir." },
   { n: "04", t: "Ankunft", s: "Sicher verpackt, persönlich übergeben oder versendet. Inklusive kleiner Geschichte zum Werk." },
 ];
 
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/atelier")({
       {
         name: "description",
         content:
-          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio – Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
+          "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio. Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
       },
       { property: "og:title", content: "Atelier · Meerzeit Studio" },
       { property: "og:image", content: wave },
@@ -60,7 +60,7 @@ function AtelierPage() {
         eyebrow="Bleibendes · Atelier"
         title="Kunst mit Ruhe,"
         italic="Gefühl und Persönlichkeit."
-        intro="Freie Arbeiten und Auftragskunst aus dem Studio – derzeit ausschließlich Originale von Iris Christophers. Werke, die ein Zuhause suchen und in deinem Raum weiterleben dürfen."
+        intro="Freie Arbeiten und Auftragskunst aus dem Studio. Derzeit ausschließlich Originale von Iris Christophers. Werke, die ein Zuhause suchen und in deinem Raum weiterleben dürfen."
       />
 
       {/* GALERIE ZUM VERKAUF */}
@@ -73,7 +73,7 @@ function AtelierPage() {
                 Werke, die ein <span className="italic">Zuhause suchen.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                Eine kleine, kuratierte Auswahl verfügbarer Originale aus dem Atelier –
+                Eine kleine, kuratierte Auswahl verfügbarer Originale aus dem Atelier.
                 jedes Werk begleitet von einem Gedanken der Künstlerin.
               </p>
             </div>
@@ -128,7 +128,7 @@ function AtelierPage() {
                 Werke in ihrem <span className="italic">neuen Zuhause.</span>
               </h2>
               <p className="mt-5 text-muted-foreground font-light leading-relaxed">
-                Eine Auswahl bisheriger Werke von Iris Christophers –
+                Eine Auswahl bisheriger Werke von Iris Christophers.
                 entstanden für Wohnräume und Praxen. Jedes Bild ein Unikat,
                 gemacht für genau diesen Ort.
               </p>
@@ -180,7 +180,7 @@ function AtelierPage() {
                 Vier ehrliche <span className="italic">Schritte.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                Eine Auftragsarbeit ist ein Dialog – kein Bestellvorgang. So gehen wir gemeinsam vor.
+                Eine Auftragsarbeit ist ein Dialog. Kein Bestellvorgang. So gehen wir gemeinsam vor.
               </p>
             </div>
           </Reveal>

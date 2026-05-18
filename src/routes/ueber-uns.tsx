@@ -213,7 +213,7 @@ function AboutPage() {
           </Reveal>
         </div>
 
-        {/* BLEIBENDES – Momente festhalten */}
+        {/* BLEIBENDES · Momente festhalten */}
         <div className="max-w-5xl mx-auto">
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
@@ -252,7 +252,7 @@ function AboutPage() {
           <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">was wir versprechen</p>
           <p className="font-serif text-2xl md:text-3xl max-w-2xl mx-auto leading-snug text-balance">
             Einen Raum, der sich anfühlt wie eine
-            <span className="italic"> warme Umarmung</span> – ohne Worte.
+            <span className="italic"> warme Umarmung</span>. Ohne Worte.
           </p>
           <Link
             to="/sessions"

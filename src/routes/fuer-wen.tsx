@@ -64,7 +64,7 @@ function ForWhomPage() {
         <Reveal>
           <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">und ganz besonders</p>
           <h2 className="font-serif text-3xl md:text-4xl max-w-2xl mx-auto leading-snug text-balance">
-            Für dich – wenn du gerade liest und denkst:
+            Für dich. Wenn du gerade liest und denkst:
             <br />
             <span className="italic">„Ja, das brauche ich.“</span>
           </h2>

@@ -27,10 +27,10 @@ function FotografiePage() {
         eyebrow="Bleibendes · Fotografie"
         title="Für Erinnerungen,"
         italic="die sich echt anfühlen."
-        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ehrliche Bilder im Editorial-Stil – ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
+        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ehrliche Bilder im Editorial-Stil. Ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
       />
 
-      {/* GROSSES BILD – FULL BLEED */}
+      {/* GROSSES BILD · FULL BLEED */}
       <section className="px-0 md:px-6">
         <Reveal>
           <figure className="relative w-full max-w-[1600px] mx-auto">

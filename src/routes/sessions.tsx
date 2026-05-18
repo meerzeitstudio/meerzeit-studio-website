@@ -30,35 +30,35 @@ const sessions = [
   {
     title: "Freies Malen am organisierten Ort",
     img: sMeer,
-    intro: "Wir suchen einen besonderen Ort – Wald, Meer, eine stille Location – und richten alles für dich her. Du bringst nur dich mit, wir den Rahmen.",
+    intro: "Wir suchen einen besonderen Ort. Wald, Meer, eine stille Location. Wir richten alles für dich her. Du bringst nur dich mit, wir den Rahmen.",
     outro: "Freies Malen, draußen in der Natur oder an einer kuratierten Location. Keine Vorgaben, kein Thema. Nur du, die Farben und der Moment.",
     mood: "frei · draußen · besonders",
   },
   {
     title: "Meditatives Malen",
     img: sMeditativ,
-    intro: "Stille. Eine Kerze. Dein Atem. Du tauchst ein. Strich für Strich – bis nichts mehr muss und du einfach da bist.",
+    intro: "Stille. Eine Kerze. Dein Atem. Du tauchst ein. Strich für Strich. Bis nichts mehr muss und du einfach da bist.",
     outro: "Eine geführte Reise nach innen, mit Pinsel statt Worten. Ideal, wenn dein Kopf zu voll ist.",
     mood: "still · achtsam · weich",
   },
   {
     title: "Mutti malt mit Baby",
     img: sMutti,
-    intro: "Dein Baby ist dabei – in der Trage, im Tuch oder auf der Krabbeldecke neben dir. Du musst niemanden organisieren, niemanden weggeben.",
+    intro: "Dein Baby ist dabei, in der Trage, im Tuch oder auf der Krabbeldecke neben dir. Du musst niemanden organisieren, niemanden weggeben.",
     outro: "Du darfst Mama sein UND einen Moment für dich haben. Mit Wickelmöglichkeit, Stillplatz und ganz viel Verständnis.",
     mood: "sanft · ehrlich · ohne schlechtes Gewissen",
   },
   {
     title: "Malen bei Nacht",
     img: sNacht,
-    intro: "Wenn die Welt leiser wird. Kerzenschein, warme Töne, ein Glas in der Hand – und ein Bild, das nur in dieser Nacht entstehen kann.",
+    intro: "Wenn die Welt leiser wird. Kerzenschein, warme Töne, ein Glas in der Hand. Und ein Bild, das nur in dieser Nacht entstehen kann.",
     outro: "Für Frauen, die sich ihre Abende zurückholen wollen.",
     mood: "warm · intim · zauberhaft",
   },
   {
     title: "Beats & Brushes",
     img: sBeats,
-    intro: "Musik, die durch dich hindurch geht. Farbe, die folgt. Ein Event, das sich wie Tanzen anfühlt – nur in Slow Motion.",
+    intro: "Musik, die durch dich hindurch geht. Farbe, die folgt. Ein Event, das sich wie Tanzen anfühlt. Nur in Slow Motion.",
     outro: "Mit kuratierter Playlist und viel Bewegungsfreiheit.",
     mood: "lebendig · frei · spielerisch",
   },
@@ -138,7 +138,7 @@ function SessionsPage() {
                 Wähle einen <span className="italic">Moment für dich.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                Wähle ein Datum im Kalender oder stöbere durch die Liste – jedes Event ist eine kleine Auszeit für dich.
+                Wähle ein Datum im Kalender oder stöbere durch die Liste. Jedes Event ist eine kleine Auszeit für dich.
               </p>
             </div>
           </Reveal>
