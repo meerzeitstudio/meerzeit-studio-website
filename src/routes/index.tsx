@@ -98,14 +98,14 @@ function Index() {
       <section className="pt-20 md:pt-24 pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
-            <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">ein Raum für dich</p>
+            <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Meerzeit Studio steht für{" "}
-              <span className="italic">kreative Auszeiten für Frauen.</span>
+              Kreative Auszeiten für Frauen.{" "}
+              <span className="italic">Events, Kunst und Erinnerungen mit Gefühl.</span>
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
-              Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.
-              Keine Vorkenntnisse, keine Erwartungen – nur du, die Farbe und der Augenblick.
+              Bei Meerzeit Studio findest du Zeit für dich selbst – ohne Druck, ohne Erwartungen.
+              Ein Ort zum Abschalten, kreativ sein und gemeinsam Zeit erleben.
             </p>
           </Reveal>
         </div>
