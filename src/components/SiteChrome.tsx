@@ -7,6 +7,7 @@ const links = [
   { to: "/sessions", label: "Events" },
   { to: "/bleibendes", label: "Bleibendes" },
   { to: "/ueber-uns", label: "Über uns" },
+  { to: "/termine", label: "Termine" },
 ] as const;
 
 export function SiteNav() {
@@ -57,7 +58,7 @@ export function SiteNav() {
             to="/buchen"
             className="hidden sm:inline-block text-sm px-5 py-2 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition"
           >
-            Buchen
+            Anfrage
           </Link>
           <button
             aria-label="Menü"
@@ -79,7 +80,7 @@ export function SiteNav() {
               </Link>
             ))}
             <Link to="/buchen" className="py-1 text-[color:var(--terracotta)]">
-              Buchen
+              Anfrage
             </Link>
             <a href={whatsappLink()} target="_blank" rel="noreferrer" className="py-1">
               WhatsApp · {CONTACT.phoneDisplay}
@@ -114,7 +115,7 @@ export function SiteFooter() {
             </Link>
           ))}
           <Link to="/buchen" className="hover:text-[color:var(--ivory)] transition">
-            Buchen
+            Anfrage
           </Link>
         </div>
         <div className="flex flex-col gap-2">

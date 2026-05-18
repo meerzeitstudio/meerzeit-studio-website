@@ -62,28 +62,28 @@ function Index() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
           <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
           <h1 className="font-serif leading-[0.95] text-balance">
-            <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
-            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
-              Studio
+            <span className="block text-5xl md:text-7xl tracking-tight">Kreative Auszeiten</span>
+            <span className="block italic font-light text-4xl md:text-6xl text-[color:var(--ivory)]/95 mt-2">
+              für Frauen.
             </span>
           </h1>
-          <p className="mt-12 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
-            Für die, die dir nahe sind.
+          <p className="mt-10 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
+            Creative Sessions, Kunst und Erinnerungen mit Gefühl.
             <br />
-            <span className="italic">Und für die, die du selbst bist.</span>
+            <span className="italic">Ein Raum zum Abschalten, Kreativsein und Einfach-sein.</span>
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              to="/termine"
+              to="/sessions"
               className="inline-block px-8 py-4 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition shadow-[var(--shadow-glow)] text-sm tracking-widest uppercase"
             >
-              Termine ansehen
+              Events entdecken
             </Link>
             <Link
-              to="/sessions"
+              to="/termine"
               className="inline-block px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
             >
-              Events entdecken
+              Termine ansehen
             </Link>
           </div>
           <div className="mt-16 flex justify-center">
@@ -98,14 +98,14 @@ function Index() {
       <section className="pt-20 md:pt-24 pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
-            <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">ein Raum für dich</p>
+            <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Meerzeit Studio steht für{" "}
-              <span className="italic">kreative Auszeiten für Frauen.</span>
+              Kreative Auszeiten für Frauen.{" "}
+              <span className="italic">Events, Kunst und Erinnerungen mit Gefühl.</span>
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
-              Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.
-              Keine Vorkenntnisse, keine Erwartungen – nur du, die Farbe und der Augenblick.
+              Bei Meerzeit Studio findest du Zeit für dich selbst – ohne Druck, ohne Erwartungen.
+              Ein Ort zum Abschalten, kreativ sein und gemeinsam Zeit erleben.
             </p>
           </Reveal>
         </div>
@@ -135,11 +135,11 @@ function Index() {
             <div className="text-center mb-16">
               <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Events</p>
               <h2 className="font-serif text-4xl md:text-6xl text-balance">
-                Was bei uns <span className="italic">entstehen darf.</span>
+                Zeit für dich. <span className="italic">Gemeinsam.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Jede Event ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt –
-                wir kümmern uns um Material, Atmosphäre und Getränke.
+                Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen.
+                Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.
               </p>
             </div>
           </Reveal>
