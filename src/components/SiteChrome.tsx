@@ -115,7 +115,7 @@ export function SiteFooter() {
             </Link>
           ))}
           <Link to="/buchen" className="hover:text-[color:var(--ivory)] transition">
-            Buchen
+            Anfrage
           </Link>
         </div>
         <div className="flex flex-col gap-2">
