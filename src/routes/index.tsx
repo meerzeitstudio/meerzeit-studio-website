@@ -59,18 +59,21 @@ function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--graphite)]/30 via-[color:var(--graphite)]/40 to-[color:var(--graphite)]/70" />
         </div>
 
-        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
-          <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6 pt-24 md:pt-20 text-center text-[color:var(--ivory)] fade-in-up">
+          <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-40 md:w-52 h-auto opacity-95 mb-8" />
           <h1 className="font-serif leading-[0.95] text-balance">
-            <span className="block text-5xl md:text-7xl tracking-tight">Kreative Auszeiten</span>
-            <span className="block italic font-light text-4xl md:text-6xl text-[color:var(--ivory)]/95 mt-2">
-              für Frauen.
+            <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
+            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
+              Studio
             </span>
           </h1>
           <p className="mt-10 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
             Creative Sessions, Kunst und Erinnerungen mit Gefühl.
             <br />
             <span className="italic">Ein Raum zum Abschalten, Kreativsein und Einfach-sein.</span>
+          </p>
+          <p className="mt-6 text-sm md:text-base tracking-[0.3em] uppercase text-[color:var(--ivory)]/70">
+            Kreative Auszeiten für Frauen
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
