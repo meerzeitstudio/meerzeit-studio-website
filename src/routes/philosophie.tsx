@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/SiteChrome";
 export const Route = createFileRoute("/philosophie")({
   head: () => ({
     meta: [
-      { title: "Unsere Philosophie – Meerzeit Studio" },
+      { title: "Unsere Philosophie · Meerzeit Studio" },
       {
         name: "description",
         content:
@@ -43,7 +43,7 @@ function PhilosophiePage() {
         <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10 text-center">
           {[
             { w: "abschalten", t: "Den Kopf leerräumen. Den Körper wieder spüren. Einmal nichts müssen." },
-            { w: "kreativ sein – ohne Druck", t: "Kein Talent, keine Bewertung. Nur dein Ausdruck, in deinem Tempo." },
+            { w: "kreativ sein. Ohne Druck", t: "Kein Talent, keine Bewertung. Nur dein Ausdruck, in deinem Tempo." },
             { w: "dich verbinden", t: "Mit dir selbst. Mit anderen Frauen. Mit dem, was wirklich zählt." },
           ].map((item, i) => (
             <Reveal key={item.w} delay={i * 150}>

@@ -5,11 +5,11 @@ import { PageHeader } from "@/components/SiteChrome";
 export const Route = createFileRoute("/ablauf")({
   head: () => ({
     meta: [
-      { title: "Ablauf einer Event – Meerzeit Studio" },
+      { title: "Ablauf einer Event · Meerzeit Studio" },
       {
         name: "description",
         content:
-          "So fühlt sich eine Event bei Meerzeit Studio an: Ankommen, Loslassen, Kreativ werden, Verbinden – inklusive aller Infos zu Material, Dauer und Atmosphäre.",
+          "So fühlt sich eine Event bei Meerzeit Studio an: Ankommen, Loslassen, Kreativ werden, Verbinden. Inklusive aller Infos zu Material, Dauer und Atmosphäre.",
       },
       { property: "og:title", content: "Ablauf einer Event" },
     ],
@@ -22,25 +22,25 @@ const steps = [
     n: "01",
     title: "Ankommen",
     text:
-      "Du wirst persönlich begrüßt – mit einer Tasse Tee, Kaffee oder einem Glas Wasser. Wir nehmen uns Zeit, bevor wir beginnen: kurzes Hallo, kennenlernen, ankommen. Du suchst dir deinen Platz – die Atmosphäre ist warm, leise Musik, viel Licht.",
+      "Du wirst persönlich begrüßt. Mit einer Tasse Tee, Kaffee oder einem Glas Wasser. Wir nehmen uns Zeit, bevor wir beginnen: kurzes Hallo, kennenlernen, ankommen. Du suchst dir deinen Platz. Die Atmosphäre ist warm, leise Musik, viel Licht.",
   },
   {
     n: "02",
     title: "Loslassen",
     text:
-      "Eine kurze, sanfte Einladung in den Moment. Manchmal ein paar tiefe Atemzüge, manchmal ein gemeinsames Innehalten. Kein Esoterik-Programm – nur das Signal an deinen Kopf, dass jetzt Pause ist.",
+      "Eine kurze, sanfte Einladung in den Moment. Manchmal ein paar tiefe Atemzüge, manchmal ein gemeinsames Innehalten. Kein Esoterik-Programm. Nur das Signal an deinen Kopf, dass jetzt Pause ist.",
   },
   {
     n: "03",
     title: "Kreativ werden",
     text:
-      "Wir geben dir einen sanften Impuls – eine Farbidee, ein Motiv, eine Technik – und du beginnst. Wir sind die ganze Zeit für dich da, helfen, wenn du es willst, und halten uns zurück, wenn du im Flow bist. Kein richtig, kein falsch – nur dein Bild.",
+      "Wir geben dir einen sanften Impuls. Eine Farbidee, ein Motiv, eine Technik, und du beginnst. Wir sind die ganze Zeit für dich da, helfen, wenn du es willst, und halten uns zurück, wenn du im Flow bist. Kein richtig, kein falsch. Nur dein Bild.",
   },
   {
     n: "04",
     title: "Verbinden",
     text:
-      "Am Ende kommen wir nochmal kurz zusammen – mit einem Glas, einem Gespräch oder einfach Stille. Wer mag, zeigt sein Bild, wer nicht, lässt es einfach. Du nimmst deine Leinwand mit – getrocknet, bereit für deine Wand zu Hause.",
+      "Am Ende kommen wir nochmal kurz zusammen. Mit einem Glas, einem Gespräch oder einfach Stille. Wer mag, zeigt sein Bild, wer nicht, lässt es einfach. Du nimmst deine Leinwand mit. Getrocknet, bereit für deine Wand zu Hause.",
   },
 ];
 
@@ -51,7 +51,7 @@ function AblaufPage() {
         eyebrow="Ablauf einer Event"
         title="So fühlt sich"
         italic="Meerzeit an."
-        intro="Eine Event dauert rund 120 Minuten. Du brauchst nichts vorzubereiten und nichts mitzubringen – wir kümmern uns um Material, Atmosphäre und Getränke."
+        intro="Eine Event dauert rund 120 Minuten. Du brauchst nichts vorzubereiten und nichts mitzubringen. Wir kümmern uns um Material, Atmosphäre und Getränke."
       />
 
       <section className="py-20 md:py-28 px-6 bg-[color:var(--muted)]">
@@ -92,11 +92,11 @@ function AblaufPage() {
             {[
               {
                 t: "Material inklusive",
-                s: "Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben im Acrylbereich – pigmentstark und angenehm zu vermalen. Leinwände, Pinsel, Schürzen und Wasser stellen wir. Unser Sortiment erweitern wir laufend.",
+                s: "Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben im Acrylbereich, pigmentstark und angenehm zu vermalen. Leinwände, Pinsel, Schürzen und Wasser stellen wir. Unser Sortiment erweitern wir laufend.",
               },
               {
                 t: "Besondere Wünsche",
-                s: "Du brauchst eine bestimmte Farbpalette, Goldfolie, eine größere Leinwand oder ein spezielles Format? Schreib es in deine Anfrage – wir bereiten es für dich vor.",
+                s: "Du brauchst eine bestimmte Farbpalette, Goldfolie, eine größere Leinwand oder ein spezielles Format? Schreib es in deine Anfrage. Wir bereiten es für dich vor.",
               },
               {
                 t: "Keine Vorkenntnisse",
@@ -108,11 +108,11 @@ function AblaufPage() {
               },
               {
                 t: "Getränke & Snacks",
-                s: "Tee, Wasser, Kaffee – und je nach Event ein Glas Wein oder etwas Knabberzeug. Bei privaten Anlässen passen wir alles an euren Wunsch an.",
+                s: "Tee, Wasser, Kaffee und je nach Event ein Glas Wein oder etwas Knabberzeug. Bei privaten Anlässen passen wir alles an euren Wunsch an.",
               },
               {
                 t: "Dein Bild",
-                s: "Du gehst mit deiner Leinwand nach Hause. Acrylfarben trocknen schnell – meist kannst du dein Bild direkt mitnehmen.",
+                s: "Du gehst mit deiner Leinwand nach Hause. Acrylfarben trocknen schnell. Meist kannst du dein Bild direkt mitnehmen.",
               },
               {
                 t: "Gruppengröße",
@@ -120,7 +120,7 @@ function AblaufPage() {
               },
               {
                 t: "Anreise & Ort",
-                s: "Die genaue Adresse bekommst du mit der Buchungsbestätigung. Beim „Freien Malen am organisierten Ort“ treffen wir uns direkt vor Ort – im Wald, am Strand oder an der jeweiligen Location.",
+                s: "Die genaue Adresse bekommst du mit der Buchungsbestätigung. Beim „Freien Malen am organisierten Ort“ treffen wir uns direkt vor Ort. Im Wald, am Strand oder an der jeweiligen Location.",
               },
             ].map((b, i) => (
               <Reveal key={b.t} delay={i * 60}>

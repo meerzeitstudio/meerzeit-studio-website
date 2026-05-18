@@ -1,4 +1,4 @@
-// Zentrale Kontaktdaten – hier einmalig anpassen
+// Zentrale Kontaktdaten: hier einmalig anpassen
 export const CONTACT = {
   email: "info@meerzeit.studio",
   // Telefon-/WhatsApp-Nummer (international, ohne Leerzeichen für wa.me)

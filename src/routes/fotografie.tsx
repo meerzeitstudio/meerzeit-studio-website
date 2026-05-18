@@ -7,13 +7,13 @@ import photoMaternity from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/fotografie")({
   head: () => ({
     meta: [
-      { title: "Fotografie – Meerzeit Studio" },
+      { title: "Fotografie · Meerzeit Studio" },
       {
         name: "description",
         content:
-          "Unser Fotografie-Bereich entsteht gerade – bald für Hochzeiten, Babybauch, Motherhood und Paare aus dem Meerzeit Studio.",
+          "Unser Fotografie-Bereich entsteht gerade. Bald für Hochzeiten, Babybauch, Motherhood und Paare aus dem Meerzeit Studio.",
       },
-      { property: "og:title", content: "Fotografie – Meerzeit Studio" },
+      { property: "og:title", content: "Fotografie · Meerzeit Studio" },
       { property: "og:image", content: photoMaternity },
     ],
   }),
@@ -27,16 +27,16 @@ function FotografiePage() {
         eyebrow="Bleibendes · Fotografie"
         title="Für Erinnerungen,"
         italic="die sich echt anfühlen."
-        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ehrliche Bilder im Editorial-Stil – ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
+        intro="Unser Fotografie-Bereich ist noch in Arbeit. Ehrliche Bilder im Editorial-Stil. Ohne Posieren, ohne Schnellschuss. Wir feilen an Bildern und Worten, hinter denen wir wirklich stehen."
       />
 
-      {/* GROSSES BILD – FULL BLEED */}
+      {/* GROSSES BILD · FULL BLEED */}
       <section className="px-0 md:px-6">
         <Reveal>
           <figure className="relative w-full max-w-[1600px] mx-auto">
             <img
               src={photoMaternity}
-              alt="Fotografie von Martina Jürgens – Frau im stillen Wasser"
+              alt="Fotografie von Martina Jürgens, Frau im stillen Wasser"
               loading="lazy"
               className="w-full h-[70vh] md:h-[88vh] object-cover md:rounded-sm shadow-[var(--shadow-soft)]"
             />
@@ -60,14 +60,14 @@ function FotografiePage() {
               Was bald hier <span className="italic">wohnen darf.</span>
             </h2>
             <ul className="mt-8 space-y-3 text-muted-foreground font-light">
-              <li>Hochzeiten – für den Tag, an dem alles ehrlich ist.</li>
-              <li>Babybauch – weiches Licht, kein Posieren.</li>
-              <li>Motherhood – die kleinen Momente zwischen euch.</li>
-              <li>Paarshootings – Nähe, wie sie wirklich aussieht.</li>
-              <li>Brand Shootings – für Unternehmerinnen mit Handschrift.</li>
+              <li>Hochzeiten: für den Tag, an dem alles ehrlich ist.</li>
+              <li>Babybauch: weiches Licht, kein Posieren.</li>
+              <li>Motherhood: die kleinen Momente zwischen euch.</li>
+              <li>Paarshootings: Nähe, wie sie wirklich aussieht.</li>
+              <li>Brand Shootings: für Unternehmerinnen mit Handschrift.</li>
             </ul>
             <p className="font-script text-[color:var(--terracotta)] text-xl mt-10 leading-snug">
-              „Gute Dinge brauchen Zeit – und wir nehmen sie uns."
+              „Gute Dinge brauchen Zeit. Und wir nehmen sie uns."
             </p>
           </Reveal>
 
@@ -79,7 +79,7 @@ function FotografiePage() {
               Trotzdem anfragen
             </Link>
             <a
-              href={whatsappLink("Hallo Meerzeit Studio, ich interessiere mich für ein Shooting – ich weiß, ihr seid noch in Arbeit.")}
+              href={whatsappLink("Hallo Meerzeit Studio, ich interessiere mich für ein Shooting. Ich weiß, ihr seid noch in Arbeit.")}
               target="_blank"
               rel="noreferrer"
               className="px-8 py-4 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"

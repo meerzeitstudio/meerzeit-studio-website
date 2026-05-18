@@ -47,7 +47,7 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
         </h3>
         <p className="text-muted-foreground text-sm mb-6">
           {dayEvents.length === 0
-            ? "Keine Event an diesem Tag – wähle einen markierten Tag im Kalender."
+            ? "Keine Event an diesem Tag. Wähle einen markierten Tag im Kalender."
             : `${dayEvents.length} Event${dayEvents.length > 1 ? "s" : ""} an diesem Tag.`}
         </p>
         <div className="space-y-3">

@@ -16,13 +16,13 @@ import atelierPortrait from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meerzeit Studio – Creative Events für Frauen" },
+      { title: "Meerzeit Studio · Creative Events für Frauen" },
       {
         name: "description",
         content:
-          "Kreative Auszeit-Events für Frauen, Mütter und Freundinnen. Acrylmalerei in entspannter Atmosphäre – kein Müssen, kein Perfekt.",
+          "Kreative Auszeit-Events für Frauen, Mütter und Freundinnen. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
       },
-      { property: "og:title", content: "Meerzeit Studio – Creative Events" },
+      { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       {
         property: "og:description",
         content: "Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.",
@@ -35,12 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const sessions = [
-  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location – wir richten den Rahmen, du malst frei.", to: "/sessions" },
+  { title: "Freies Malen am organisierten Ort", img: sMeer, text: "Wald, Meer oder kuratierte Location. Wir richten den Rahmen, du malst frei.", to: "/sessions" },
   { title: "Meditatives Malen", img: sMeditativ, text: "Stille. Eine Kerze. Dein Atem. Strich für Strich darfst du einfach sein.", to: "/sessions" },
-  { title: "Mutti malt – mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir – in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
-  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne – ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
+  { title: "Mutti malt mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir, in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
+  { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne. Ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
   { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion.", to: "/sessions" },
-  { title: "So individuell wie ihr", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende – eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
+  { title: "So individuell wie ihr", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende. Eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
 ];
 
 function Index() {
@@ -107,14 +107,14 @@ function Index() {
               <span className="italic">Events, Kunst und Erinnerungen mit Gefühl.</span>
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
-              Bei Meerzeit Studio findest du Zeit für dich selbst – ohne Druck, ohne Erwartungen.
+              Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
               Ein Ort zum Abschalten, kreativ sein und gemeinsam Zeit erleben.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* CALENDAR – oben sichtbar */}
+      {/* CALENDAR, oben sichtbar */}
       <section className="pt-8 md:pt-10 pb-20 md:pb-28 px-6 bg-[color:var(--ivory)]">
         <div className="max-w-6xl mx-auto">
           <Reveal>
@@ -190,13 +190,13 @@ function Index() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">so läuft es ab</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-6 leading-snug">
-              Du kommst an –<br />
+              Du kommst an.<br />
               <span className="italic">wir kümmern uns um den Rest.</span>
             </h2>
             <ul className="space-y-4 text-muted-foreground font-light leading-relaxed">
               <li>
                 <strong className="text-foreground font-serif text-lg block mb-1">Material inklusive</strong>
-                Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben aus dem Acrylbereich –
+                Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben aus dem Acrylbereich.
                 und erweitern unser Sortiment laufend. Besondere Wünsche? Sag Bescheid in der Anfrage.
               </li>
               <li>
@@ -205,7 +205,7 @@ function Index() {
               </li>
               <li>
                 <strong className="text-foreground font-serif text-lg block mb-1">Rund 120 Minuten</strong>
-                Ankommen, loslassen, malen, verbinden. Du gehst mit deinem Bild – und einem vollen Herzen.
+                Ankommen, loslassen, malen, verbinden. Du gehst mit deinem Bild. Und einem vollen Herzen.
               </li>
             </ul>
             <Link
@@ -238,7 +238,7 @@ function Index() {
                 Aus dem <span className="italic">Studio.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed">
-                Neben den Events entstehen Werke und Bilder – in zwei eigenen Welten.
+                Neben den Events entstehen Werke und Bilder. In zwei eigenen Welten.
               </p>
             </div>
           </Reveal>
@@ -247,14 +247,14 @@ function Index() {
             <Reveal>
               <Link to="/atelier" className="group block relative overflow-hidden rounded-sm bg-card shadow-[var(--shadow-soft)]">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={atelierWave} alt="Atelier – Kunstwerke" loading="lazy" className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105" />
+                  <img src={atelierWave} alt="Atelier: Kunstwerke" loading="lazy" className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--graphite)]/85 via-[color:var(--graphite)]/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-7 text-[color:var(--ivory)]">
                   <p className="font-script text-[color:var(--terracotta)] text-base mb-1">Atelier</p>
                   <h3 className="font-serif text-2xl md:text-3xl mb-2">Kunstwerke</h3>
                   <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
-                    Originale und Auftragsarbeiten – Kunst mit Ausdruck, Farbe und Charakter.
+                    Originale und Auftragsarbeiten. Kunst mit Ausdruck, Farbe und Charakter.
                   </p>
                 </div>
               </Link>
@@ -269,7 +269,7 @@ function Index() {
                   <p className="font-script text-[color:var(--terracotta)] text-base mb-1">Fotografie</p>
                   <h3 className="font-serif text-2xl md:text-3xl mb-2">Erinnerungen</h3>
                   <p className="text-[color:var(--ivory)]/85 text-sm leading-relaxed font-light">
-                    Hochzeit, Babybauch, Mutterglück, Paare und Brand – ehrlich und persönlich.
+                    Hochzeit, Babybauch, Mutterglück, Paare und Brand. Ehrlich und persönlich.
                   </p>
                 </div>
               </Link>
@@ -294,7 +294,7 @@ function Index() {
               <span className="italic">Auszeit.</span>
             </h2>
             <p className="mt-6 text-[color:var(--ivory)]/80 max-w-md mx-auto font-light">
-              Per Formular, E-Mail oder direkt über WhatsApp – wie es für dich am leichtesten ist.
+              Per Formular, E-Mail oder direkt über WhatsApp, wie es für dich am leichtesten ist.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link

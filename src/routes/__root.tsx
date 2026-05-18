@@ -38,10 +38,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Meerzeit Studio – Creative Events für Frauen" },
+      { title: "Meerzeit Studio · Creative Events für Frauen" },
       { name: "description", content: "Kreative Auszeit-Events für Frauen und Mütter. Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst." },
       { name: "author", content: "Meerzeit Studio" },
-      { property: "og:title", content: "Meerzeit Studio – Creative Events" },
+      { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       { property: "og:description", content: "Kreative Auszeit-Events für Frauen und Mütter." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

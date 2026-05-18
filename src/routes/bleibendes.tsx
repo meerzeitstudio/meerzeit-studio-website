@@ -7,13 +7,13 @@ import photoMaternity from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/bleibendes")({
   head: () => ({
     meta: [
-      { title: "Bleibendes – Kunst & Fotografie aus dem Meerzeit Studio" },
+      { title: "Bleibendes: Kunst & Fotografie aus dem Meerzeit Studio" },
       {
         name: "description",
         content:
           "Bleibendes vom Meerzeit Studio: Kunstwerke und Fotografie, die echte Momente sichtbar machen und im Raum weiterleben dürfen.",
       },
-      { property: "og:title", content: "Bleibendes – Meerzeit Studio" },
+      { property: "og:title", content: "Bleibendes · Meerzeit Studio" },
       {
         property: "og:description",
         content:
@@ -71,7 +71,7 @@ function BleibendesPage() {
                 Kunst mit Ruhe, <span className="italic">Gefühl und Persönlichkeit.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
-                Originale aus dem Atelier – organisch, farbstark, ehrlich. Werke, die ein Zuhause
+                Originale aus dem Atelier. Organisch, farbstark, ehrlich. Werke, die ein Zuhause
                 suchen, und individuelle Auftragsarbeiten, die in deinem Raum entstehen dürfen.
               </p>
               <Link
@@ -103,7 +103,7 @@ function BleibendesPage() {
                 Für Erinnerungen, <span className="italic">die sich echt anfühlen.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
-                Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen –
+                Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen.
                 ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
               </p>
               <Link
