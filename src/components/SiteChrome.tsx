@@ -80,7 +80,7 @@ export function SiteNav() {
               </Link>
             ))}
             <Link to="/buchen" className="py-1 text-[color:var(--terracotta)]">
-              Buchen
+              Anfrage
             </Link>
             <a href={whatsappLink()} target="_blank" rel="noreferrer" className="py-1">
               WhatsApp · {CONTACT.phoneDisplay}
