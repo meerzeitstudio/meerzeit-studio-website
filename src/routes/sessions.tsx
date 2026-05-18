@@ -77,9 +77,9 @@ function SessionsPage() {
     <main>
       <PageHeader
         eyebrow="unsere Events"
-        title="Was bei uns"
-        italic="entstehen darf."
-        intro="Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, Ausprobieren und einfach im Moment sein."
+        title="Kreative Auszeiten"
+        italic="für Frauen."
+        intro="Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst."
       />
 
       <section className="py-20 md:py-28 px-6">
