@@ -58,7 +58,7 @@ export function SiteNav() {
             to="/buchen"
             className="hidden sm:inline-block text-sm px-5 py-2 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition"
           >
-            Buchen
+            Anfrage
           </Link>
           <button
             aria-label="Menü"
