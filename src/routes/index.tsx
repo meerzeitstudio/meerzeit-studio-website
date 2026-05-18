@@ -62,28 +62,28 @@ function Index() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-[color:var(--ivory)] fade-in-up">
           <img src={logo} alt="Meerzeit Studio Logo" className="mx-auto w-56 md:w-72 h-auto opacity-95 mb-10" />
           <h1 className="font-serif leading-[0.95] text-balance">
-            <span className="block text-6xl md:text-8xl tracking-tight">Meerzeit</span>
-            <span className="block italic font-light text-5xl md:text-7xl text-[color:var(--ivory)]/95 mt-2">
-              Studio
+            <span className="block text-5xl md:text-7xl tracking-tight">Kreative Auszeiten</span>
+            <span className="block italic font-light text-4xl md:text-6xl text-[color:var(--ivory)]/95 mt-2">
+              für Frauen.
             </span>
           </h1>
-          <p className="mt-12 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
-            Für die, die dir nahe sind.
+          <p className="mt-10 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
+            Creative Sessions, Kunst und Erinnerungen mit Gefühl.
             <br />
-            <span className="italic">Und für die, die du selbst bist.</span>
+            <span className="italic">Ein Raum zum Abschalten, Kreativsein und Einfach-sein.</span>
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              to="/termine"
+              to="/sessions"
               className="inline-block px-8 py-4 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition shadow-[var(--shadow-glow)] text-sm tracking-widest uppercase"
             >
-              Termine ansehen
+              Events entdecken
             </Link>
             <Link
-              to="/sessions"
+              to="/termine"
               className="inline-block px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
             >
-              Events entdecken
+              Termine ansehen
             </Link>
           </div>
           <div className="mt-16 flex justify-center">
