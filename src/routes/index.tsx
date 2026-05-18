@@ -135,11 +135,11 @@ function Index() {
             <div className="text-center mb-16">
               <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">unsere Events</p>
               <h2 className="font-serif text-4xl md:text-6xl text-balance">
-                Was bei uns <span className="italic">entstehen darf.</span>
+                Zeit für dich. <span className="italic">Gemeinsam.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Jede Event ist ein eigener Raum. Such dir aus, was sich heute richtig anfühlt –
-                wir kümmern uns um Material, Atmosphäre und Getränke.
+                Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen.
+                Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.
               </p>
             </div>
           </Reveal>
