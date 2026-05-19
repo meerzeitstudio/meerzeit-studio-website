@@ -152,7 +152,7 @@ function AboutPage() {
                 echt und persönlich sind.
               </p>
               <p>
-                Ob bei einem Creative Event, einem Fotoshooting oder einem individuellen
+                Ob bei kreativen Events, einem Fotoshooting oder einem individuellen
                 Kunstwerk: Es geht uns nicht darum, etwas Perfektes zu erschaffen.
               </p>
               <p className="font-serif italic text-foreground text-xl">
