@@ -65,95 +65,17 @@ function BookingPage() {
       </section>
 
       <section className="py-16 md:py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <Reveal>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Danke! Wir melden uns bald bei dir. ✨");
-              }}
-              className="bg-card p-8 md:p-12 rounded-sm shadow-[var(--shadow-soft)] space-y-6 border border-border"
-            >
-              <div>
-                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">Dein Name</label>
-                <input
-                  required
-                  type="text"
-                  className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                  placeholder="Wie dürfen wir dich nennen?"
-                />
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">E-Mail</label>
-                  <input
-                    required
-                    type="email"
-                    className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                    placeholder="dein@name.de"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">
-                    Telefon / WhatsApp
-                  </label>
-                  <input
-                    type="tel"
-                    className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                    placeholder="optional"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">Anlass</label>
-                <select
-                  className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                  defaultValue=""
-                >
-                  <option value="" disabled>
-                    Bitte wählen
-                  </option>
-                  {occasionOptions.map((s) => (
-                    <option key={s}>{s}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">
-                  Welche Event interessiert dich?
-                </label>
-                <select
-                  className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition"
-                  defaultValue=""
-                >
-                  <option value="">Noch nicht sicher</option>
-                  {sessionOptionsList.map((s) => (
-                    <option key={s}>{s}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm tracking-wide uppercase text-muted-foreground mb-2">
-                  Deine Nachricht
-                </label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-3 bg-background border border-input rounded-sm focus:outline-none focus:border-[color:var(--terracotta)] transition resize-none"
-                  placeholder="Erzähl uns ein wenig: Wann hast du Zeit? Wie viele seid ihr? Besondere Wünsche zum Material (z. B. bestimmte Farben, Goldfolie, Format)?"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-4 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-sm tracking-widest uppercase shadow-[var(--shadow-glow)]"
-              >
-                Anfrage senden
-              </button>
-            </form>
+            <div className="bg-card rounded-sm shadow-[var(--shadow-soft)] border border-border overflow-hidden">
+              <iframe
+                title="Anfrageformular Meerzeit Studio"
+                src="https://form.typeform.com/to/knIiW622"
+                className="w-full"
+                style={{ height: "720px", border: 0 }}
+                allow="camera; microphone; autoplay; encrypted-media;"
+              />
+            </div>
           </Reveal>
         </div>
       </section>
