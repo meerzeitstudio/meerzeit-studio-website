@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
-import { sessionOptionsList } from "@/lib/events";
+
 import hero from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/buchen")({
