@@ -62,9 +62,9 @@ function FotografiePage() {
             <ul className="mt-8 space-y-3 text-muted-foreground font-light">
               <li>Hochzeiten: für den Tag, an dem alles ehrlich ist.</li>
               <li>Babybauch: weiches Licht, kein Posieren.</li>
-              <li>Motherhood: die kleinen Momente zwischen euch.</li>
+              <li>Mutterschaft: die kleinen Momente zwischen euch.</li>
               <li>Paarshootings: Nähe, wie sie wirklich aussieht.</li>
-              <li>Brand Shootings: für Unternehmerinnen mit Handschrift.</li>
+              <li>Werbefotografie: für Unternehmerinnen mit Handschrift.</li>
             </ul>
             <p className="font-script text-[color:var(--terracotta)] text-xl mt-10 leading-snug">
               „Gute Dinge brauchen Zeit. Und wir nehmen sie uns."
