@@ -20,15 +20,8 @@ export const Route = createFileRoute("/buchen")({
   component: BookingPage,
 });
 
-const occasionOptions = [
-  "Einzelplatz in offener Event",
-  "Freundinnenabend",
-  "Hochzeit / JGA",
-  "Firmenevent",
-  "Geburtstag / privater Anlass",
-  "Mutti malt mit Baby",
-  "Etwas anderes",
-];
+
+
 
 function BookingPage() {
   return (
