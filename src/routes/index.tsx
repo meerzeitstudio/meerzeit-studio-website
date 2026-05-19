@@ -98,7 +98,10 @@ function Index() {
       <section className="pt-20 md:pt-24 pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
-            <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">willkommen</p>
+            <p className="font-script text-[color:var(--terracotta)] text-xl mb-3">willkommen</p>
+            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
+              Kreative Auszeiten für Frauen
+            </p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
               Events, Kunst und Erinnerungen mit Gefühl.
             </h2>
