@@ -99,11 +99,8 @@ function Index() {
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-3">willkommen</p>
-            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-              Kreative Auszeiten für Frauen
-            </p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Events, Kunst und Erinnerungen mit Gefühl.
+              Kreative Auszeiten für Frauen.
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
               Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
