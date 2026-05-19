@@ -68,12 +68,9 @@ function Index() {
             </span>
           </h1>
           <p className="mt-10 text-lg md:text-xl text-[color:var(--ivory)]/85 font-light leading-relaxed text-balance max-w-xl mx-auto">
-            Creative Sessions, Kunst und Erinnerungen mit Gefühl.
+            Events, Kunst und Erinnerungen mit Gefühl.
             <br />
             <span className="italic">Ein Raum zum Abschalten, Kreativsein und Einfach-sein.</span>
-          </p>
-          <p className="mt-6 text-sm md:text-base tracking-[0.3em] uppercase text-[color:var(--ivory)]/70">
-            Kreative Auszeiten für Frauen
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -103,8 +100,7 @@ function Index() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-6">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Kreative Auszeiten für Frauen.{" "}
-              <span className="italic">Events, Kunst und Erinnerungen mit Gefühl.</span>
+              Events, Kunst und Erinnerungen mit Gefühl.
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
               Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
