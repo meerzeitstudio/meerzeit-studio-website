@@ -44,7 +44,7 @@ function PhilosophiePage() {
           {[
             { w: "abschalten", t: "Den Kopf leerräumen. Den Körper wieder spüren. Einmal nichts müssen." },
             { w: "kreativ sein. Ohne Druck", t: "Kein Talent, keine Bewertung. Nur dein Ausdruck, in deinem Tempo." },
-            { w: "dich verbinden", t: "Mit dir selbst. Mit anderen Frauen. Mit dem, was wirklich zählt." },
+            { w: "dich verbinden", t: "Mit dir selbst. Mit anderen Menschen. Mit dem, was wirklich zählt." },
           ].map((item, i) => (
             <Reveal key={item.w} delay={i * 150}>
               <div className="py-6">
