@@ -144,7 +144,7 @@ function AboutPage() {
                 Arbeiten mit Gefühl.
               </p>
               <p>
-                Wir veranstalten kreative Events für euch, in denen nicht Leistung oder
+                Wir veranstalten kreative Events für dich, in denen nicht Leistung oder
                 Talent im Mittelpunkt stehen, sondern Zeit für sich selbst.
               </p>
               <p>
@@ -205,7 +205,7 @@ function AboutPage() {
                   Die schönsten Ideen entstehen nicht unter Druck. Sie entstehen, wenn man einfach beginnt.
                 </p>
                 <p>
-                  Unsere Events sind kreative Auszeiten für euch. Ein Raum zum Abschalten,
+                  Unsere Events sind kreative Auszeiten für dich. Ein Raum zum Abschalten,
                   Ausprobieren und einfach im Moment sein.
                 </p>
               </div>

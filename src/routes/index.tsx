@@ -16,11 +16,11 @@ import atelierPortrait from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meerzeit Studio · Creative Events für euch" },
+      { title: "Meerzeit Studio · Creative Events für dich" },
       {
         name: "description",
         content:
-          "Kreative Auszeit-Events für euch. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
+          "Kreative Auszeit-Events für dich. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
       },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       {
@@ -100,7 +100,7 @@ function Index() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-3">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Kreative Auszeiten für euch.
+              Kreative Auszeiten für dich.
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
               Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
@@ -137,7 +137,7 @@ function Index() {
                 Zeit für dich. <span className="italic">Gemeinsam.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Unsere Events sind kreative Auszeiten für euch. Ohne Druck. Ohne Erwartungen.
+                Unsere Events sind kreative Auszeiten für dich. Ohne Druck. Ohne Erwartungen.
                 Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.
               </p>
             </div>
