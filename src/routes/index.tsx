@@ -16,11 +16,11 @@ import atelierPortrait from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meerzeit Studio · Creative Events für Frauen" },
+      { title: "Meerzeit Studio · Creative Events für euch" },
       {
         name: "description",
         content:
-          "Kreative Auszeit-Events für Frauen, Mütter und Freundinnen. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
+          "Kreative Auszeit-Events für euch. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
       },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       {
@@ -40,7 +40,7 @@ const sessions = [
   { title: "Mutti malt mit Baby", img: sMutti, text: "Du malst, dein Baby ist bei dir, in der Trage, im Tuch, auf der Decke. Ohne schlechtes Gewissen.", to: "/sessions" },
   { title: "Malen bei Nacht", img: sNacht, text: "Kerzenschein, warme Töne. Ein Bild, das nur in dieser Nacht entsteht.", to: "/sessions" },
   { title: "Beats & Brushes", img: sBeats, text: "Musik durch dich hindurch. Farbe folgt. Wie Tanzen in Slow Motion.", to: "/sessions" },
-  { title: "So individuell wie ihr", img: privateImg, text: "Firmenevents, Hochzeiten, Freundinnenabende. Eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
+  { title: "So individuell wie ihr", img: privateImg, text: "Firmenevents, Hochzeiten, Abende im Freundeskreis. Eure ganz persönliche Meerzeit-Begegnung.", to: "/private-anlaesse" },
 ];
 
 function Index() {
@@ -51,7 +51,7 @@ function Index() {
         <div className="absolute inset-0">
           <img
             src={hero}
-            alt="Frauen malen gemeinsam am Meer im warmen Abendlicht"
+            alt="Menschen malen gemeinsam am Meer im warmen Abendlicht"
             width={1920}
             height={1280}
             className="w-full h-full object-cover"
@@ -100,7 +100,7 @@ function Index() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-3">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Kreative Auszeiten für Frauen.
+              Kreative Auszeiten für euch.
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
               Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
@@ -137,7 +137,7 @@ function Index() {
                 Zeit für dich. <span className="italic">Gemeinsam.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen.
+                Unsere Events sind kreative Auszeiten für euch. Ohne Druck. Ohne Erwartungen.
                 Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.
               </p>
             </div>

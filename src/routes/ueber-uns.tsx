@@ -29,7 +29,7 @@ export const Route = createFileRoute("/ueber-uns")({
       {
         name: "description",
         content:
-          "Zwei Gründerinnen, selbst Mütter. Aus kleinen Treffen wurde eine Idee: Frauen einen Raum geben, in dem sie einfach sein dürfen.",
+          "Zwei Gründerinnen, selbst Mütter. Aus kleinen Treffen wurde eine Idee: einen Raum schaffen, in dem ihr einfach sein dürft.",
       },
       { property: "og:title", content: "Über uns · Meerzeit Studio" },
       {
@@ -104,13 +104,13 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={100}>
             <h2 className="font-serif text-3xl md:text-4xl mb-8 leading-tight text-balance">
-              Ein Raum, in dem Frauen
+              Ein Raum, in dem ihr
               <br />
-              <span className="italic">einfach sein dürfen.</span>
+              <span className="italic">einfach sein dürft.</span>
             </h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed text-lg font-light">
               <p>
-                Wir glauben, dass jede Frau Momente braucht, in denen sie einfach mal nur
+                Wir glauben, dass jede:r Momente braucht, in denen man einfach mal nur
                 sein darf. Ohne Erwartungen. Ohne Druck. Ohne perfekt funktionieren zu müssen.
               </p>
               <p>
@@ -144,7 +144,7 @@ function AboutPage() {
                 Arbeiten mit Gefühl.
               </p>
               <p>
-                Wir veranstalten kreative Events für Frauen, in denen nicht Leistung oder
+                Wir veranstalten kreative Events für euch, in denen nicht Leistung oder
                 Talent im Mittelpunkt stehen, sondern Zeit für sich selbst.
               </p>
               <p>
@@ -205,7 +205,7 @@ function AboutPage() {
                   Die schönsten Ideen entstehen nicht unter Druck. Sie entstehen, wenn man einfach beginnt.
                 </p>
                 <p>
-                  Unsere Events sind kreative Auszeiten für Frauen. Ein Raum zum Abschalten,
+                  Unsere Events sind kreative Auszeiten für euch. Ein Raum zum Abschalten,
                   Ausprobieren und einfach im Moment sein.
                 </p>
               </div>
