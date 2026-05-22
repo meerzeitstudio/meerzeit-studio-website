@@ -71,9 +71,11 @@ function Impressum() {
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">Umsatzsteuer</h2>
             <p>
-              Eine Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz wird ggf. nachgereicht.
+              Als Gesellschaft bürgerlichen Rechts (GbR) führen wir derzeit keine
+              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz.
             </p>
           </div>
+
 
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">Streitschlichtung</h2>
