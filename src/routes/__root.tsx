@@ -42,7 +42,7 @@ export const Route = createRootRoute({
       { name: "description", content: "Kreative Auszeit-Events für dich. Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst." },
       { name: "author", content: "Meerzeit Studio" },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
-      { property: "og:description", content: "Kreative Auszeit-Events für euch." },
+      { property: "og:description", content: "Kreative Auszeit-Events für dich." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
