@@ -38,8 +38,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Meerzeit Studio · Creative Events für euch" },
-      { name: "description", content: "Kreative Auszeit-Events für euch. Ein Raum, in dem ihr loslassen, eintauchen und einfach im Moment sein könnt." },
+      { title: "Meerzeit Studio · Creative Events für dich" },
+      { name: "description", content: "Kreative Auszeit-Events für dich. Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst." },
       { name: "author", content: "Meerzeit Studio" },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       { property: "og:description", content: "Kreative Auszeit-Events für euch." },
