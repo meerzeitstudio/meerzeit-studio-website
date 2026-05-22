@@ -9,7 +9,7 @@ export const Route = createFileRoute("/fuer-wen")({
       {
         name: "description",
         content:
-          "Für Mütter, die eine Pause brauchen. Für Frauen, die wieder bei sich ankommen wollen. Für Freundinnen, die gemeinsam Zeit erleben möchten.",
+          "Für alle, die eine Pause brauchen, wieder bei sich ankommen oder gemeinsam mit ihren Liebsten Zeit erleben möchten.",
       },
       { property: "og:title", content: "Für wen ist Meerzeit?" },
       {
@@ -23,15 +23,15 @@ export const Route = createFileRoute("/fuer-wen")({
 
 const groups = [
   {
-    t: "Für Mütter,",
-    s: "die eine Pause brauchen. Ohne schlechtes Gewissen. Hier darfst du für ein paar Stunden niemandem etwas sein außer dir selbst.",
+    t: "Für Eltern,",
+    s: "die eine Pause brauchen. Ohne schlechtes Gewissen. Hier dürft ihr für ein paar Stunden niemandem etwas sein außer euch selbst.",
   },
   {
-    t: "Für Frauen,",
-    s: "die wieder bei sich selbst ankommen wollen. Zwischen To-Dos und Rollen findest du hier deinen eigenen Atem.",
+    t: "Für euch,",
+    s: "wenn ihr wieder bei euch selbst ankommen wollt. Zwischen To-Dos und Rollen findet ihr hier euren eigenen Atem.",
   },
   {
-    t: "Für Freundinnen,",
+    t: "Für Freundeskreise,",
     s: "die gemeinsam einen echten Moment erleben möchten. Statt Brunch-Smalltalk: ein Erlebnis, das bleibt.",
   },
 ];

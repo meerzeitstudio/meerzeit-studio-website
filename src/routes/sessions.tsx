@@ -52,7 +52,7 @@ const sessions = [
     title: "Malen bei Nacht",
     img: sNacht,
     intro: "Wenn die Welt leiser wird. Kerzenschein, warme Töne, ein Glas in der Hand. Und ein Bild, das nur in dieser Nacht entstehen kann.",
-    outro: "Für Frauen, die sich ihre Abende zurückholen wollen.",
+    outro: "Für alle, die sich ihre Abende zurückholen wollen.",
     mood: "warm · intim · zauberhaft",
   },
   {
@@ -78,8 +78,8 @@ function SessionsPage() {
       <PageHeader
         eyebrow="unsere Events"
         title="Kreative Auszeiten"
-        italic="für Frauen."
-        intro="Unsere Events sind kreative Auszeiten für Frauen. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst."
+        italic="für euch."
+        intro="Unsere Events sind kreative Auszeiten für euch. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst."
       />
 
       <section className="py-20 md:py-28 px-6">

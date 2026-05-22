@@ -7,11 +7,11 @@ import { CONTACT, whatsappLink } from "@/lib/contact";
 export const Route = createFileRoute("/private-anlaesse")({
   head: () => ({
     meta: [
-      { title: "Private Anlässe: Firmenevent, Hochzeit & Freundinnenabend" },
+      { title: "Private Anlässe: Firmenevent, Hochzeit & Freundeskreis" },
       {
         name: "description",
         content:
-          "Meerzeit Studio als Firmenevent, Hochzeitsfeier oder Freundinnenabend buchen. Kreative Auszeit auf Anfrage, ganz nach euren Wünschen.",
+          "Meerzeit Studio als Firmenevent, Hochzeitsfeier oder Abend im Freundeskreis buchen. Kreative Auszeit auf Anfrage, ganz nach euren Wünschen.",
       },
       { property: "og:title", content: "Private Anlässe · Meerzeit Studio" },
       { property: "og:image", content: privateImg },
@@ -27,15 +27,15 @@ const occasions = [
   },
   {
     t: "Hochzeitsfeier",
-    s: "Ein kreativer Junggesellinnenabschied, ein Brunch mit den Brautjungfern oder ein gemaltes Erinnerungsstück eurer Gäste. Wir gestalten den Rahmen, ihr erlebt den Moment. Pinsel statt Penisstrohhalm.",
+    s: "Ein kreativer Junggesell:innenabschied, ein Brunch mit den Trauzeug:innen oder ein gemaltes Erinnerungsstück eurer Gäste. Wir gestalten den Rahmen, ihr erlebt den Moment.",
   },
   {
-    t: "Freundinnenabend",
-    s: "Ihr seid 4 bis 12 Frauen und wollt einen Abend, der schöner ist als Wein bei dir auf dem Sofa? Wir richten alles her. Farben, Atmosphäre, Snacks. Und ihr genießt einfach.",
+    t: "Abend im Freundeskreis",
+    s: "Ihr seid 4 bis 12 Personen und wollt einen Abend, der schöner ist als Wein auf dem Sofa? Wir richten alles her. Farben, Atmosphäre, Snacks. Und ihr genießt einfach.",
   },
   {
     t: "Geburtstag & mehr",
-    s: "Runder Geburtstag, Babymoon, Mama-Tochter-Tag, Reunion mit alten Freundinnen. Wenn der Anlass besonders ist, gestalten wir den Rahmen so, dass er sich auch so anfühlt.",
+    s: "Runder Geburtstag, Babymoon, Familientag, Reunion mit alten Wegbegleiter:innen. Wenn der Anlass besonders ist, gestalten wir den Rahmen so, dass er sich auch so anfühlt.",
   },
 ];
 
@@ -46,7 +46,7 @@ function PrivatePage() {
         eyebrow="auf Anfrage"
         title="Eure Auszeit."
         italic="ganz für euch."
-        intro="Ob Firmenevent, Hochzeit oder Freundinnenabend: Wir gestalten Meerzeit-Begegnungen auch privat. Im Studio, bei euch zu Hause oder am Ort eurer Feier."
+        intro="Ob Firmenevent, Hochzeit oder Abend im Freundeskreis: Wir gestalten Meerzeit-Begegnungen auch privat. Im Studio, bei euch zu Hause oder am Ort eurer Feier."
       />
 
       <section className="px-6">
@@ -55,7 +55,7 @@ function PrivatePage() {
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
                 src={privateImg}
-                alt="Frauen malen gemeinsam bei einem privaten Event mit Kerzen und Blumen"
+                alt="Gruppe malt gemeinsam bei einem privaten Event mit Kerzen und Blumen"
                 width={1600}
                 height={1024}
                 loading="lazy"
