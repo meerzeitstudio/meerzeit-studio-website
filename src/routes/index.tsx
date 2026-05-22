@@ -137,7 +137,7 @@ function Index() {
                 Zeit für dich. <span className="italic">Gemeinsam.</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Unsere Events sind kreative Auszeiten für euch. Ohne Druck. Ohne Erwartungen.
+                Unsere Events sind kreative Auszeiten für dich. Ohne Druck. Ohne Erwartungen.
                 Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.
               </p>
             </div>
