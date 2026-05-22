@@ -144,7 +144,7 @@ function AboutPage() {
                 Arbeiten mit Gefühl.
               </p>
               <p>
-                Wir veranstalten kreative Events für euch, in denen nicht Leistung oder
+                Wir veranstalten kreative Events für dich, in denen nicht Leistung oder
                 Talent im Mittelpunkt stehen, sondern Zeit für sich selbst.
               </p>
               <p>
