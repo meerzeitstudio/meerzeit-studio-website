@@ -17,6 +17,7 @@ import { Route as PhilosophieRouteImport } from './routes/philosophie'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as FuerWenRouteImport } from './routes/fuer-wen'
 import { Route as FotografieRouteImport } from './routes/fotografie'
+import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as BleibendesRouteImport } from './routes/bleibendes'
 import { Route as AtelierRouteImport } from './routes/atelier'
@@ -63,6 +64,11 @@ const FotografieRoute = FotografieRouteImport.update({
   path: '/fotografie',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DatenschutzRoute = DatenschutzRouteImport.update({
+  id: '/datenschutz',
+  path: '/datenschutz',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BuchenRoute = BuchenRouteImport.update({
   id: '/buchen',
   path: '/buchen',
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/atelier': typeof AtelierRoute
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -110,6 +117,7 @@ export interface FileRoutesByTo {
   '/atelier': typeof AtelierRoute
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -126,6 +134,7 @@ export interface FileRoutesById {
   '/atelier': typeof AtelierRoute
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -143,6 +152,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/bleibendes'
     | '/buchen'
+    | '/datenschutz'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -158,6 +168,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/bleibendes'
     | '/buchen'
+    | '/datenschutz'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -173,6 +184,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/bleibendes'
     | '/buchen'
+    | '/datenschutz'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -189,6 +201,7 @@ export interface RootRouteChildren {
   AtelierRoute: typeof AtelierRoute
   BleibendesRoute: typeof BleibendesRoute
   BuchenRoute: typeof BuchenRoute
+  DatenschutzRoute: typeof DatenschutzRoute
   FotografieRoute: typeof FotografieRoute
   FuerWenRoute: typeof FuerWenRoute
   ImpressumRoute: typeof ImpressumRoute
@@ -257,6 +270,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FotografieRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/datenschutz': {
+      id: '/datenschutz'
+      path: '/datenschutz'
+      fullPath: '/datenschutz'
+      preLoaderRoute: typeof DatenschutzRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/buchen': {
       id: '/buchen'
       path: '/buchen'
@@ -301,6 +321,7 @@ const rootRouteChildren: RootRouteChildren = {
   AtelierRoute: AtelierRoute,
   BleibendesRoute: BleibendesRoute,
   BuchenRoute: BuchenRoute,
+  DatenschutzRoute: DatenschutzRoute,
   FotografieRoute: FotografieRoute,
   FuerWenRoute: FuerWenRoute,
   ImpressumRoute: ImpressumRoute,
