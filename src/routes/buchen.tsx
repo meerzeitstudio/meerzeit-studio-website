@@ -63,13 +63,51 @@ function BookingPage() {
         <div className="max-w-3xl mx-auto">
           <Reveal>
             <div className="bg-card rounded-sm shadow-[var(--shadow-soft)] border border-border overflow-hidden">
-              <iframe
-                title="Anfrageformular Meerzeit Studio"
-                src="https://form.typeform.com/to/knIiW622"
-                className="w-full"
-                style={{ height: "720px", border: 0 }}
-                allow="camera; microphone; autoplay; encrypted-media;"
-              />
+              {formConsent ? (
+                <iframe
+                  title="Anfrageformular Meerzeit Studio"
+                  src="https://form.typeform.com/to/knIiW622"
+                  className="w-full"
+                  style={{ height: "720px", border: 0 }}
+                  allow="camera; microphone; autoplay; encrypted-media;"
+                />
+              ) : (
+                <div className="p-8 md:p-12 text-center flex flex-col items-center gap-5">
+                  <p className="font-script text-[color:var(--terracotta)] text-xl">Anfrageformular</p>
+                  <h2 className="font-serif text-2xl md:text-3xl text-foreground">
+                    Formular laden
+                  </h2>
+                  <p className="text-sm text-muted-foreground max-w-md leading-relaxed font-light">
+                    Unser Anfrageformular wird vom Anbieter{" "}
+                    <strong className="text-foreground">Typeform</strong> (Typeform S.L., Spanien;
+                    Infrastruktur in den USA) bereitgestellt. Mit Klick auf den Button willigst du
+                    in das Laden des Formulars sowie das Setzen von Cookies und eine mögliche
+                    Datenübermittlung in die USA ein. Mehr Infos in unserer{" "}
+                    <Link to="/datenschutz" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
+                      Datenschutzerklärung
+                    </Link>
+                    .
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setFormConsent(true)}
+                    className="mt-2 px-6 py-3 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-sm"
+                  >
+                    Formular jetzt laden
+                  </button>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    Lieber direkt? Schreib uns per{" "}
+                    <a href={`mailto:${CONTACT.email}`} className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
+                      E-Mail
+                    </a>{" "}
+                    oder{" "}
+                    <a href={whatsappLink()} target="_blank" rel="noreferrer" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
+                      WhatsApp
+                    </a>
+                    .
+                  </p>
+                </div>
+              )}
             </div>
           </Reveal>
         </div>
