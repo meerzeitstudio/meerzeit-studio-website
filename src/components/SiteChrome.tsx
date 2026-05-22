@@ -139,6 +139,7 @@ export function SiteFooter() {
       <div className="text-center mt-12 text-[color:var(--ivory)]/50 flex flex-col sm:flex-row gap-2 sm:gap-6 items-center justify-center">
         <p>© {new Date().getFullYear()} Meerzeit Studio. Mit Liebe gemacht.</p>
         <Link to="/impressum" className="hover:text-[color:var(--ivory)] transition">Impressum</Link>
+        <Link to="/datenschutz" className="hover:text-[color:var(--ivory)] transition">Datenschutz</Link>
       </div>
     </footer>
   );
