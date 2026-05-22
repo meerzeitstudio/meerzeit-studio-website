@@ -25,6 +25,7 @@ export const Route = createFileRoute("/buchen")({
 
 
 function BookingPage() {
+  const [formConsent, setFormConsent] = useState(false);
   return (
     <main>
       <PageHeader
