@@ -100,7 +100,7 @@ function Index() {
           <Reveal>
             <p className="font-script text-[color:var(--terracotta)] text-xl mb-3">willkommen</p>
             <h2 className="font-serif text-3xl md:text-5xl leading-snug text-balance">
-              Kreative Auszeiten für euch.
+              Kreative Auszeiten für dich.
             </h2>
             <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-balance">
               Bei Meerzeit Studio findest du Zeit für dich selbst. Ohne Druck, ohne Erwartungen.
