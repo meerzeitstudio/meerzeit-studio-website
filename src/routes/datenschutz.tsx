@@ -28,7 +28,7 @@ function Datenschutz() {
             <p>
               Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
               <br />
-              Meerzeit Studio · Creative Events GbR
+              meerzeit.studio GbR
               <br />
               Martina Jürgens &amp; Iris Christophers
               <br />

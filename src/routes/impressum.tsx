@@ -26,7 +26,7 @@ function Impressum() {
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">Angaben gemäß § 5 TMG</h2>
             <p>
-              Meerzeit Studio · Creative Events GbR
+              meerzeit.studio GbR
               <br />
               Vertretungsberechtigte Gesellschafterinnen: Martina Jürgens &amp; Iris Christophers
               <br />
