@@ -16,11 +16,11 @@ import atelierPortrait from "@/assets/photo-martina-1.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meerzeit Studio · Creative Events für euch" },
+      { title: "Meerzeit Studio · Creative Events für dich" },
       {
         name: "description",
         content:
-          "Kreative Auszeit-Events für euch. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
+          "Kreative Auszeit-Events für dich. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
       },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       {
