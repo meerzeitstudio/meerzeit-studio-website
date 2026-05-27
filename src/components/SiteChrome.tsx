@@ -104,7 +104,7 @@ export function SiteFooter() {
             <p className="font-serif text-xl text-[color:var(--ivory)]">
               Meerzeit <span className="italic text-[color:var(--terracotta)]">Studio</span>
             </p>
-            <p className="font-script text-sm text-[color:var(--ivory)]/60 mt-0.5">— Kreativ Events —</p>
+            <p className="font-script text-sm text-[color:var(--ivory)]/60 mt-0.5">— Kreative Events —</p>
           </div>
         </div>
         <div className="flex flex-col gap-2">
