@@ -46,7 +46,16 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">2. Allgemeines</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">2. Datenschutzbeauftragter</h2>
+            <p>
+              Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen
+              gemäß Art. 37 DSGVO i. V. m. § 38 BDSG nicht vorliegen. Bei datenschutzrechtlichen
+              Fragen wenden Sie sich direkt an die oben genannte Kontaktadresse.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-foreground text-xl mb-3">3. Allgemeines</h2>
             <p>
               Wir nehmen den Schutz deiner personenbezogenen Daten ernst und behandeln sie vertraulich
               sowie entsprechend der gesetzlichen Vorschriften (DSGVO, BDSG, TDDDG) und dieser
@@ -56,7 +65,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">3. Hosting</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">4. Hosting</h2>
             <p>
               Diese Website wird gehostet bei Cloudflare, Inc., 101 Townsend St., San Francisco,
               CA 94107, USA. Beim Aufruf der Website erfasst der Server automatisch Server-Logfiles
@@ -83,12 +92,12 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">4. Kontaktaufnahme</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">5. Kontaktaufnahme</h2>
             <p>
               Wenn du uns per E-Mail, Telefon oder WhatsApp kontaktierst, werden deine Angaben zur
-              Bearbeitung der Anfrage verarbeitet (Art. 6 Abs. 1 lit. b bzw. f DSGVO). Wir speichern
-              diese Daten nur so lange, wie es zur Bearbeitung erforderlich ist, bzw. solange
-              gesetzliche Aufbewahrungspflichten bestehen.
+              Bearbeitung der Anfrage verarbeitet (Art. 6 Abs. 1 lit. b bzw. f DSGVO). Anfragedaten
+              werden nach vollständiger Bearbeitung gelöscht, spätestens jedoch nach 3 Jahren gemäß
+              handelsrechtlicher Aufbewahrungspflicht (§ 257 HGB).
             </p>
             <p className="mt-3">
               <strong className="text-foreground">WhatsApp:</strong> Bei Kontakt über WhatsApp werden
@@ -99,7 +108,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">5. Anfrageformular (Typeform)</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">6. Anfrageformular (Typeform)</h2>
             <p>
               Auf unserer Buchungsseite bieten wir ein Anfrageformular über den Anbieter Typeform S.L.,
               Carrer de Bac de Roda 163, 08018 Barcelona, Spanien, mit Infrastruktur in den USA. Das
@@ -125,7 +134,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">6. Schriftarten (lokal gehostet)</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">7. Schriftarten (lokal gehostet)</h2>
             <p>
               Wir verwenden Schriftarten, die lokal von unserem Server ausgeliefert werden. Es findet
               keine Verbindung zu Google-Servern statt.
@@ -133,7 +142,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">7. Cookies</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">8. Cookies</h2>
             <p>
               Unsere Website setzt selbst keine analyse- oder marketingbezogenen Cookies. Technisch
               notwendige Cookies (z. B. zur Speicherung deiner Einwilligung in den Typeform-Ladebutton)
@@ -143,7 +152,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">8. Deine Rechte</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">9. Deine Rechte</h2>
             <p>Du hast nach DSGVO folgende Rechte uns gegenüber:</p>
             <ul className="list-disc pl-5 mt-3 space-y-1">
               <li>Auskunft (Art. 15 DSGVO)</li>
@@ -161,7 +170,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">9. SSL-Verschlüsselung</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">10. SSL-Verschlüsselung</h2>
             <p>
               Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine
               verschlüsselte Verbindung erkennst du an „https://" in der Adresszeile des Browsers.
@@ -169,7 +178,7 @@ function Datenschutz() {
           </div>
 
           <div>
-            <h2 className="font-serif text-foreground text-xl mb-3">10. Aktualität</h2>
+            <h2 className="font-serif text-foreground text-xl mb-3">11. Aktualität</h2>
             <p>
               Stand dieser Datenschutzerklärung: {new Date().toLocaleDateString("de-DE", { month: "long", year: "numeric" })}.
               Durch Weiterentwicklung unserer Website oder geänderter gesetzlicher Vorgaben kann es
