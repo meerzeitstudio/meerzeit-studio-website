@@ -58,11 +58,27 @@ function Datenschutz() {
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">3. Hosting</h2>
             <p>
-              Diese Website wird bei einem Dienstleister gehostet, der die Daten in einem Rechenzentrum
-              speichert. Der Server erfasst beim Aufruf automatisch sogenannte Server-Logfiles
-              (IP-Adresse, Datum und Uhrzeit, abgerufene Datei, Browsertyp, Betriebssystem, Referrer-URL).
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren,
-              stabilen Bereitstellung der Website). Speicherdauer: in der Regel max. 30 Tage.
+              Diese Website wird gehostet bei Cloudflare, Inc., 101 Townsend St., San Francisco,
+              CA 94107, USA. Beim Aufruf der Website erfasst der Server automatisch Server-Logfiles
+              (IP-Adresse, Datum und Uhrzeit, abgerufene Datei, Browsertyp, Betriebssystem,
+              Referrer-URL). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+              einer sicheren, stabilen und schnellen Bereitstellung der Website). Speicherdauer:
+              max. 30 Tage.
+            </p>
+            <p className="mt-3">
+              Da Cloudflare seinen Hauptsitz in den USA hat, können Daten in die USA übertragen
+              werden. Die Übermittlung erfolgt auf Basis von EU-Standardvertragsklauseln
+              (Art. 46 Abs. 2 lit. c DSGVO) sowie des EU-US Data Privacy Framework. Mit Cloudflare
+              wurde ein Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen.
+              Weitere Informationen zum Datenschutz bei Cloudflare:{" "}
+              <a
+                href="https://www.cloudflare.com/privacypolicy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[color:var(--terracotta)] hover:text-[color:var(--copper)] underline"
+              >
+                https://www.cloudflare.com/privacypolicy/
+              </a>
             </p>
           </div>
 
