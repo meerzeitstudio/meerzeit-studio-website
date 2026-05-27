@@ -103,8 +103,10 @@ function BleibendesPage() {
                 Für Erinnerungen, <span className="italic">die sich echt anfühlen.</span>
               </h2>
               <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
-                Hochzeiten, Babybauch, Motherhood, Paare und Brand Shootings für Unternehmerinnen.
-                ehrliche Bilder im Editorial-Stil. Kein Posieren, kein Schnellschuss.
+                Hochzeiten, Babybauch, Mutterschaft, Paare und Brand Shootings für Unternehmen.
+              </p>
+              <p className="mt-4 text-muted-foreground font-light leading-relaxed text-lg">
+                Zeitlose Bilder mit Atmosphäre – ehrlich, ästhetisch und voller echter Momente.
               </p>
               <Link
                 to="/fotografie"
