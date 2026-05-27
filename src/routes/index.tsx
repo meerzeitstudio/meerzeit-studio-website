@@ -192,7 +192,7 @@ function Index() {
             <ul className="space-y-4 text-muted-foreground font-light leading-relaxed">
               <li>
                 <strong className="text-foreground font-serif text-lg block mb-1">Material inklusive</strong>
-                Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben aus dem Acrylbereich.
+                Wir arbeiten mit hochwertigen Mittelklasse-Studiofarben aus dem Acrylbereich,
                 und erweitern unser Sortiment laufend. Besondere Wünsche? Sag Bescheid in der Anfrage.
               </li>
               <li>
