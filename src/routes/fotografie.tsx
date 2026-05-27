@@ -12,7 +12,7 @@ export const Route = createFileRoute("/fotografie")({
       {
         name: "description",
         content:
-          "Unser Fotografie-Bereich entsteht gerade. Bald für Hochzeiten, Babybauch, Motherhood und Paare aus dem Meerzeit Studio.",
+          "Unser Fotografie-Bereich entsteht gerade. Bald für Hochzeiten, Babybauch, Mutterschaft und Paare aus dem Meerzeit Studio.",
       },
       { property: "og:title", content: "Fotografie · Meerzeit Studio" },
       { property: "og:image", content: absUrl(photoMaternity) },
