@@ -53,7 +53,7 @@ function Impressum() {
                 {CONTACT.email}
               </a>
               <br />
-              <a href={whatsappLink()} target="_blank" rel="noreferrer" className="text-[color:var(--terracotta)] hover:text-[color:var(--copper)]">
+              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="text-[color:var(--terracotta)] hover:text-[color:var(--copper)]">
                 Direkt per WhatsApp schreiben →
               </a>
             </p>
@@ -86,7 +86,7 @@ function Impressum() {
               <a
                 href="https://ec.europa.eu/consumers/odr"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground"
               >
                 https://ec.europa.eu/consumers/odr

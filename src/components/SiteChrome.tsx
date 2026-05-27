@@ -82,7 +82,7 @@ export function SiteNav() {
             <Link to="/buchen" className="py-1 text-[color:var(--terracotta)]">
               Anfrage
             </Link>
-            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="py-1">
+            <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="py-1">
               WhatsApp · {CONTACT.phoneDisplay}
             </a>
           </div>
@@ -129,7 +129,7 @@ export function SiteFooter() {
           <a
             href={whatsappLink()}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-[color:var(--terracotta)] hover:text-[color:var(--ivory)] transition"
           >
             WhatsApp schreiben →

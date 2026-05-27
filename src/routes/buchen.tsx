@@ -45,7 +45,7 @@ function BookingPage() {
           <a
             href={whatsappLink()}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="block p-5 rounded-sm bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition shadow-[var(--shadow-soft)]"
           >
             <p className="text-xs uppercase tracking-widest opacity-80 mb-1">am schnellsten</p>
@@ -105,7 +105,7 @@ function BookingPage() {
                       E-Mail
                     </a>{" "}
                     oder{" "}
-                    <a href={whatsappLink()} target="_blank" rel="noreferrer" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
+                    <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
                       WhatsApp
                     </a>
                     .

@@ -99,7 +99,7 @@ function Datenschutz() {
               <a
                 href="https://www.typeform.com/help/a/data-protection-at-typeform-360029259552/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground"
               >
                 typeform.com/help/data-protection

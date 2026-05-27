@@ -127,7 +127,7 @@ function PrivatePage() {
             <a
               href={whatsappLink("Hallo Meerzeit Studio, wir möchten eine Event für einen privaten Anlass anfragen.")}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-full border border-[color:var(--smoke)] text-[color:var(--smoke)] hover:bg-[color:var(--smoke)] hover:text-[color:var(--ivory)] transition text-sm tracking-widest uppercase"
             >
               WhatsApp · {CONTACT.phoneDisplay}
