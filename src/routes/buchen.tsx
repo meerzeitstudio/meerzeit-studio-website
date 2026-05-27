@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 
 import hero from "@/assets/hero.jpg";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/buchen")({
   head: () => ({
@@ -16,7 +17,10 @@ export const Route = createFileRoute("/buchen")({
           "Buche deine kreative Auszeit. Per Formular, E-Mail oder direkt über WhatsApp. Wir melden uns innerhalb von 48 Stunden.",
       },
       { property: "og:title", content: "Buche deine Auszeit · Meerzeit Studio" },
+      { property: "og:image", content: absUrl(hero) },
+      { name: "twitter:image", content: absUrl(hero) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/buchen") }],
   }),
   component: BookingPage,
 });

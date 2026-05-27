@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
+import { absUrl } from "@/lib/seo";
 import founders from "@/assets/founders.jpg";
 import erleben from "@/assets/session-meditativ.jpg";
 import festhalten from "@/assets/atelier-wave.jpg";
@@ -36,8 +37,10 @@ export const Route = createFileRoute("/ueber-uns")({
         property: "og:description",
         content: "Zwei Gründerinnen. Selbst Mütter. Eine gemeinsame Vision.",
       },
-      { property: "og:image", content: founders },
+      { property: "og:image", content: absUrl(founders) },
+      { name: "twitter:image", content: absUrl(founders) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/ueber-uns") }],
     scripts: [
       {
         type: "application/ld+json",

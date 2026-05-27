@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/philosophie")({
   head: () => ({
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/philosophie")({
         content: "Abschalten. Kreativ sein ohne Druck. Sich verbinden.",
       },
     ],
+    links: [{ rel: "canonical", href: absUrl("/philosophie") }],
   }),
   component: PhilosophiePage,
 });

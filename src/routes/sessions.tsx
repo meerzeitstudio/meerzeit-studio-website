@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CalendarSection } from "@/components/CalendarSection";
 import { events, titleColor } from "@/lib/events";
+import { absUrl } from "@/lib/seo";
 import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
 import sNacht from "@/assets/session-nacht.jpg";
@@ -20,8 +21,10 @@ export const Route = createFileRoute("/sessions")({
           "Freies Malen am organisierten Ort, Meditatives Malen, Mutti malt mit Baby, Malen bei Nacht und Beats & Brushes. Kreative Auszeiten und alle kommenden Termine.",
       },
       { property: "og:title", content: "Unsere Events · Meerzeit Studio" },
-      { property: "og:image", content: sMeer },
+      { property: "og:image", content: absUrl(sMeer) },
+      { name: "twitter:image", content: absUrl(sMeer) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/sessions") }],
   }),
   component: SessionsPage,
 });

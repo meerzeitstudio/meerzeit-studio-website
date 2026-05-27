@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/SiteChrome";
 import { CalendarSection } from "@/components/CalendarSection";
 import { events, titleColor } from "@/lib/events";
 import { useMemo, useState } from "react";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/termine")({
   head: () => ({
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/termine")({
       { property: "og:title", content: "Termine · Meerzeit Studio" },
       { property: "og:description", content: "Alle kommenden Creative Events im Überblick." },
     ],
+    links: [{ rel: "canonical", href: absUrl("/termine") }],
   }),
   component: TerminePage,
 });

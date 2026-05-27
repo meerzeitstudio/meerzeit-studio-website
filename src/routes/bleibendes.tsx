@@ -3,6 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import iris1 from "@/assets/iris-1.png";
 import photoMaternity from "@/assets/photo-martina-1.jpg";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/bleibendes")({
   head: () => ({
@@ -19,8 +20,10 @@ export const Route = createFileRoute("/bleibendes")({
         content:
           "Kunst und Fotografie, die sich echt anfühlen und bleiben dürfen.",
       },
-      { property: "og:image", content: iris1 },
+      { property: "og:image", content: absUrl(iris1) },
+      { name: "twitter:image", content: absUrl(iris1) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/bleibendes") }],
   }),
   component: BleibendesPage,
 });

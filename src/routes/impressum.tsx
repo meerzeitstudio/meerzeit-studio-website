@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/impressum")({
   head: () => ({
@@ -9,6 +10,7 @@ export const Route = createFileRoute("/impressum")({
       { name: "description", content: "Impressum & Anbieterkennzeichnung von Meerzeit Studio · Creative Events." },
       { name: "robots", content: "index,follow" },
     ],
+    links: [{ rel: "canonical", href: absUrl("/impressum") }],
   }),
   component: Impressum,
 });

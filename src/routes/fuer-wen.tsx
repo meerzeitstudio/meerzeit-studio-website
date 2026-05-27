@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/fuer-wen")({
   head: () => ({
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/fuer-wen")({
         content: "Wenn du das Gefühl kennst, einmal kurz aussteigen zu wollen. Dann bist du hier richtig.",
       },
     ],
+    links: [{ rel: "canonical", href: absUrl("/fuer-wen") }],
   }),
   component: ForWhomPage,
 });

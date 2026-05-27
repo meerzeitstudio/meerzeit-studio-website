@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { CalendarSection } from "@/components/CalendarSection";
 import { CONTACT, whatsappLink } from "@/lib/contact";
+import { absUrl } from "@/lib/seo";
 import hero from "@/assets/hero.jpg";
 import sMeer from "@/assets/session-freies-malen.jpg";
 import sMeditativ from "@/assets/session-meditativ.jpg";
@@ -27,9 +28,10 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.",
       },
-      { property: "og:image", content: hero },
-      { name: "twitter:image", content: hero },
+      { property: "og:image", content: absUrl(hero) },
+      { name: "twitter:image", content: absUrl(hero) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/") }],
   }),
   component: Index,
 });

@@ -3,6 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
 import photoMaternity from "@/assets/photo-martina-1.jpg";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/fotografie")({
   head: () => ({
@@ -14,8 +15,10 @@ export const Route = createFileRoute("/fotografie")({
           "Unser Fotografie-Bereich entsteht gerade. Bald für Hochzeiten, Babybauch, Motherhood und Paare aus dem Meerzeit Studio.",
       },
       { property: "og:title", content: "Fotografie · Meerzeit Studio" },
-      { property: "og:image", content: photoMaternity },
+      { property: "og:image", content: absUrl(photoMaternity) },
+      { name: "twitter:image", content: absUrl(photoMaternity) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/fotografie") }],
   }),
   component: FotografiePage,
 });

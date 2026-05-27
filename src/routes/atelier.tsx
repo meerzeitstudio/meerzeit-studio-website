@@ -12,6 +12,7 @@ import ref2 from "@/assets/ref-iris-2.png";
 import ref3 from "@/assets/ref-iris-3.png";
 import ref4 from "@/assets/ref-iris-4.png";
 import ref5 from "@/assets/ref-iris-5.jpg";
+import { absUrl } from "@/lib/seo";
 
 type ForSale = { img: string; title: string; quote: string };
 
@@ -47,8 +48,10 @@ export const Route = createFileRoute("/atelier")({
           "Freie Kunstwerke und Auftragsarbeiten aus dem Meerzeit Studio. Originale von Iris Christophers, gemacht für Räume mit Geschichte.",
       },
       { property: "og:title", content: "Atelier · Meerzeit Studio" },
-      { property: "og:image", content: wave },
+      { property: "og:image", content: absUrl(wave) },
+      { name: "twitter:image", content: absUrl(wave) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/atelier") }],
   }),
   component: AtelierPage,
 });
