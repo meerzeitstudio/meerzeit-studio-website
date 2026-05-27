@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
+import { de } from "date-fns/locale";
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
 import { events, titleColor, type SessionEvent } from "@/lib/events";
@@ -23,6 +24,7 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
     <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
       <div className="bg-card p-5 md:p-8 rounded-sm shadow-[var(--shadow-soft)] border border-border w-full flex flex-col items-center">
         <Calendar
+          locale={de}
           mode="single"
           selected={selected}
           onSelect={setSelected}
