@@ -304,7 +304,7 @@ function Index() {
               <a
                 href={whatsappLink()}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full border border-[color:var(--ivory)]/60 text-[color:var(--ivory)] hover:bg-[color:var(--ivory)]/10 transition text-sm tracking-widest uppercase"
               >
                 WhatsApp · {CONTACT.phoneDisplay}
