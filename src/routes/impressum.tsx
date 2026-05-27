@@ -73,8 +73,9 @@ function Impressum() {
           <div>
             <h2 className="font-serif text-foreground text-xl mb-3">Umsatzsteuer</h2>
             <p>
-              Als Gesellschaft bürgerlichen Rechts (GbR) führen wir derzeit keine
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz.
+              Gemäß § 19 UStG wird keine Umsatzsteuer berechnet und ausgewiesen
+              (Kleinunternehmerregelung). Eine Umsatzsteuer-Identifikationsnummer
+              liegt daher nicht vor.
             </p>
           </div>
 
