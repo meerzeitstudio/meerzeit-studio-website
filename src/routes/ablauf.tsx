@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/ablauf")({
   head: () => ({
@@ -13,6 +14,7 @@ export const Route = createFileRoute("/ablauf")({
       },
       { property: "og:title", content: "Ablauf einer Event" },
     ],
+    links: [{ rel: "canonical", href: absUrl("/ablauf") }],
   }),
   component: AblaufPage,
 });

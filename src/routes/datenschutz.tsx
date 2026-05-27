@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT } from "@/lib/contact";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/datenschutz")({
   head: () => ({
@@ -9,6 +10,7 @@ export const Route = createFileRoute("/datenschutz")({
       { name: "description", content: "Datenschutzerklärung von Meerzeit Studio · Creative Events nach DSGVO." },
       { name: "robots", content: "index,follow" },
     ],
+    links: [{ rel: "canonical", href: absUrl("/datenschutz") }],
   }),
   component: Datenschutz,
 });

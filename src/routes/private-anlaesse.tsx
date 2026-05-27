@@ -3,6 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import privateImg from "@/assets/private-events.jpg";
 import { CONTACT, whatsappLink } from "@/lib/contact";
+import { absUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/private-anlaesse")({
   head: () => ({
@@ -14,8 +15,10 @@ export const Route = createFileRoute("/private-anlaesse")({
           "Meerzeit Studio als Firmenevent, Hochzeitsfeier oder Abend im Freundeskreis buchen. Kreative Auszeit auf Anfrage, ganz nach euren Wünschen.",
       },
       { property: "og:title", content: "Private Anlässe · Meerzeit Studio" },
-      { property: "og:image", content: privateImg },
+      { property: "og:image", content: absUrl(privateImg) },
+      { name: "twitter:image", content: absUrl(privateImg) },
     ],
+    links: [{ rel: "canonical", href: absUrl("/private-anlaesse") }],
   }),
   component: PrivatePage,
 });
