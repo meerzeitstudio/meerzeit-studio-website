@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { CONTACT, whatsappLink } from "@/lib/contact";
@@ -25,11 +25,46 @@ export const Route = createFileRoute("/buchen")({
   component: BookingPage,
 });
 
+const TALLY_SCRIPT_SRC = "https://tally.so/widgets/embed.js";
 
+function loadTallyEmbeds() {
+  const w = window as unknown as { Tally?: { loadEmbeds: () => void } };
+  if (typeof w.Tally !== "undefined") {
+    w.Tally.loadEmbeds();
+  } else {
+    document
+      .querySelectorAll<HTMLIFrameElement>("iframe[data-tally-src]:not([src])")
+      .forEach((el) => {
+        if (el.dataset.tallySrc) el.src = el.dataset.tallySrc;
+      });
+  }
+}
 
+function useTallyEmbed() {
+  useEffect(() => {
+    const w = window as unknown as { Tally?: { loadEmbeds: () => void } };
+    if (typeof w.Tally !== "undefined") {
+      loadTallyEmbeds();
+      return;
+    }
+    const existing = document.querySelector<HTMLScriptElement>(
+      `script[src="${TALLY_SCRIPT_SRC}"]`,
+    );
+    if (existing) {
+      existing.addEventListener("load", loadTallyEmbeds);
+      loadTallyEmbeds();
+      return;
+    }
+    const s = document.createElement("script");
+    s.src = TALLY_SCRIPT_SRC;
+    s.onload = loadTallyEmbeds;
+    s.onerror = loadTallyEmbeds;
+    document.body.appendChild(s);
+  }, []);
+}
 
 function BookingPage() {
-  const [formConsent, setFormConsent] = useState(false);
+  useTallyEmbed();
   return (
     <main>
       <PageHeader
@@ -66,52 +101,18 @@ function BookingPage() {
       <section className="py-16 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <Reveal>
-            <div className="bg-card rounded-sm shadow-[var(--shadow-soft)] border border-border overflow-hidden">
-              {formConsent ? (
-                <iframe
-                  title="Anfrageformular Meerzeit Studio"
-                  src="https://form.typeform.com/to/knIiW622"
-                  className="w-full"
-                  style={{ height: "720px", border: 0 }}
-                  allow="camera; microphone; autoplay; encrypted-media;"
-                />
-              ) : (
-                <div className="p-8 md:p-12 text-center flex flex-col items-center gap-5">
-                  <p className="font-script text-[color:var(--terracotta)] text-xl">Anfrageformular</p>
-                  <h2 className="font-serif text-2xl md:text-3xl text-foreground">
-                    Formular laden
-                  </h2>
-                  <p className="text-sm text-muted-foreground max-w-md leading-relaxed font-light">
-                    Unser Anfrageformular wird vom Anbieter{" "}
-                    <strong className="text-foreground">Typeform</strong> (Typeform S.L., Spanien;
-                    Infrastruktur in den USA) bereitgestellt. Mit Klick auf den Button willigst du
-                    in das Laden des Formulars sowie das Setzen von Cookies und eine mögliche
-                    Datenübermittlung in die USA ein. Mehr Infos in unserer{" "}
-                    <Link to="/datenschutz" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
-                      Datenschutzerklärung
-                    </Link>
-                    .
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => setFormConsent(true)}
-                    className="mt-2 px-6 py-3 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-sm"
-                  >
-                    Formular jetzt laden
-                  </button>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    Lieber direkt? Schreib uns per{" "}
-                    <a href={`mailto:${CONTACT.email}`} className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
-                      E-Mail
-                    </a>{" "}
-                    oder{" "}
-                    <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="underline decoration-[color:var(--terracotta)]/50 hover:text-foreground">
-                      WhatsApp
-                    </a>
-                    .
-                  </p>
-                </div>
-              )}
+            <div className="rounded-sm overflow-hidden bg-transparent">
+              <iframe
+                data-tally-src="https://tally.so/embed/A7yrxB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height={133}
+                frameBorder={0}
+                marginHeight={0}
+                marginWidth={0}
+                title="Kontaktformular"
+                className="w-full block bg-transparent"
+              />
             </div>
           </Reveal>
         </div>
@@ -126,7 +127,7 @@ function BookingPage() {
         <div className="relative max-w-xl mx-auto">
           <p className="font-script text-[color:var(--terracotta)] text-xl mb-4">wir freuen uns auf dich</p>
           <p className="font-serif text-2xl md:text-3xl italic leading-snug text-balance">
-            „Hier darfst du einfach sein.“
+            „Hier darfst du einfach sein."
           </p>
         </div>
       </section>
