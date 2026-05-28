@@ -103,7 +103,7 @@ function BookingPage() {
           <Reveal>
             <div className="rounded-sm overflow-hidden bg-transparent">
               <iframe
-                data-tally-src="https://tally.so/embed/A7yrxB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                data-tally-src="https://tally.so/embed/A7yrxB?alignLeft=1&transparentBackground=1&dynamicHeight=1"
                 loading="lazy"
                 width="100%"
                 height={133}
