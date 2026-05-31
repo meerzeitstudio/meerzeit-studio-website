@@ -91,8 +91,9 @@ function AboutPage() {
                 Also haben wir ihn uns gemacht. Erst für uns. Dann für unsere Freundinnen.
                 Heute für dich.
               </p>
-              <p className="font-serif italic text-foreground text-xl">
-                Meerzeit Studio ist genau das, was wir damals selbst gebraucht hätten.
+              <p className="font-serif italic text-foreground text-xl whitespace-pre-line">
+                Meerzeit Studio ist genau das, was wir damals selbst gebraucht hätten. {"\n\n"}
+                Eure Iris & Martina
               </p>
             </div>
           </Reveal>
