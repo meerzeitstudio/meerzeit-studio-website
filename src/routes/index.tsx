@@ -21,12 +21,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Kreative Auszeit-Events für dich. Acrylmalerei in entspannter Atmosphäre. Kein Müssen, kein Perfekt.",
+          "Kreative Events. Unsere Events sind kreative Auszeiten für dich. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.",
       },
       { property: "og:title", content: "Meerzeit Studio · Creative Events" },
       {
         property: "og:description",
-        content: "Ein Raum, in dem du loslassen, eintauchen und einfach im Moment sein kannst.",
+        content: "Kreative Events. Unsere Events sind kreative Auszeiten für dich. Ohne Druck. Ohne Erwartungen. Ein Raum zum Abschalten, kreativ sein und einfach mal wieder Zeit für sich selbst.",
       },
       { property: "og:image", content: absUrl(hero) },
       { name: "twitter:image", content: absUrl(hero) },
