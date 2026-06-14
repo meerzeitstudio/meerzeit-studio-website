@@ -3,8 +3,8 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/SiteChrome";
 import { absUrl } from "@/lib/seo";
 import founders from "@/assets/founders.jpg";
-import erleben from "@/assets/session-meditativ.jpg";
-import festhalten from "@/assets/atelier-wave.jpg";
+import irisAsset from "@/assets/iris.png.asset.json";
+import martinaAsset from "@/assets/martina.jpeg.asset.json";
 
 const orgSchema = {
   "@context": "https://schema.org",
