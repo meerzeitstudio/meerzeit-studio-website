@@ -167,85 +167,131 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* WOFÜR WIR STEHEN — zwei Säulen */}
-      <section className="py-20 md:py-28 px-6">
+      {/* IRIS & MARTINA — persönliche Vorstellung */}
+      <section className="py-20 md:py-28 px-6 border-t border-border/60">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <Reveal>
-            <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">Vision &amp; Mission</p>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-4">die Menschen dahinter</p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
-              Momente erleben.
-              <br />
-              <span className="italic">Momente festhalten.</span>
+              Iris &amp; <span className="italic">Martina.</span>
             </h2>
             <p className="mt-6 text-muted-foreground font-light leading-relaxed text-lg">
-              Zwei Wege, ein Gefühl. Bei Meerzeit Studio geht es nicht darum, etwas zu leisten.
-              sondern um echte Momente, die berühren und bleiben dürfen.
+              Zwei Frauen, zwei Wege, eine gemeinsame Vision.
             </p>
           </Reveal>
         </div>
 
-        {/* EVENTS · Momente erleben */}
-        <div className="max-w-5xl mx-auto mb-24 md:mb-32">
+        {/* MARTINA */}
+        <div className="max-w-6xl mx-auto mb-24 md:mb-32 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
-                src={erleben}
-                alt="Kreative Auszeit bei Meerzeit Studio"
+                src={martinaAsset.url}
+                alt="Martina, Mitgründerin von Meerzeit Studio"
                 loading="lazy"
-                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+                className="w-full aspect-[4/5] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
               />
             </div>
-            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
-              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Events — Momente erleben</p>
-              <h3 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
-                Räume, die Menschen <span className="italic">langsamer werden lassen.</span>
-              </h3>
-              <div className="mt-6 space-y-5 text-muted-foreground font-light leading-relaxed text-lg">
-                <p>
-                  In einer Welt, die immer schneller wird, glauben wir an Räume, die Menschen
-                  wieder langsamer werden lassen. Ohne Druck. Ohne Erwartungen. Einfach im Moment.
-                </p>
-                <p className="font-serif italic text-foreground">
-                  Die schönsten Ideen entstehen nicht unter Druck. Sie entstehen, wenn man einfach beginnt.
-                </p>
-                <p>
-                  Unsere Events sind kreative Auszeiten für dich. Ein Raum zum Abschalten,
-                  Ausprobieren und einfach im Moment sein.
-                </p>
-              </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Martina</p>
+            <h3 className="font-serif text-3xl md:text-4xl mb-6 leading-tight text-balance">
+              Zwischen Analyse und <span className="italic">Kreativität.</span>
+            </h3>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg font-light">
+              <p>
+                Eigentlich komme ich aus dem Ingenieurwesen – aber Kreativität war schon
+                immer der rote Faden in meinem Leben. Während ich beruflich gerne
+                analysiere, plane und Lösungen entwickle, finde ich meinen Ausgleich in
+                der Kunst, der Fotografie und allem, was Menschen zusammenbringt.
+              </p>
+              <p>
+                Mich begeistern die kleinen Details: besondere Lichtstimmungen, spannende
+                Strukturen, kreative Ideen und die Geschichten hinter den Menschen, die
+                einem begegnen. Genau deshalb liebe ich kreative Workshops. Sie schaffen
+                Raum, um Neues auszuprobieren, den Kopf freizubekommen und für ein paar
+                Stunden ganz im Moment zu sein.
+              </p>
+              <p className="font-serif italic text-foreground">
+                Mit Meerzeit Studio möchte ich einen Ort schaffen, an dem niemand kreativ
+                sein muss, sondern kreativ sein darf. Einen Ort für Begegnungen,
+                Inspiration und die Freude, etwas mit den eigenen Händen entstehen zu
+                lassen.
+              </p>
+              <p>
+                Wenn ich nicht gerade male oder neue Workshop-Ideen sammle, bin ich meist
+                mit der Kamera unterwegs, löse begeistert Rätsel oder genieße die
+                ostfriesische Weite, die mich immer wieder inspiriert.
+              </p>
             </div>
           </Reveal>
         </div>
 
-        {/* BLEIBENDES · Momente festhalten */}
-        <div className="max-w-5xl mx-auto">
-          <Reveal>
+        {/* IRIS */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <Reveal delay={120} className="md:order-2">
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
-                src={festhalten}
-                alt="Bleibendes: Kunst und Fotografie aus dem Atelier"
+                src={irisAsset.url}
+                alt="Iris, Mitgründerin von Meerzeit Studio"
                 loading="lazy"
-                className="w-full aspect-[16/10] md:aspect-[16/9] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
+                className="w-full aspect-[4/5] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
               />
             </div>
-            <div className="text-center mt-12 md:mt-16 max-w-2xl mx-auto">
-              <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Bleibendes — Momente festhalten</p>
-              <h3 className="font-serif text-3xl md:text-4xl leading-tight text-balance">
-                Arbeiten, die berühren. <span className="italic">Erinnerungen, die bleiben.</span>
-              </h3>
-              <div className="mt-6 space-y-5 text-muted-foreground font-light leading-relaxed text-lg">
-                <p>
-                  Manche Momente möchte man festhalten. Mit Bildern, Kunst und Erinnerungen,
-                  die sich echt anfühlen und bleiben dürfen.
-                </p>
-                <p>
-                  Von Fotografie bis zu individuellen Kunstwerken schaffen wir Arbeiten mit
-                  Gefühl, Atmosphäre und Persönlichkeit. Authentisch und zeitlos.
-                </p>
-                <p className="font-serif italic text-foreground">
-                  Nicht nur etwas Schönes zu erschaffen, sondern etwas Echtes.
-                </p>
-              </div>
+          </Reveal>
+          <Reveal className="md:order-1">
+            <p className="font-script text-[color:var(--terracotta)] text-lg mb-3">Iris</p>
+            <h3 className="font-serif text-3xl md:text-4xl mb-6 leading-tight text-balance">
+              Vom Bewerten <span className="italic">ins Loslassen.</span>
+            </h3>
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg font-light">
+              <p>
+                Als Kind und Jugendliche war Kreativität mein natürlicher Ausdruck. Ich
+                habe gemalt, ausprobiert und war voller Ideen. Damals gewann ich sogar bei
+                „Jugend kreativ" den ersten Platz im Landkreis Wittmund. Trotzdem verlor
+                ich durch die Schule irgendwann den Zugang zur Kunst. Ich habe Kunst
+                später sogar abgewählt, obwohl ich es eigentlich liebte.
+              </p>
+              <p className="font-serif italic text-foreground">Warum?</p>
+              <p>
+                Weil es sich plötzlich nicht mehr frei anfühlte. Kunst wurde bewertet,
+                verglichen und an Regeln geknüpft. Es musste nach Lernplan gearbeitet
+                werden, mit klaren Vorgaben und Erwartungen. Schon damals merkte ich: Das
+                passt nicht zu meinem Verständnis von kreativem Schaffen.
+              </p>
+              <p>
+                Im Erwachsenenleben wurde das Malen dann wieder zu meinem Rückzugsort. Ein
+                Ort, an dem ich Ruhe, Inspiration und Verbindung zu mir selbst gefunden
+                habe. Ich habe verschiedene Techniken ausprobiert, mit Farben, Formen und
+                Kompositionen experimentiert und mit der Zeit ein eigenes Gespür dafür
+                entwickelt.
+              </p>
+              <p>
+                Am Anfang war ich unglaublich stolz darauf, Realität möglichst perfekt
+                abbilden zu können. Dafür bekam ich viel Anerkennung und Zuspruch.
+                Irgendwann verstand ich jedoch, dass meine wahre Freude woanders liegt:
+                im Loslassen.
+              </p>
+              <p className="font-serif italic text-foreground">
+                Ohne Druck. Ohne Erwartungen. Ohne vorher genau zu wissen, was entstehen
+                soll.
+              </p>
+              <p>
+                Einfach meiner Intuition zu folgen und Stimmung, Gedanken oder Gefühle auf
+                die Leinwand zu bringen. Die Ergebnisse wurden abstrakter, persönlicher
+                und ehrlicher. Mixed Media wurde zu meiner Ausdrucksform. Nicht einfach
+                nur „schön", sondern echt. Verletzlich. Frei.
+              </p>
+              <p>
+                Ich bin fest davon überzeugt, dass jeder Mensch kreativ ist. Doch unsere
+                Gesellschaft verbindet Kreativität oft mit Leistung, Bewertung und
+                Perfektion. Dadurch verlieren viele den Zugang zu ihrer eigenen
+                schöpferischen Kraft und gehen verkopft an kreative Prozesse heran.
+              </p>
+              <p className="font-serif italic text-foreground">
+                Diese Blockaden wieder zu lösen und Menschen zurück in ihren eigenen
+                kreativen Flow zu bringen, ist meine Motivation.
+              </p>
             </div>
           </Reveal>
         </div>
