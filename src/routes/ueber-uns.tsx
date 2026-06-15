@@ -186,7 +186,7 @@ function AboutPage() {
           <Reveal>
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
-                src={martinaAsset.url}
+                src={irisAsset.url}
                 alt="Martina, Mitgründerin von Meerzeit Studio"
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
