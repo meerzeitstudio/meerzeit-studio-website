@@ -232,7 +232,7 @@ function AboutPage() {
           <Reveal delay={120} className="md:order-2">
             <div className="overflow-hidden rounded-sm shadow-[var(--shadow-soft)]">
               <img
-                src={irisAsset.url}
+                src={martinaAsset.url}
                 alt="Iris, Mitgründerin von Meerzeit Studio"
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover hover:scale-[1.02] transition-transform duration-[1600ms]"
