@@ -272,6 +272,22 @@ function FlyerPage() {
             justifyContent: "flex-end",
           }}
         >
+          <a
+            href="/meerzeit-flyer.pdf"
+            download="meerzeit-flyer.pdf"
+            style={{
+              background: COLORS.terracotta,
+              color: COLORS.white,
+              textDecoration: "none",
+              padding: "10px 18px",
+              fontFamily: "Arial, sans-serif",
+              fontSize: "12px",
+              letterSpacing: "0.1em",
+              marginRight: "8px",
+            }}
+          >
+            PDF HERUNTERLADEN
+          </a>
           <button
             onClick={() => window.print()}
             style={{
@@ -285,7 +301,7 @@ function FlyerPage() {
               cursor: "pointer",
             }}
           >
-            DRUCKEN / PDF
+            DRUCKEN
           </button>
         </div>
         <Flyer />
