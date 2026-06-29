@@ -17,6 +17,7 @@ import { Route as PhilosophieRouteImport } from './routes/philosophie'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as FuerWenRouteImport } from './routes/fuer-wen'
 import { Route as FotografieRouteImport } from './routes/fotografie'
+import { Route as FlyerRouteImport } from './routes/flyer'
 import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as BleibendesRouteImport } from './routes/bleibendes'
@@ -64,6 +65,11 @@ const FotografieRoute = FotografieRouteImport.update({
   path: '/fotografie',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FlyerRoute = FlyerRouteImport.update({
+  id: '/flyer',
+  path: '/flyer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DatenschutzRoute = DatenschutzRouteImport.update({
   id: '/datenschutz',
   path: '/datenschutz',
@@ -102,6 +108,7 @@ export interface FileRoutesByFullPath {
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
+  '/flyer': typeof FlyerRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -118,6 +125,7 @@ export interface FileRoutesByTo {
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
+  '/flyer': typeof FlyerRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -135,6 +143,7 @@ export interface FileRoutesById {
   '/bleibendes': typeof BleibendesRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
+  '/flyer': typeof FlyerRoute
   '/fotografie': typeof FotografieRoute
   '/fuer-wen': typeof FuerWenRoute
   '/impressum': typeof ImpressumRoute
@@ -153,6 +162,7 @@ export interface FileRouteTypes {
     | '/bleibendes'
     | '/buchen'
     | '/datenschutz'
+    | '/flyer'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -169,6 +179,7 @@ export interface FileRouteTypes {
     | '/bleibendes'
     | '/buchen'
     | '/datenschutz'
+    | '/flyer'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -185,6 +196,7 @@ export interface FileRouteTypes {
     | '/bleibendes'
     | '/buchen'
     | '/datenschutz'
+    | '/flyer'
     | '/fotografie'
     | '/fuer-wen'
     | '/impressum'
@@ -202,6 +214,7 @@ export interface RootRouteChildren {
   BleibendesRoute: typeof BleibendesRoute
   BuchenRoute: typeof BuchenRoute
   DatenschutzRoute: typeof DatenschutzRoute
+  FlyerRoute: typeof FlyerRoute
   FotografieRoute: typeof FotografieRoute
   FuerWenRoute: typeof FuerWenRoute
   ImpressumRoute: typeof ImpressumRoute
@@ -270,6 +283,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FotografieRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/flyer': {
+      id: '/flyer'
+      path: '/flyer'
+      fullPath: '/flyer'
+      preLoaderRoute: typeof FlyerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/datenschutz': {
       id: '/datenschutz'
       path: '/datenschutz'
@@ -322,6 +342,7 @@ const rootRouteChildren: RootRouteChildren = {
   BleibendesRoute: BleibendesRoute,
   BuchenRoute: BuchenRoute,
   DatenschutzRoute: DatenschutzRoute,
+  FlyerRoute: FlyerRoute,
   FotografieRoute: FotografieRoute,
   FuerWenRoute: FuerWenRoute,
   ImpressumRoute: ImpressumRoute,
