@@ -45,12 +45,15 @@
 
   /* Brand palette */
   --smoke: oklch(0.36 0.014 220);          /* Rauchblau #2F3A40 */
+  --smoky-blue: oklch(0.52 0.05 230);      /* Weiches Blaugrau */
+  --ocean: oklch(0.55 0.07 230);           /* Meeresblau für Küstenmalerei */
   --ivory: oklch(0.955 0.008 80);          /* Elfenbein #F4F1EC */
   --taupe: oklch(0.58 0.014 55);           /* Schlamm-Taupe #8C817A */
   --sage: oklch(0.72 0.025 145);           /* Salbei #A3B2A4 */
   --terracotta: oklch(0.62 0.105 45);      /* #C07A5A */
   --copper: oklch(0.63 0.065 60);          /* #B08A6A */
   --graphite: oklch(0.22 0.012 230);       /* #1E2529 */
+
 
   --background: var(--ivory);
   --foreground: var(--graphite);
