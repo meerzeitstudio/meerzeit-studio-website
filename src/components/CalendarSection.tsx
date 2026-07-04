@@ -87,7 +87,22 @@ export function EventCard({ event }: { event: SessionEvent }) {
         <dd>{event.time}</dd>
         <dt className="text-muted-foreground uppercase tracking-wide text-xs">Ort</dt>
         <dd>{event.location}</dd>
+        {event.price && (
+          <>
+            <dt className="text-muted-foreground uppercase tracking-wide text-xs">Preis</dt>
+            <dd>{event.price}</dd>
+          </>
+        )}
       </dl>
+      {event.description && (
+        <p className="text-sm text-muted-foreground leading-relaxed mb-4">{event.description}</p>
+      )}
+      {event.partner && (
+        <p className="text-xs text-muted-foreground mb-4">
+          In Zusammenarbeit mit {event.partner}
+          {event.bookingInfo ? ` · ${event.bookingInfo}` : ""}
+        </p>
+      )}
       <Link
         to="/buchen"
         className="inline-block px-5 py-2.5 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-xs tracking-widest uppercase"
@@ -97,3 +112,4 @@ export function EventCard({ event }: { event: SessionEvent }) {
     </div>
   );
 }
+
