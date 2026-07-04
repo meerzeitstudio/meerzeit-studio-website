@@ -192,7 +192,7 @@ function FlyerPage() {
           style={{ maxWidth: "210mm", margin: "0 auto 16px", display: "flex", justifyContent: "flex-end" }}
         >
           <a
-            href="/meerzeit-flyer-allgemein.pdf"
+            href={pdfAsset.url}
             download="meerzeit-flyer-allgemein.pdf"
             style={{
               background: COLORS.terracotta,
