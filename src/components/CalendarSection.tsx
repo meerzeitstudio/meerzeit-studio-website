@@ -28,8 +28,7 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
           mode="single"
           selected={selected}
           onSelect={setSelected}
-          month={selected}
-          onMonthChange={setSelected}
+          defaultMonth={selected}
           numberOfMonths={1}
           showOutsideDays
           modifiers={{ hasEvent: eventDates }}
@@ -44,6 +43,7 @@ export function CalendarSection({ compact = false }: { compact?: boolean }) {
           Tage mit verfügbaren Events
         </div>
       </div>
+
 
 
       <div>
