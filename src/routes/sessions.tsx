@@ -173,8 +173,19 @@ function SessionsPage() {
                     )}
                     <p className="text-sm text-muted-foreground">
                       {e.time} · {e.location}
+                      {e.price ? ` · ${e.price}` : ""}
                     </p>
+                    {e.description && (
+                      <p className="text-sm text-muted-foreground leading-relaxed mt-2 max-w-2xl">{e.description}</p>
+                    )}
+                    {e.partner && (
+                      <p className="text-xs text-muted-foreground mt-2">
+                        In Zusammenarbeit mit {e.partner}
+                        {e.bookingInfo ? ` · ${e.bookingInfo}` : ""}
+                      </p>
+                    )}
                   </div>
+
                 </div>
               </Reveal>
             ))}
