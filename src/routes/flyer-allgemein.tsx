@@ -6,6 +6,8 @@ import sNacht from "@/assets/session-nacht.jpg";
 import sBeats from "@/assets/session-beats.jpg";
 import sMutti from "@/assets/session-mutti-baby.jpg";
 import { CONTACT } from "@/lib/contact";
+import pdfAsset from "../../public/meerzeit-flyer-allgemein.pdf.asset.json";
+
 
 export const Route = createFileRoute("/flyer-allgemein")({
   head: () => ({
