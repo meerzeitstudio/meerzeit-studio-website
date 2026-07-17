@@ -106,12 +106,23 @@ export function EventCard({ event }: { event: SessionEvent }) {
           {event.bookingInfo ? ` · ${event.bookingInfo}` : ""}
         </p>
       )}
-      <Link
-        to="/buchen"
-        className="inline-block px-5 py-2.5 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-xs tracking-widest uppercase"
-      >
-        Diesen Termin buchen
-      </Link>
+      {event.bookingUrl ? (
+        <a
+          href={event.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-5 py-2.5 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-xs tracking-widest uppercase"
+        >
+          Diesen Termin buchen
+        </a>
+      ) : (
+        <Link
+          to="/buchen"
+          className="inline-block px-5 py-2.5 rounded-full bg-[color:var(--terracotta)] text-[color:var(--ivory)] hover:bg-[color:var(--copper)] transition text-xs tracking-widest uppercase"
+        >
+          Diesen Termin buchen
+        </Link>
+      )}
     </div>
   );
 }

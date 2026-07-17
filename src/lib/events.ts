@@ -19,6 +19,7 @@ export type SessionEvent = {
   description?: string;
   partner?: string;
   bookingInfo?: string;
+  bookingUrl?: string;
 };
 
 // Termine: hier können neue Events einfach ergänzt werden
@@ -36,6 +37,7 @@ export const events: SessionEvent[] = [
     description: "Ein kreativer Abend, an dem die Teilnehmenden ihr eigenes abstraktes Meeresbild mit Strukturpaste und hochwertigen Materialien gestalten – ganz ohne Vorkenntnisse.",
     partner: "Norddeich Tourismus",
     bookingInfo: "Anmeldung über Norddeich Tourismus",
+    bookingUrl: "https://www.norddeich.de/gastgeber/veranstaltungen/erlebnisse/NDD/27000c03-7ca3-4dff-a2c0-652bd611c174/kuestenmalerei-am-strand",
   },
   {
     date: new Date(2026, 9, 9),
