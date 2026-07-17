@@ -208,7 +208,7 @@ function Flyer() {
           color: COLORS.dark,
         }}
       >
-        <span>So., xx. August 2026  ·  16:00 bis 18:30 Uhr</span>
+        <span>So., 23. August 2026  ·  16:30 bis 18:30 Uhr</span>
         <span style={{ fontWeight: 500 }}>49,95 Euro pro Person</span>
       </div>
 
